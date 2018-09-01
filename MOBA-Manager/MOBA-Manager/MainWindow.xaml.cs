@@ -24,5 +24,24 @@ namespace MOBA_Manager
         {
             InitializeComponent();
         }
+
+        private void userNextButton_Click(object sender, RoutedEventArgs e)
+        {
+            User player = new User(NameField.GetLineText(0), Int32.Parse(AgeField.GetLineText(0)), true);
+            Console.WriteLine("Name: " + player.GetName());
+            Console.WriteLine("Age " + player.GetAge());
+        }
+
+        private void NameField_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (!String.IsNullOrEmpty(NameField.Text))
+            {
+                userNextButton.IsEnabled = true;
+            }
+            else
+            {
+                userNextButton.IsEnabled = false;
+            }
+        }
     }
 }
