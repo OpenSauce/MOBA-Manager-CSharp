@@ -67,6 +67,12 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit">
+      <HintPath>C:\Users\Lawley\Downloads\Extended.WPF.Toolkit.Binaries.NET.3.5\Extended WPF Toolkit Binaries .NET 3.5\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit">
+      <HintPath>C:\Users\Lawley\Downloads\Extended.WPF.Toolkit.Binaries.NET.4.x\Extended WPF Toolkit Binaries .NET 4.x\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
