@@ -8,7 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TeamCreation">
 
-    <Grid Background="White">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF911212" Offset="0.873"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,0,100,25" Width="84" HorizontalAlignment="Right" Click="userNextButton_Click" VerticalAlignment="Bottom"/>
         <Label Content="Choose a Team:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top"/>
         <Label Content="Team Details" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="16" Margin="0"/>
