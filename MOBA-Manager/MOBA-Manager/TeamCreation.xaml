@@ -15,7 +15,7 @@
         <ComboBox x:Name="TeamComboBox" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TeamComboBox_SelectionChanged"/>
         <Canvas x:Name="NewTeamCanvas" Height="198" Margin="0,126,0,0" Width="424" VerticalAlignment="Top" HorizontalAlignment="Center">
             <Label Content="Team Name:" Canvas.Left="67" Canvas.Top="28"/>
-            <TextBox Height="26" Canvas.Left="156" TextWrapping="Wrap" Text="" Canvas.Top="28" Width="217" Margin="-4,0,0,0" BorderThickness="3,1,1,1"/>
+            <TextBox x:Name="TeamNameField" Height="26" Canvas.Left="156" TextWrapping="Wrap" Text="" Canvas.Top="28" Width="217" Margin="-4,0,0,0" BorderThickness="3,1,1,1"/>
         </Canvas>
 
     </Grid>

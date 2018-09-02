@@ -36,7 +36,16 @@ namespace MOBA_Manager
 
         private void userNextButton_Click(object sender, RoutedEventArgs e)
         {
-            _player.SetTeam(new Team(TeamComboBox.Text));
+            String teamName;
+            if(TeamComboBox.SelectedIndex == 0)
+            {
+                teamName = TeamNameField.Text;
+            }
+            else
+            {
+                teamName = TeamComboBox.Text;
+            }
+            _player.SetTeam(new Team(teamName));
             Console.WriteLine("Name: " + _player.GetName());
             Console.WriteLine("Age " + _player.GetAge());
             Console.WriteLine("Team: " + _player.GetTeamName());
