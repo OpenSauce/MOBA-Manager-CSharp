@@ -44,7 +44,7 @@ namespace MOBA_Manager
 
         private void userNextButton_Click(object sender, RoutedEventArgs e)
         {
-            _player.SetTeam(new Team("Example United"));
+            _player.SetTeam(new Team(NameField.GetLineText(0)));
             Console.WriteLine("Name: " + _player.GetName());
             Console.WriteLine("Age " + _player.GetAge());
             Console.WriteLine("Team: " + _player.GetTeamName());

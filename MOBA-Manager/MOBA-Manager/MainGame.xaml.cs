@@ -20,9 +20,15 @@ namespace MOBA_Manager
     /// </summary>
     public partial class MainGame : Page
     {
-        public MainGame()
+        private User _player;
+
+        public MainGame(User player)
         {
             InitializeComponent();
+            this._player = player;
+            NameLabel.Content = "Name: " + _player.GetName();
+            TeamLabel.Content = "Team: " + _player.GetTeamName();
+            CashLabel.Content = "Cash: " + _player.GetCashString();
         }
     }
 }

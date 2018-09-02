@@ -11,6 +11,12 @@ namespace MOBA_Manager.src
         protected String _name;
         protected int _age;
         protected Team _team;
+        protected Int64 _cash;
+
+        public Manager()
+        {
+            _cash = 10000;
+        }
 
         public void SetName(String name)
         {
@@ -40,6 +46,11 @@ namespace MOBA_Manager.src
         public String GetTeamName()
         {
             return _team.GetTeamName();
+        }
+
+        public String GetCashString()
+        {
+            return _cash.ToString();
         }
     }
 }

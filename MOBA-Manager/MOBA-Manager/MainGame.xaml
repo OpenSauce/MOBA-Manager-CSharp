@@ -5,8 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MOBA_Manager"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      MinWidth="900" MinHeight="450"
+      Height="Auto" Width="Auto"
       Title="MainGame">
 
-    <Grid Background="White"/>
+    <Grid Background="White" Width="Auto" Height="Auto">
+        <Label x:Name="NameLabel" Content="Name: N/A" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" FontFamily="Lucida Sans" FontSize="16"/>
+        <Label x:Name="CashLabel" Content="Cash: 0" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Lucida Sans"/>
+        <Label x:Name="TeamLabel" Content="Team: N/A" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Top" HorizontalContentAlignment="Right" FontSize="16" FontFamily="Lucida Sans"/>
+    </Grid>
 </Page>
