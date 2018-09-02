@@ -13,15 +13,15 @@
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="1"/>
-                <GradientStop Color="#FF911212" Offset="0.873"/>
+                <GradientStop Color="#FF911212" Offset="0.9"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,0,50,25" VerticalAlignment="Bottom" Width="94" Click="userNextButton_Click" HorizontalAlignment="Right" IsEnabled="False"/>
-        <TextBox x:Name="NameField" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.11,5.066" Width="250" TextChanged="NameField_TextChanged"/>
-        <Label Content="Name:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top"/>
-        <Label Content="Age:" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top"/>
-        <Label Content="User Details:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="16"/>
-        <xctk:IntegerUpDown x:Name="AgeInteger" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="195" DefaultValue="18" DisplayDefaultValueOnEmptyText="True" AllowTextInput="False" Maximum="99" Minimum="18"/>
+        <TextBox x:Name="NameField" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.11,5.066" Width="250" TextChanged="NameField_TextChanged" Height="26"/>
+        <Label Content="Name:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top" Foreground="#FFFFCFCF"/>
+        <Label Content="Age:" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top" Foreground="#FFFFCFCF"/>
+        <Label Content="User Details:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="22" Foreground="#FFFFCFCF"/>
+        <xctk:IntegerUpDown x:Name="AgeInteger" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" Width="195" DefaultValue="18" DisplayDefaultValueOnEmptyText="True" AllowTextInput="False" Maximum="99" Minimum="18" Height="26"/>
         <Button x:Name="LoadButton" Content="Load" HorizontalAlignment="Left" Height="26" Margin="50,2,0,25" VerticalAlignment="Bottom" Width="94"/>
     </Grid>
 </Page>

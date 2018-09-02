@@ -13,20 +13,20 @@
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="1"/>
-                <GradientStop Color="#FF911212" Offset="0.873"/>
+                <GradientStop Color="#FF911212" Offset="0.9"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Grid Height="50" Width="Auto" VerticalAlignment="Top">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                    <GradientStop Color="#FFFFCFCF" Offset="1"/>
+                    <GradientStop Color="Black" Offset="1"/>
                     <GradientStop Color="#FF911212" Offset="0.75"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Label x:Name="NameLabel" Content="Name: N/A" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Width="Auto" Margin="0,10,0,-20" Foreground="#FFFFCFCF" FontWeight="Bold"/>
-            <Label x:Name="CashLabel" Content="Cash: 0" HorizontalAlignment="Center" Margin="304,10,374,-4" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Width="148" Foreground="#FFFFCFCF" FontWeight="Bold"/>
-            <Label x:Name="TeamLabel" Content="Team: N/A" HorizontalAlignment="Right" Margin="0,10,135,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" FontSize="16" Background="{x:Null}" Foreground="#FFFFCFCF" FontWeight="Bold"/>
-            <Button x:Name="ProceedButton" Content="Proceed" Height="Auto" Margin="0" Width="100" Click="ProceedButton_Click" BorderThickness="2,0,0,0" Background="{x:Null}" BorderBrush="White" Foreground="#FFFFCFCF" HorizontalAlignment="Right"/>
+            <Label x:Name="NameLabel" Content="Name: N/A" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="22" Width="Auto" Margin="0" Foreground="#FFFFCFCF"/>
+            <Label x:Name="CashLabel" Content="Cash: 0" HorizontalAlignment="Center" Margin="0,0,135,0" VerticalAlignment="Center" HorizontalContentAlignment="Center" FontSize="22" Width="148" Foreground="#FFFFCFCF"/>
+            <Label x:Name="TeamLabel" Content="Team: N/A" HorizontalAlignment="Right" Margin="0,0,133,0" VerticalAlignment="Center" HorizontalContentAlignment="Right" FontSize="22" Background="{x:Null}" Foreground="#FFFFCFCF"/>
+            <Button x:Name="ProceedButton" Content="Proceed" Height="Auto" Margin="0" Width="100" Click="ProceedButton_Click" BorderThickness="2,0,0,0" Background="#FFE2CACA" BorderBrush="White" Foreground="#FF080808" HorizontalAlignment="Right" FontSize="14"/>
         </Grid>
     </Grid>
 </Page>

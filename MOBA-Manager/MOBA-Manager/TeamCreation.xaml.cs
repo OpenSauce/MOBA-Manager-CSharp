@@ -56,11 +56,11 @@ namespace MOBA_Manager
         {
             if(TeamComboBox.SelectedIndex != 0)
             {
-                NewTeamCanvas.Visibility = Visibility.Collapsed;
+                NewTeamGrid.Visibility = Visibility.Collapsed;
             } 
             else
             {
-                NewTeamCanvas.Visibility = Visibility.Visible;
+                NewTeamGrid.Visibility = Visibility.Visible;
             }
         }
     }
