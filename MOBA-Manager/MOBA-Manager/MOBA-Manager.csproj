@@ -82,6 +82,7 @@
     <Compile Include="MainGame.xaml.cs">
       <DependentUpon>MainGame.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\GameEngine.cs" />
     <Compile Include="src\Manager.cs" />
     <Compile Include="src\Team.cs" />
     <Compile Include="src\User.cs" />

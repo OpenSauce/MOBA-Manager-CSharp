@@ -24,6 +24,5 @@ namespace MOBA_Manager
             return _created;
         }
 
-
     }
 }

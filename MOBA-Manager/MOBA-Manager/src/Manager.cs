@@ -48,6 +48,21 @@ namespace MOBA_Manager.src
             return _team.GetTeamName();
         }
 
+        public Int64 GetCash()
+        {
+            return _cash;
+        }
+
+        public void SetCash(Int64 cash)
+        {
+            _cash = cash;
+        }
+
+        public void IncreaseCash(int increase)
+        {
+            _cash += increase;
+        }
+
         public String GetCashString()
         {
             return _cash.ToString("C", new System.Globalization.CultureInfo("en-GB"));

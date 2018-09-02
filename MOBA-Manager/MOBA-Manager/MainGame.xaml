@@ -13,5 +13,6 @@
         <Label x:Name="NameLabel" Content="Name: N/A" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" FontFamily="Lucida Sans" FontSize="16"/>
         <Label x:Name="CashLabel" Content="Cash: 0" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Lucida Sans"/>
         <Label x:Name="TeamLabel" Content="Team: N/A" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Top" HorizontalContentAlignment="Right" FontSize="16" FontFamily="Lucida Sans"/>
+        <Button x:Name="ProceedButton" Content="Proceed" HorizontalAlignment="Right" Height="39" Margin="0,0,25,25" VerticalAlignment="Bottom" Width="101" Click="ProceedButton_Click"/>
     </Grid>
 </Page>
