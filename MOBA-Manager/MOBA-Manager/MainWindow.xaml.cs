@@ -38,7 +38,7 @@ namespace MOBA_Manager
 
         public void BeginGame()
         {
-            //Begin the actual game.
+            MainFrame.Content = new MainGame();
         }
 
     }

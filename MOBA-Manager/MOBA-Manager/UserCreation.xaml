@@ -6,10 +6,10 @@
       xmlns:local="clr-namespace:MOBA_Manager"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="UserCreation">
+      Title="UserCreation" >
 
     <Grid Background="White">
-        <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,356,100,0" VerticalAlignment="Top" Width="84" Click="userNextButton_Click" HorizontalAlignment="Right" IsEnabled="False"/>
+        <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,0,100,28" VerticalAlignment="Bottom" Width="84" Click="userNextButton_Click" HorizontalAlignment="Right" IsEnabled="False"/>
         <TextBox x:Name="NameField" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.11,5.066" Width="250" TextChanged="NameField_TextChanged"/>
         <Label Content="Name:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top"/>
         <Label Content="Age:" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top"/>

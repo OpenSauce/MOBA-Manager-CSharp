@@ -8,15 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TeamCreation">
 
-    <Grid>
         <Grid Background="White">
-            <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,356,100,0" VerticalAlignment="Top" Width="84" HorizontalAlignment="Right" IsEnabled="False" Click="userNextButton_Click"/>
+            <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,0,100,25" Width="84" HorizontalAlignment="Right" IsEnabled="False" Click="userNextButton_Click" VerticalAlignment="Bottom"/>
             <TextBox x:Name="NameField" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.11,5.066" Width="250" TextChanged="NameField_TextChanged"/>
             <Label Content="Team Name:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top"/>
             <Label Content="Age:" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="AgeField" HorizontalAlignment="Center" Height="22" Margin="0,125,0,0" TextWrapping="Wrap" Text="99" VerticalAlignment="Top"/>
+            <Label Content="Enter Team Details:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="16" Margin="0"/>
 
         </Grid>
 
-    </Grid>
 </Page>
