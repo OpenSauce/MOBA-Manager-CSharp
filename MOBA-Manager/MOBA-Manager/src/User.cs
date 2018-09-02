@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.src;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +8,9 @@ using System.Threading.Tasks;
 namespace MOBA_Manager
 {
 
-    class User
+    public class User : Manager
     {
         private bool _created = false;
-        private String _name;
-        private int _age;
 
         public User(String name, int age, bool created)
         {
@@ -20,19 +19,11 @@ namespace MOBA_Manager
             this._created = created;
         }
 
-        public void SetName(String name)
+        public Boolean IsCreated()
         {
-            this._name = name;
+            return _created;
         }
 
-        public String GetName()
-        {
-            return this._name;
-        }
 
-        public int GetAge()
-        {
-            return this._age;
-        }
     }
 }

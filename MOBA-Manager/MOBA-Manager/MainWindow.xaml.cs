@@ -20,28 +20,26 @@ namespace MOBA_Manager
     /// </summary>
     public partial class MainWindow : Window
     {
+        User _player;
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new UserCreation(this);
         }
 
-        private void userNextButton_Click(object sender, RoutedEventArgs e)
+        public void CreateTeam(User player)
         {
-            User player = new User(NameField.GetLineText(0), Int32.Parse(AgeField.GetLineText(0)), true);
-            Console.WriteLine("Name: " + player.GetName());
-            Console.WriteLine("Age " + player.GetAge());
+            this._player = player;
+            if(_player.IsCreated())
+            {
+                MainFrame.Content = new TeamCreation(this, _player);
+            }
         }
 
-        private void NameField_TextChanged(object sender, TextChangedEventArgs e)
+        public void BeginGame()
         {
-            if (!String.IsNullOrEmpty(NameField.Text))
-            {
-                userNextButton.IsEnabled = true;
-            }
-            else
-            {
-                userNextButton.IsEnabled = false;
-            }
+            //Begin the actual game.
         }
+
     }
 }
