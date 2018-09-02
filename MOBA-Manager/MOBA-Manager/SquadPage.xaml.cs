@@ -28,12 +28,15 @@ namespace MOBA_Manager
 
         public SquadPage(List<MOBAPlayer> squad)
         {
-
+            InitializeComponent();
         }
 
-        public ListBox GetListBox()
+        public void PopulateSquadBox(User _player)
         {
-            return SquadListBox;
+            foreach (var MOBAPlayer in _player.GetTeam().GetSquad())
+            {
+                SquadListBox.Items.Add(MOBAPlayer.GetNickname());
+            }
         }
     }
 }

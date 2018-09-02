@@ -58,10 +58,7 @@ namespace MOBA_Manager
             NameLabel.Content = "Name: " + _player.GetName();
             TeamLabel.Content = "Team: " + _player.GetTeamName();
             CashLabel.Content = "Cash: " + _player.GetCashString();
-            foreach (var MOBAPlayer in _player.GetTeam().GetSquad())
-            {
-                _squadPage.GetListBox().Items.Add(MOBAPlayer.GetNickname());
-            }
+            _squadPage.PopulateSquadBox(_player);
         }
 
         private void SquadListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
