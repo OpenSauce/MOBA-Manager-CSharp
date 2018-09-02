@@ -26,29 +26,33 @@ namespace MOBA_Manager
         public TeamCreation(MainWindow window, User player)
         {
             InitializeComponent();
+            //Hardcode some teams
+            TeamComboBox.Items.Add("Create Team");
+            TeamComboBox.Items.Add("OG");
+            TeamComboBox.SelectedIndex = 0;
             this._window = window;
             this._player = player;
         }
 
-        private void NameField_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (!String.IsNullOrEmpty(NameField.Text))
-            {
-                userNextButton.IsEnabled = true;
-            }
-            else
-            {
-                userNextButton.IsEnabled = false;
-            }
-        }
-
         private void userNextButton_Click(object sender, RoutedEventArgs e)
         {
-            _player.SetTeam(new Team(NameField.GetLineText(0)));
+            _player.SetTeam(new Team(TeamComboBox.Text));
             Console.WriteLine("Name: " + _player.GetName());
             Console.WriteLine("Age " + _player.GetAge());
             Console.WriteLine("Team: " + _player.GetTeamName());
             _window.BeginGame();
+        }
+
+        private void TeamComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(TeamComboBox.SelectedIndex != 0)
+            {
+                NewTeamCanvas.Visibility = Visibility.Collapsed;
+            } 
+            else
+            {
+                NewTeamCanvas.Visibility = Visibility.Visible;
+            }
         }
     }
 }

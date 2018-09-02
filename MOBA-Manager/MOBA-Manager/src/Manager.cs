@@ -50,7 +50,7 @@ namespace MOBA_Manager.src
 
         public String GetCashString()
         {
-            return _cash.ToString();
+            return _cash.ToString("C", new System.Globalization.CultureInfo("en-GB"));
         }
     }
 }

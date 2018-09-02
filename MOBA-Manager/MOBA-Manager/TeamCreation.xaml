@@ -8,14 +8,16 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TeamCreation">
 
-        <Grid Background="White">
-            <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,0,100,25" Width="84" HorizontalAlignment="Right" IsEnabled="False" Click="userNextButton_Click" VerticalAlignment="Bottom"/>
-            <TextBox x:Name="NameField" HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.11,5.066" Width="250" TextChanged="NameField_TextChanged"/>
-            <Label Content="Team Name:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top"/>
-            <Label Content="Age:" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="AgeField" HorizontalAlignment="Center" Height="22" Margin="0,125,0,0" TextWrapping="Wrap" Text="99" VerticalAlignment="Top"/>
-            <Label Content="Enter Team Details:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="16" Margin="0"/>
+    <Grid Background="White">
+        <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,0,100,25" Width="84" HorizontalAlignment="Right" Click="userNextButton_Click" VerticalAlignment="Bottom"/>
+        <Label Content="Choose a Team:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="Team Details" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="16" Margin="0"/>
+        <ComboBox x:Name="TeamComboBox" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TeamComboBox_SelectionChanged"/>
+        <Canvas x:Name="NewTeamCanvas" Height="198" Margin="0,126,0,0" Width="424" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Label Content="Team Name:" Canvas.Left="67" Canvas.Top="28"/>
+            <TextBox Height="26" Canvas.Left="156" TextWrapping="Wrap" Text="" Canvas.Top="28" Width="217" Margin="-4,0,0,0" BorderThickness="3,1,1,1"/>
+        </Canvas>
 
-        </Grid>
+    </Grid>
 
 </Page>
