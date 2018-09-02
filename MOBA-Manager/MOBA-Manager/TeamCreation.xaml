@@ -16,13 +16,16 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="userNextButton" Content="Next" Height="26" Margin="0,0,50,25" Width="84" HorizontalAlignment="Right" Click="userNextButton_Click" VerticalAlignment="Bottom"/>
-        <Label Content="Choose a Team:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top" Foreground="#FFFFCFCF"/>
-        <Label Content="Team Details" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="22" Margin="0" Foreground="#FFFFCFCF"/>
-        <ComboBox x:Name="TeamComboBox" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TeamComboBox_SelectionChanged" Height="26"/>
-        <Grid x:Name="NewTeamGrid" Height="194" Margin="0,111,0,0" VerticalAlignment="Top" Width="Auto" RenderTransformOrigin="0.531,0.5">
+        <Label Content="Choose a Team:" HorizontalAlignment="Center" Height="26" Margin="0,45,0,0" VerticalAlignment="Top" Foreground="#FFFFCFCF" FontSize="14"/>
+        <Label Content="Team Details" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="26" Margin="0" Foreground="#FFFFCFCF"/>
+        <ComboBox x:Name="TeamComboBox" HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="TeamComboBox_SelectionChanged" Height="26" FontSize="14" FontWeight="Bold"/>
+        <Grid x:Name="NewTeamGrid" Height="194" Margin="0,105,0,0" VerticalAlignment="Top" Width="Auto" RenderTransformOrigin="0.531,0.5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-            <TextBox x:Name="TeamNameField" TextWrapping="Wrap" Text="" Width="250" BorderThickness="3,1,1,1" HorizontalAlignment="Center" Margin="0,26,0,142" Height="26"/>
-            <Label Content="Team Name:" Foreground="#FFFFCFCF" HorizontalAlignment="Center" Margin="356,0,368,0" Width="76" Height="26" VerticalAlignment="Top"/>
+            <TextBox x:Name="TeamNameField" TextWrapping="Wrap" Text="" Width="250" BorderThickness="3,1,1,1" HorizontalAlignment="Center" Margin="275,30,280,0" FontSize="14" Height="26" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="Team Name:" Foreground="#FFFFCFCF" HorizontalAlignment="Center" Margin="0" Height="26" VerticalAlignment="Top" FontSize="14"/>
         </Grid>
 
     </Grid>
