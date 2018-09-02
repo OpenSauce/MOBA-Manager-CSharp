@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.src;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,10 +47,24 @@ namespace MOBA_Manager
                 teamName = TeamComboBox.Text;
             }
             _player.SetTeam(new Team(teamName));
-            Console.WriteLine("Name: " + _player.GetName());
-            Console.WriteLine("Age " + _player.GetAge());
-            Console.WriteLine("Team: " + _player.GetTeamName());
+            SetupTeam(_player);
             _window.BeginGame();
+        }
+
+        private void SetupTeam(User player)
+        {
+            //Hardcode Team
+            Team playerTeam = player.GetTeam();
+            Console.WriteLine("Hi1");
+            if(playerTeam.GetTeamName().Equals("OG"))
+            {
+                Console.WriteLine("Hi2");
+                playerTeam.AddPlayer(new MOBAPlayer("N0Tail", playerTeam));
+                playerTeam.AddPlayer(new MOBAPlayer("Ceb", playerTeam));
+                playerTeam.AddPlayer(new MOBAPlayer("Klaxon", playerTeam));
+                playerTeam.AddPlayer(new MOBAPlayer("Jerax", playerTeam));
+                playerTeam.AddPlayer(new MOBAPlayer("Ana", playerTeam));
+            }
         }
 
         private void TeamComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

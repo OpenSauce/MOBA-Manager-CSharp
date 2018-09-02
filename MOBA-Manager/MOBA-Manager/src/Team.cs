@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.src;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,14 +10,32 @@ namespace MOBA_Manager
     public class Team
     {
         protected String _teamName;
+        protected List<MOBAPlayer> _squad;
+
         public Team(String teamName) 
         {
+            this._squad = new List<MOBAPlayer>();
             this._teamName = teamName;
         }
 
         public String GetTeamName()
         {
             return _teamName;
+        }
+
+        public List<MOBAPlayer> GetSquad()
+        {
+            return _squad;
+        }
+
+        public Boolean AddPlayer(MOBAPlayer player)
+        {
+            if(_squad.Count <= 7)
+            {
+                _squad.Add(player);
+                return true;
+            }
+            return false;
         }
     }
 }

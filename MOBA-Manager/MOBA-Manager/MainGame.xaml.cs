@@ -25,6 +25,7 @@ namespace MOBA_Manager
         private MainWindow _window;
         private GameEngine _engine;
         private List<Manager> _managerList;
+        private SquadPage _squadPage;
 
         public MainGame(MainWindow window, User player)
         {
@@ -52,9 +53,20 @@ namespace MOBA_Manager
 
         private void Refresh()
         {
+            _squadPage = new SquadPage(_player.GetTeam().GetSquad());
+            SquadFrame.Content = _squadPage;
             NameLabel.Content = "Name: " + _player.GetName();
             TeamLabel.Content = "Team: " + _player.GetTeamName();
             CashLabel.Content = "Cash: " + _player.GetCashString();
+            foreach (var MOBAPlayer in _player.GetTeam().GetSquad())
+            {
+                _squadPage.GetListBox().Items.Add(MOBAPlayer.GetNickname());
+            }
+        }
+
+        private void SquadListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Console.WriteLine("Hi");
         }
     }
 }

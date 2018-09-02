@@ -32,8 +32,6 @@ namespace MOBA_Manager
         private void userNextButton_Click(object sender, RoutedEventArgs e)
         {
             _player = new User(NameField.GetLineText(0), (int)AgeInteger.Value, true);
-            Console.WriteLine("Name: " + _player.GetName());
-            Console.WriteLine("Age " + _player.GetAge());
             _window.CreateTeam(_player);
         }
 
