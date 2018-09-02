@@ -14,7 +14,7 @@
         <Label Content="Name:" HorizontalAlignment="Center" Height="26" Margin="0,35,0,0" VerticalAlignment="Top"/>
         <Label Content="Age:" HorizontalAlignment="Center" Margin="0,95,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="AgeField" HorizontalAlignment="Center" Height="22" Margin="0,125,0,0" TextWrapping="Wrap" Text="99" VerticalAlignment="Top"/>
-        <Label Content="User Creation:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="16"/>
+        <Label Content="User Details:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" FontSize="16"/>
 
     </Grid>
 </Page>
