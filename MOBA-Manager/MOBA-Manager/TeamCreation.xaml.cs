@@ -59,11 +59,11 @@ namespace MOBA_Manager
             if(playerTeam.GetTeamName().Equals("OG"))
             {
                 Console.WriteLine("Hi2");
-                playerTeam.AddPlayer(new MOBAPlayer("N0Tail", playerTeam));
-                playerTeam.AddPlayer(new MOBAPlayer("Ceb", playerTeam));
-                playerTeam.AddPlayer(new MOBAPlayer("Klaxon", playerTeam));
-                playerTeam.AddPlayer(new MOBAPlayer("Jerax", playerTeam));
-                playerTeam.AddPlayer(new MOBAPlayer("Ana", playerTeam));
+                playerTeam.AddPlayer(new MOBAPlayer("N0Tail", playerTeam, 25, "Support", 20000));
+                playerTeam.AddPlayer(new MOBAPlayer("Ceb", playerTeam, 25, "Offlane", 20000));
+                playerTeam.AddPlayer(new MOBAPlayer("Klaxon", playerTeam, 24, "Mid", 20000));
+                playerTeam.AddPlayer(new MOBAPlayer("Jerax", playerTeam, 23, "Support", 20000));
+                playerTeam.AddPlayer(new MOBAPlayer("Ana", playerTeam, 24, "Carry", 20000));
             }
         }
 

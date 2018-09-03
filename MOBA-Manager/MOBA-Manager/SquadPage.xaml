@@ -13,12 +13,12 @@
             <ListView.View>
                 <GridView>
                     <GridView.ColumnHeaderContextMenu>
-                        <ContextMenu/>
+                        <ContextMenu HorizontalContentAlignment="Stretch" HorizontalOffset="20" MinWidth="200" Width="0"/>
                     </GridView.ColumnHeaderContextMenu>
-                    <GridViewColumn Header="Hello"/>
-                    <GridViewColumn/>
-                    <GridViewColumn/>
-                    <GridViewColumn/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Path=Name}" />
+                    <GridViewColumn Header="Age" DisplayMemberBinding="{Binding Path=Age}"/>
+                    <GridViewColumn Header="Role" DisplayMemberBinding="{Binding Path=Role}"/>
+                    <GridViewColumn Header="Salary" DisplayMemberBinding="{Binding Path=Salary}"/>
                 </GridView>
             </ListView.View>
         </ListView>

@@ -80,7 +80,7 @@ namespace MOBA_Manager
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _squadPage = new SquadPage(_player.GetTeam().GetSquad());
+            _squadPage = new SquadPage();
             _squadPage.PopulateSquadBox(_player.GetTeam());
             SquadFrame.Content = _squadPage;
         }

@@ -26,16 +26,12 @@ namespace MOBA_Manager
             InitializeComponent();
         }
 
-        public SquadPage(List<MOBAPlayer> squad)
-        {
-            InitializeComponent();
-        }
-
         public void PopulateSquadBox(Team team)
         {
             foreach (var MOBAPlayer in team.GetSquad())
             {
-                SquadListView.Items.Add(MOBAPlayer.GetNickname());
+                var row = new {Name = MOBAPlayer.Nickname, Age = MOBAPlayer.Age, Role = MOBAPlayer.Role, Salary = MOBAPlayer.Salary};
+                SquadListView.Items.Add(row);
             }
         }
     }
