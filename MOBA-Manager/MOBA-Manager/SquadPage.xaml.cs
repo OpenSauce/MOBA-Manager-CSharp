@@ -35,7 +35,7 @@ namespace MOBA_Manager
         {
             foreach (var MOBAPlayer in team.GetSquad())
             {
-                SquadListBox.Items.Add(MOBAPlayer.GetNickname());
+                SquadListView.Items.Add(MOBAPlayer.GetNickname());
             }
         }
     }

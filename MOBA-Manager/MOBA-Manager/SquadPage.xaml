@@ -9,6 +9,18 @@
       Title="SquadPage">
 
     <Grid>
-        <ListBox x:Name="SquadListBox" Margin="0" FontSize="14" FontWeight="Bold"/>
+        <ListView x:Name="SquadListView" Margin="0" FontSize="14" FontWeight="Bold" Background="#FFE0E0E0">
+            <ListView.View>
+                <GridView>
+                    <GridView.ColumnHeaderContextMenu>
+                        <ContextMenu/>
+                    </GridView.ColumnHeaderContextMenu>
+                    <GridViewColumn Header="Hello"/>
+                    <GridViewColumn/>
+                    <GridViewColumn/>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>
