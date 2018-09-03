@@ -100,12 +100,6 @@
     <Compile Include="NewsPage.xaml.cs">
       <DependentUpon>NewsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PlayerControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PlayerControl.Designer.cs">
-      <DependentUpon>PlayerControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="SquadPage.xaml.cs">
       <DependentUpon>SquadPage.xaml</DependentUpon>
     </Compile>
@@ -168,9 +162,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="PlayerControl.resx">
-      <DependentUpon>PlayerControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
