@@ -9,6 +9,6 @@
       Title="SquadPage">
 
     <Grid>
-        <ListBox x:Name="SquadListBox" Margin="0"/>
+        <ListBox x:Name="SquadListBox" Margin="0" FontSize="14" FontWeight="Bold"/>
     </Grid>
 </Page>

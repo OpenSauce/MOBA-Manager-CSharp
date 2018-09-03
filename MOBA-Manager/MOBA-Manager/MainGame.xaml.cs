@@ -54,18 +54,28 @@ namespace MOBA_Manager
 
         private void Refresh()
         {
+            UpdateHeader();
+            _newsPage = new NewsPage();
+            SquadFrame.Content = _newsPage;
+            GenerateNews();
+            _newsPage.PopulatePosts(GetNewsPosts());
+        }
+
+        private void UpdateHeader()
+        {
             NameLabel.Content = "Name: " + _player.GetName();
             TeamLabel.Content = "Team: " + _player.GetTeamName();
             CashLabel.Content = "Cash: " + _player.GetCashString();
-            _newsPage = new NewsPage();
-            SquadFrame.Content = _newsPage;
-            NewsPost newpost = new NewsPost("Title", "This is the content of the news post");
-            _newsPage.PushNewsPost(newpost);
         }
 
-        private List<NewsPost> GenerateNewsPosts()
+        private void GenerateNews()
         {
-            return new List<NewsPost>();
+            _player.AddNews(new NewsPost("Title", "This is the content of the news post"));
+        }
+
+        private List<NewsPost> GetNewsPosts()
+        {
+            return _player.NewsPosts;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -78,6 +88,7 @@ namespace MOBA_Manager
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             _newsPage = new NewsPage();
+            _newsPage.PopulatePosts(GetNewsPosts());
             SquadFrame.Content = _newsPage;
         }
     }

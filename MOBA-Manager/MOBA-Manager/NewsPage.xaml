@@ -9,7 +9,7 @@
       Title="NewsPage">
 
     <Grid>
-        <ListBox x:Name="NewsListBox" Margin="0,0,624,0" Width="175" HorizontalAlignment="Left" BorderThickness="1,1,2,1" BorderBrush="Black"/>
+        <ListBox x:Name="NewsListBox" Margin="0,0,624,0" Width="175" HorizontalAlignment="Left" BorderThickness="1,1,2,1" BorderBrush="Black" FontSize="14" FontWeight="Bold"/>
         <TextBlock x:Name="NewsTextBlock" Margin="175,50,0,0" TextWrapping="Wrap" Background="#FFE0E0E0" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="NewsTitleBox" Margin="175,0,0,0" TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Background="#FFE0E0E0" BorderBrush="Black" BorderThickness="0,1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Height="50" Width="Auto" VerticalAlignment="Top"/>
     </Grid>
