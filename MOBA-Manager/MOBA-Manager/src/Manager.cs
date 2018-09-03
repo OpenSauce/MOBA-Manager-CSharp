@@ -11,7 +11,7 @@ namespace MOBA_Manager.src
         protected String _name;
         protected int _age;
         protected Team _team;
-        protected Int64 _cash;
+        protected Double _cash, _netIncome = 500;
 
         public Manager()
         {
@@ -48,7 +48,7 @@ namespace MOBA_Manager.src
             return _team.GetTeamName();
         }
 
-        public Int64 GetCash()
+        public Double GetCash()
         {
             return _cash;
         }

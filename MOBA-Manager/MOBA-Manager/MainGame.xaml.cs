@@ -1,6 +1,7 @@
 ﻿using MOBA_Manager.src;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,16 +28,27 @@ namespace MOBA_Manager
         private List<Manager> _managerList;
         private SquadPage _squadPage;
         private NewsPage _newsPage;
+        private DateTime _date;
+
+        public DateTime Date { get => _date; set => _date = value; }
 
         public MainGame(MainWindow window, User player)
         {
             InitializeComponent();
             this._window = window;
             this._player = player;
+            SetupGame();
+
+        }
+
+        private void SetupGame()
+        {
             _managerList = CreateManagerList();
             this._engine = new GameEngine(this);
             _engine.SetManagerList(_managerList);
             _engine.SetUser(_player);
+
+            _date = DateTime.Parse("7 June 2018", new CultureInfo("en-GB"));
             Refresh();
         }
 
@@ -66,6 +78,7 @@ namespace MOBA_Manager
             NameLabel.Content = "Name: " + _player.GetName();
             TeamLabel.Content = "Team: " + _player.GetTeamName();
             CashLabel.Content = "Cash: " + _player.GetCashString();
+            DateLabel.Content = _date.ToString("dddd\ndd/MM/yy");
         }
 
         private void GenerateNews()

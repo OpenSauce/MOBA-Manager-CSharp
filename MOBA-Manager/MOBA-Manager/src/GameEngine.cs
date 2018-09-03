@@ -31,7 +31,8 @@ namespace MOBA_Manager.src
 
         public void Proceed()
         {
-            _player.IncreaseCash(500);
+            _mainGame.Date = _mainGame.Date.AddDays(1);
+            _player.CalculateCash();
         }
     }
 }
