@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.src;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,21 @@ namespace MOBA_Manager
         public NewsPage()
         {
             InitializeComponent();
+        }
+
+        public void PushNewsPost(NewsPost post)
+        {
+            NewsListBox.Items.Add(post.Title);
+            NewsTitleBox.Text = post.Title;
+            NewsTextBlock.Text = post.Content;
+        }
+
+        public void PopulatePosts(List<NewsPost> posts)
+        {
+            foreach(NewsPost post in posts)
+            {
+                PushNewsPost(post);
+            }
         }
     }
 }

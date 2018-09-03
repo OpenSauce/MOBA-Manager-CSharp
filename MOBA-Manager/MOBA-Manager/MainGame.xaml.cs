@@ -59,6 +59,13 @@ namespace MOBA_Manager
             CashLabel.Content = "Cash: " + _player.GetCashString();
             _newsPage = new NewsPage();
             SquadFrame.Content = _newsPage;
+            NewsPost newpost = new NewsPost("Title", "This is the content of the news post");
+            _newsPage.PushNewsPost(newpost);
+        }
+
+        private List<NewsPost> GenerateNewsPosts()
+        {
+            return new List<NewsPost>();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
