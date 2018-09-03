@@ -97,6 +97,9 @@
     <Compile Include="MainGame.xaml.cs">
       <DependentUpon>MainGame.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewsPage.xaml.cs">
+      <DependentUpon>NewsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PlayerControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +112,7 @@
     <Compile Include="src\GameEngine.cs" />
     <Compile Include="src\Manager.cs" />
     <Compile Include="src\MOBAPlayer.cs" />
+    <Compile Include="src\NewsPost.cs" />
     <Compile Include="src\Team.cs" />
     <Compile Include="src\User.cs" />
     <Compile Include="TeamCreation.xaml.cs">
@@ -133,6 +137,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NewsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SquadPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

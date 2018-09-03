@@ -26,6 +26,7 @@ namespace MOBA_Manager
         private GameEngine _engine;
         private List<Manager> _managerList;
         private SquadPage _squadPage;
+        private NewsPage _newsPage;
 
         public MainGame(MainWindow window, User player)
         {
@@ -53,17 +54,24 @@ namespace MOBA_Manager
 
         private void Refresh()
         {
-            _squadPage = new SquadPage(_player.GetTeam().GetSquad());
-            SquadFrame.Content = _squadPage;
             NameLabel.Content = "Name: " + _player.GetName();
             TeamLabel.Content = "Team: " + _player.GetTeamName();
             CashLabel.Content = "Cash: " + _player.GetCashString();
-            _squadPage.PopulateSquadBox(_player);
+            _newsPage = new NewsPage();
+            SquadFrame.Content = _newsPage;
         }
 
-        private void SquadListBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Hi");
+            _squadPage = new SquadPage(_player.GetTeam().GetSquad());
+            _squadPage.PopulateSquadBox(_player.GetTeam());
+            SquadFrame.Content = _squadPage;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            _newsPage = new NewsPage();
+            SquadFrame.Content = _newsPage;
         }
     }
 }

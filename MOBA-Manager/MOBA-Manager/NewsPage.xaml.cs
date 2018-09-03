@@ -1,5 +1,4 @@
-﻿using MOBA_Manager.src;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,26 +16,13 @@ using System.Windows.Shapes;
 namespace MOBA_Manager
 {
     /// <summary>
-    /// Interaction logic for SquadPage.xaml
+    /// Interaction logic for NewsPage.xaml
     /// </summary>
-    public partial class SquadPage : Page
+    public partial class NewsPage : Page
     {
-        public SquadPage()
+        public NewsPage()
         {
             InitializeComponent();
-        }
-
-        public SquadPage(List<MOBAPlayer> squad)
-        {
-            InitializeComponent();
-        }
-
-        public void PopulateSquadBox(Team team)
-        {
-            foreach (var MOBAPlayer in team.GetSquad())
-            {
-                SquadListBox.Items.Add(MOBAPlayer.GetNickname());
-            }
         }
     }
 }
