@@ -34,5 +34,10 @@ namespace MOBA_Manager
                 SquadListView.Items.Add(row);
             }
         }
+
+        private void SquadListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

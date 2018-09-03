@@ -9,7 +9,7 @@
       Title="SquadPage">
 
     <Grid>
-        <ListView x:Name="SquadListView" Margin="0" FontSize="14" FontWeight="Bold" Background="#FFE0E0E0">
+        <ListView x:Name="SquadListView" Margin="0" FontSize="14" FontWeight="Bold" Background="#FFE0E0E0" MouseDoubleClick="SquadListView_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridView.ColumnHeaderContextMenu>
