@@ -91,18 +91,23 @@ namespace MOBA_Manager
             return _player.NewsPosts;
         }
 
+        public void SetSquadFrame(Page page)
+        {
+            SquadFrame.Content = page;
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _squadPage = new SquadPage();
+            _squadPage = new SquadPage(this);
             _squadPage.PopulateSquadBox(_player.GetTeam());
-            SquadFrame.Content = _squadPage;
+            SetSquadFrame(_squadPage);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             _newsPage = new NewsPage();
             _newsPage.PopulatePosts(GetNewsPosts());
-            SquadFrame.Content = _newsPage;
+            SetSquadFrame(_newsPage);
         }
     }
 }

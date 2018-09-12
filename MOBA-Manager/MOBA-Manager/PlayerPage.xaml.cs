@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.src;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,23 @@ namespace MOBA_Manager
     /// </summary>
     public partial class PlayerPage : Page
     {
-        public PlayerPage()
+        private MOBAPlayer _player;
+        private PlayerPage()
         {
             InitializeComponent();
+        }
+
+        public PlayerPage(MOBAPlayer player)
+        {
+            InitializeComponent();
+            this._player = player;
+            LoadPlayerDetails(_player);
+            Console.WriteLine(_player.Nickname);
+        }
+
+        private void LoadPlayerDetails(MOBAPlayer player)
+        {
+
         }
     }
 }

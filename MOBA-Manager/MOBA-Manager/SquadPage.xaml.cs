@@ -21,13 +21,23 @@ namespace MOBA_Manager
     /// </summary>
     public partial class SquadPage : Page
     {
+        private Team _team;
+        private MainGame _window;
+
         public SquadPage()
         {
             InitializeComponent();
         }
 
+        public SquadPage(MainGame window)
+        {
+            this._window = window;
+            InitializeComponent();
+        }
+
         public void PopulateSquadBox(Team team)
         {
+            this._team = team;
             foreach (var MOBAPlayer in team.GetSquad())
             {
                 var row = new {Name = MOBAPlayer.Nickname, Age = MOBAPlayer.Age, Role = MOBAPlayer.Role, Salary = MOBAPlayer.Salary};
@@ -37,7 +47,9 @@ namespace MOBA_Manager
 
         private void SquadListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            Console.WriteLine(SquadListView.Items.IndexOf(SquadListView.SelectedItem));
+            MOBAPlayer player = _team.GetPlayerIndex(SquadListView.Items.IndexOf(SquadListView.SelectedItem));
+            _window.SetSquadFrame(new PlayerPage(player));
         }
     }
 }

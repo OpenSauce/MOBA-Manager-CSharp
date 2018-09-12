@@ -28,6 +28,23 @@ namespace MOBA_Manager
             return _squad;
         }
 
+        public MOBAPlayer GetPlayer(MOBAPlayer player)
+        {
+            MOBAPlayer chosenplayer = null;
+            foreach(var MOBAPlayer in _squad) {
+                if(player == MOBAPlayer)
+                {
+                    chosenplayer = MOBAPlayer;
+                }
+            }
+            return chosenplayer;
+        }
+
+        public MOBAPlayer GetPlayerIndex(int index)
+        {
+            return _squad[index];
+        }
+
         public Boolean AddPlayer(MOBAPlayer player)
         {
             if(_squad.Count <= 7)

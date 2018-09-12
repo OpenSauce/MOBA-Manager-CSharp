@@ -11,7 +11,7 @@ namespace MOBA_Manager.src
         protected String _name;
         protected int _age;
         protected Team _team;
-        protected Double _cash, _netIncome = 500;
+        protected Double _cash, _dailyIncome = 1000;
 
         public Manager()
         {

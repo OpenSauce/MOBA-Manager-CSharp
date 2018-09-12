@@ -35,12 +35,13 @@ namespace MOBA_Manager
 
         public void CalculateCash()
         {
+            double netIncome = 0;
             foreach(MOBAPlayer player in _team.GetSquad())
             {
-                _netIncome -= player.Salary / 52;
+                netIncome -= (player.Salary / 365);
             }
 
-            _cash += _netIncome;
+            _cash += _dailyIncome - netIncome;
         }
 
     }
