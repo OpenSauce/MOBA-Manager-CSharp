@@ -7,7 +7,17 @@
         xmlns:local="clr-namespace:MOBA_Manager"
         mc:Ignorable="d"
         Title="MOBA-Manager" Height="Auto" Width="Auto" MinWidth="800" MinHeight="450">
-    <Grid Margin="0" Height="Auto" Width="Auto">
-        <Frame x:Name="MainFrame" Content="Frame" NavigationUIVisibility="Hidden"/>
-    </Grid>
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open"/>
+                <MenuItem Header="_Close"/>
+                <MenuItem Header="_Save"/>
+            </MenuItem>
+        </Menu>
+        <Grid Margin="0" Height="Auto" Width="Auto">
+                <Frame x:Name="MainFrame" Content="Frame" NavigationUIVisibility="Hidden"/>
+            </Grid>
+    </DockPanel>
 </Window>

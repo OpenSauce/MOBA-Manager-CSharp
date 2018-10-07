@@ -49,7 +49,12 @@ namespace MOBA_Manager
         {
             Console.WriteLine(SquadListView.Items.IndexOf(SquadListView.SelectedItem));
             MOBAPlayer player = _team.GetPlayerIndex(SquadListView.Items.IndexOf(SquadListView.SelectedItem));
-            _window.SetSquadFrame(new PlayerPage(player));
+            _window.SetSquadFrame(new PlayerPage(this, player));
+        }
+
+        public void ReturnPage()
+        {
+            _window.SetSquadFrame(this);
         }
     }
 }

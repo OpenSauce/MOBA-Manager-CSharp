@@ -11,6 +11,7 @@
       Title="MainGame">
 
     <Grid Width="Auto" Height="Auto">
+
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="1"/>
@@ -24,10 +25,11 @@
                     <GradientStop Color="#FF911212" Offset="0.75"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <Label x:Name="NameLabel" Content="Name: N/A" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Width="Auto" Margin="90,0,0,0" Foreground="#FFFFCFCF"/>
+            <Label x:Name="NameLabel" Content="Name: N/A" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Width="Auto" Margin="110,0,0,0" Foreground="#FFFFCFCF"/>
             <Label x:Name="CashLabel" Content="Cash: 0" HorizontalAlignment="Center" Margin="90,0,135,0" VerticalAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Foreground="#FFFFCFCF"/>
             <Label x:Name="TeamLabel" Content="Team: N/A" HorizontalAlignment="Right" Margin="0,0,133,0" VerticalAlignment="Center" HorizontalContentAlignment="Right" FontSize="20" Background="{x:Null}" Foreground="#FFFFCFCF"/>
             <Button x:Name="ProceedButton" Content="Proceed" Height="Auto" Margin="5" Width="100" Click="ProceedButton_Click" BorderThickness="2,0,0,0" Background="{x:Null}" BorderBrush="White" Foreground="#FFFFCFCF" HorizontalAlignment="Right" FontSize="20"/>
+            <Button x:Name="OptionsButton" Content="Options" HorizontalAlignment="Left" Width="100" Height="40" Background="{x:Null}" Foreground="#FFFFCFCF" FontSize="20" Margin="5,5,0,0"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Margin="0,50,0,0" Width="100" ShowGridLines="True">
             <Button Content="News" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" FontSize="14" RenderTransformOrigin="0.477,2.707" BorderBrush="White" Margin="5" BorderThickness="0,0,2,1" Foreground="#FFFFCFCF" Width="90" Click="Button_Click_1" Background="{x:Null}"/>

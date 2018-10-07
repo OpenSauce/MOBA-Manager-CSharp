@@ -22,22 +22,29 @@ namespace MOBA_Manager
     public partial class PlayerPage : Page
     {
         private MOBAPlayer _player;
+        private SquadPage _parent;
+
         private PlayerPage()
         {
             InitializeComponent();
         }
 
-        public PlayerPage(MOBAPlayer player)
+        public PlayerPage(SquadPage parent, MOBAPlayer player)
         {
             InitializeComponent();
+            this._parent = parent;
             this._player = player;
             LoadPlayerDetails(_player);
-            Console.WriteLine(_player.Nickname);
         }
 
         private void LoadPlayerDetails(MOBAPlayer player)
         {
+            playerNameLabel.Content = _player.Nickname;
+        }
 
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            _parent.ReturnPage();
         }
     }
 }
