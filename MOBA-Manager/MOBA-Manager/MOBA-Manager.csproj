@@ -94,6 +94,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClubPage.xaml.cs">
+      <DependentUpon>ClubPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainGame.xaml.cs">
       <DependentUpon>MainGame.xaml</DependentUpon>
     </Compile>
@@ -118,6 +121,10 @@
     <Compile Include="UserCreation.xaml.cs">
       <DependentUpon>UserCreation.xaml</DependentUpon>
     </Compile>
+    <Page Include="ClubPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

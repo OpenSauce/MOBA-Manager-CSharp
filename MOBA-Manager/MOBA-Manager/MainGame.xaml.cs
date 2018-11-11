@@ -27,6 +27,7 @@ namespace MOBA_Manager
         private GameEngine _engine;
         private List<Manager> _managerList;
         private SquadPage _squadPage;
+        private ClubPage _clubPage;
         private NewsPage _newsPage;
         private DateTime _date;
 
@@ -108,6 +109,12 @@ namespace MOBA_Manager
             _newsPage = new NewsPage();
             _newsPage.PopulatePosts(GetNewsPosts());
             SetSquadFrame(_newsPage);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            _clubPage = new ClubPage();
+            SetSquadFrame(_clubPage);
         }
     }
 }

@@ -9,7 +9,7 @@
         Title="MOBA-Manager" Height="Auto" Width="Auto" MinWidth="800" MinHeight="450">
 
     <DockPanel>
-        <Menu DockPanel.Dock="Top">
+        <Menu DockPanel.Dock="Top" Background="#FF7C0F0F" FontWeight="Bold">
             <MenuItem Header="_File">
                 <MenuItem Header="_Open"/>
                 <MenuItem Header="_Close"/>
