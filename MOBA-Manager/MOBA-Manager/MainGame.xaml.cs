@@ -116,5 +116,10 @@ namespace MOBA_Manager
             _clubPage = new ClubPage();
             SetSquadFrame(_clubPage);
         }
+
+        private void OptionsButton_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsPage settings = new SettingsPage();
+        }
     }
 }
