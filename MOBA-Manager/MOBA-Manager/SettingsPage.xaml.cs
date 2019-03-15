@@ -30,6 +30,7 @@ namespace MOBA_Manager
         {
             this.Show();
             LoadSettings();
+
         }
 
         private void LoadSettings()
