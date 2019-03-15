@@ -130,6 +130,7 @@
     <Compile Include="src\MOBAPlayer.cs" />
     <Compile Include="src\NewsPost.cs" />
     <Compile Include="src\Schedule.cs" />
+    <Compile Include="src\Settings\Settings.cs" />
     <Compile Include="src\Team.cs" />
     <Compile Include="src\User.cs" />
     <Compile Include="TeamCreation.xaml.cs">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.src.Settings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,8 @@ namespace MOBA_Manager
     /// </summary>
     public partial class SettingsPage : Window
     {
+        private Settings settings;
+
         public SettingsPage()
         {
             InitializeComponent();
