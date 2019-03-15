@@ -22,7 +22,19 @@ namespace MOBA_Manager
         public SettingsPage()
         {
             InitializeComponent();
+            SetupWindow();
             this.Show();
+        }
+
+        private void SetupWindow()
+        {
+            this.Show();
+            LoadSettings();
+        }
+
+        private void LoadSettings()
+        {
+
         }
     }
 }
