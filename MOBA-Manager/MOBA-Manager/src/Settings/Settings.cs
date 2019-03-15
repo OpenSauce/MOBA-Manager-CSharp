@@ -10,5 +10,13 @@ namespace MOBA_Manager.src.Settings
     {
         public Boolean fullSCreenEnabled { get; set; }
 
+        internal void SaveSettings()
+        {
+        }
+
+        internal void LoadSettings()
+        {
+            
+        }
     }
 }

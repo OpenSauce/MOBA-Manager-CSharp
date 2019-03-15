@@ -20,25 +20,33 @@ namespace MOBA_Manager
     /// </summary>
     public partial class SettingsPage : Window
     {
-        private Settings settings;
+        private Settings _settings;
 
         public SettingsPage()
         {
             InitializeComponent();
             SetupWindow();
-            this.Show();
         }
 
         private void SetupWindow()
         {
             this.Show();
             LoadSettings();
-
         }
 
         private void LoadSettings()
         {
+            this._settings = new Settings();
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this._settings.SaveSettings();
         }
     }
 }
