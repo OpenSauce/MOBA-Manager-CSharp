@@ -22,22 +22,24 @@ namespace MOBA_Manager
     {
         private Settings _settings;
 
-        public SettingsPage()
+        public SettingsPage(Settings _gameSettings)
         {
+            this._settings = _gameSettings;
             InitializeComponent();
-            SetupWindow();
+            SetupWindow(_settings);
         }
 
-        private void SetupWindow()
+        private void SetupWindow(Settings _settings)
         {
             this.Show();
-            LoadSettings();
+            DisplaySettings(_settings);
         }
 
-        private void LoadSettings()
+        private void DisplaySettings(Settings _settings)
         {
-            this._settings = new Settings();
+
         }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -46,7 +48,7 @@ namespace MOBA_Manager
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this._settings.SaveSettings();
+            this._settings.SaveSettings(_settings);
         }
     }
 }

@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace MOBA_Manager.src.Settings
 {
-    class Settings
+    public class Settings
     {
         public Boolean fullSCreenEnabled { get; set; }
 
-        internal void SaveSettings()
+        internal void SaveSettings(Settings _settings)
         {
         }
 
-        internal void LoadSettings()
+        internal Settings LoadSettings()
         {
-            
+            return this;
         }
     }
 }
