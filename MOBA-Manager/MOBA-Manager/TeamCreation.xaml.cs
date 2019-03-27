@@ -48,14 +48,19 @@ namespace MOBA_Manager
             }
             _player.SetTeam(new Team(teamName));
             SetupTeam(_player);
+            GeneratePlayers(_player);
             _window.BeginGame();
+        }
+
+        private void GeneratePlayers(User player)
+        {
+
         }
 
         private void SetupTeam(User player)
         {
             //Hardcode Team
             Team playerTeam = player.GetTeam();
-            Console.WriteLine("Hi1");
             if(playerTeam.GetTeamName().Equals("OG"))
             {
                 Console.WriteLine("Hi2");

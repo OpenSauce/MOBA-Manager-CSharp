@@ -22,6 +22,8 @@ namespace MOBA_Manager
     public partial class MainWindow : Window
     {
         User _player;
+        PlaySession _session;
+
         public MainWindow()
         {
             InitializeComponent();

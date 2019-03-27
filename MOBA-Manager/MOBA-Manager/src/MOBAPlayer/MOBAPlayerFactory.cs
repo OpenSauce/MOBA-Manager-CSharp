@@ -30,7 +30,8 @@ namespace MOBA_Manager.src
         public MOBAPlayer generateRandomPlayer(String name, int weight)
         {
             MOBAPlayer player = new MOBAPlayer(name);
-            return null;
+            player.PlayerSkill = new MOBAPlayerSkill().PopulateSkills(weight);
+            return player;
         }
     }
 }

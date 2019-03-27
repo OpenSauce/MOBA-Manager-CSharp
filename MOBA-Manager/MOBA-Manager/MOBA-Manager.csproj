@@ -118,6 +118,7 @@
     <Compile Include="PlayerPage.xaml.cs">
       <DependentUpon>PlayerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\PlaySession.cs" />
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
@@ -127,8 +128,9 @@
     <Compile Include="src\Fixture.cs" />
     <Compile Include="src\GameEngine.cs" />
     <Compile Include="src\Manager.cs" />
-    <Compile Include="src\MOBAPlayer.cs" />
-    <Compile Include="src\MOBAPlayerFactory.cs" />
+    <Compile Include="src\MOBAPlayer\MOBAPlayer.cs" />
+    <Compile Include="src\MOBAPlayer\MOBAPlayerFactory.cs" />
+    <Compile Include="src\MOBAPlayer\MOBAPlayerSkill.cs" />
     <Compile Include="src\NewsPost.cs" />
     <Compile Include="src\Schedule.cs" />
     <Compile Include="src\Settings\Settings.cs" />
