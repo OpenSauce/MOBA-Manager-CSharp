@@ -128,6 +128,7 @@
     <Compile Include="src\GameEngine.cs" />
     <Compile Include="src\Manager.cs" />
     <Compile Include="src\MOBAPlayer.cs" />
+    <Compile Include="src\MOBAPlayerFactory.cs" />
     <Compile Include="src\NewsPost.cs" />
     <Compile Include="src\Schedule.cs" />
     <Compile Include="src\Settings\Settings.cs" />

@@ -14,15 +14,21 @@ namespace MOBA_Manager.src
         private String _role;
         private Int64 _salary;
 
+        public MOBAPlayer(String nickname)
+        {
+            this.Team = null;
+            this._nickname = nickname;
+        }
+
         public MOBAPlayer(String nickname, Team team)
         {
-            this._team = team;
+            this.Team = team;
             this._nickname = nickname;
         }
 
         public MOBAPlayer(String nickname, Team team, int age, String role, Int64 salary)
         {
-            this._team = team;
+            this.Team = team;
             this._nickname = nickname;
             this._age = age;
             this._role = role;
@@ -33,5 +39,6 @@ namespace MOBA_Manager.src
         public int Age { get => _age; set => _age = value; }
         public string Role { get => _role; set => _role = value; }
         public long Salary { get => _salary; set => _salary = value; }
+        public Team Team { get => _team; set => _team = value; }
     }
 }

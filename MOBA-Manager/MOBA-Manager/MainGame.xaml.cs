@@ -51,7 +51,7 @@ namespace MOBA_Manager
             _engine.SetManagerList(_managerList);
             _engine.SetUser(_player);
 
-            _date = DateTime.Parse("7 June 2018", new CultureInfo("en-GB"));
+            _date = DateTime.Parse("7 June 2019", new CultureInfo("en-GB"));
             Refresh();
         }
 
