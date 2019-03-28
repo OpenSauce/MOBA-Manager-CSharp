@@ -57,10 +57,7 @@ namespace MOBA_Manager
         private void GeneratePlayers(int numberOfPlayers)
         {
             MOBAPlayerFactory playerGenerator = new MOBAPlayerFactory();
-            for(int i = 0; i < numberOfPlayers; i++) 
-            {
-                _session.AddPlayerToSession(playerGenerator.GenerateRandomPlayer());
-            }
+            _session.TotalPlayerList = playerGenerator.GenerateRandomPlayers(100);
         }
 
         private void SetupTeam(User player)

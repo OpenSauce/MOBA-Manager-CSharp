@@ -22,7 +22,8 @@ namespace MOBA_Manager
     public partial class PlayerPage : Page
     {
         private MOBAPlayer _player;
-        private SquadPage _parent;
+        private SquadPage _squadParent;
+        private PlayerSearchPage _searchParent;
 
         private PlayerPage()
         {
@@ -32,7 +33,8 @@ namespace MOBA_Manager
         public PlayerPage(SquadPage parent, MOBAPlayer player)
         {
             InitializeComponent();
-            this._parent = parent;
+            this._squadParent = parent;
+            this._searchParent = null;
             this._player = player;
             LoadPlayerDetails(_player);
         }
@@ -41,17 +43,33 @@ namespace MOBA_Manager
         {
             InitializeComponent();
             this._player = player;
+            this._searchParent = parent;
+            this._squadParent = null;
             LoadPlayerDetails(_player);
         }
 
         private void LoadPlayerDetails(MOBAPlayer player)
         {
             playerNameLabel.Content = _player.Nickname;
+            CurrentSkillLabel.Content = player.PlayerSkill.CurrentSkill;
+            PotentialSkillLabel.Content = player.PlayerSkill.PotentialSkill;
+            MentalSkillLabel.Content = player.PlayerSkill.MentalSkill;
+            TechniqueLabel.Content = player.PlayerSkill.Technique;
+            SupportSkillLabel.Content = player.PlayerSkill.SupportSkill;
+            CarrySkillLabel.Content = player.PlayerSkill.CarrySkill;
+            MidSkillLevel.Content = player.PlayerSkill.MidSkill;
+            OfflaneSkillLabel.Content = player.PlayerSkill.OfflaneSkill;
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            _parent.ReturnPage();
+            if(_searchParent != null)
+            {
+                _searchParent.ReturnPage();
+            } else
+            {
+                _squadParent.ReturnPage();
+            }
         }
     }
 }

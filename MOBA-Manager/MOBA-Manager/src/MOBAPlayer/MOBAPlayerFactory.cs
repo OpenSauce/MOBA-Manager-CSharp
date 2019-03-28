@@ -15,6 +15,18 @@ namespace MOBA_Manager.src
             iteration = 0;
         }
 
+        public List<MOBAPlayer> GenerateRandomPlayers(int number)
+        {
+            List<MOBAPlayer> list = new List<MOBAPlayer>();
+            Random rnd = new Random();
+            for (int i = 0; i < number; i++)
+            {
+                iteration += 1;
+                list.Add(GenerateRandomPlayer("PlayerName" + iteration, rnd.Next(0, 100)));
+            }
+            return list;
+        }
+
         public MOBAPlayer GenerateRandomPlayer()
         {
             iteration += 1;

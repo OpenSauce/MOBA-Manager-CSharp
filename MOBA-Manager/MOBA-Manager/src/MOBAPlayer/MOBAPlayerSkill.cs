@@ -27,7 +27,16 @@ using System.Threading.Tasks;
             offlaneSkill = 0;
         }
 
-        public MOBAPlayerSkill PopulateSkills(int weight)
+    public int CurrentSkill { get => currentSkill; set => currentSkill = value; }
+    public int PotentialSkill { get => potentialSkill; set => potentialSkill = value; }
+    public int MentalSkill { get => mentalSkill; set => mentalSkill = value; }
+    public int Technique { get => technique; set => technique = value; }
+    public int SupportSkill { get => supportSkill; set => supportSkill = value; }
+    public int CarrySkill { get => carrySkill; set => carrySkill = value; }
+    public int MidSkill { get => midSkill; set => midSkill = value; }
+    public int OfflaneSkill { get => offlaneSkill; set => offlaneSkill = value; }
+
+    public MOBAPlayerSkill PopulateSkills(int weight)
         {
             Random number = new Random();
             currentSkill = number.Next(weight, 100) * 2;

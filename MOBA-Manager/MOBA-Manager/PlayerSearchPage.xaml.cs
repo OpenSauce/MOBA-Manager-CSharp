@@ -45,9 +45,9 @@ namespace MOBA_Manager
 
         private void SquadListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            /*Console.WriteLine(SquadListView.Items.IndexOf(SquadListView.SelectedItem));
-            MOBAPlayer player = _team.GetPlayerIndex(SquadListView.Items.IndexOf(SquadListView.SelectedItem));
-            _window.SetSquadFrame(new PlayerPage(this, player));*/
+            Console.WriteLine(SquadListView.Items.IndexOf(SquadListView.SelectedItem));
+            MOBAPlayer player = _window.GetSession().GetPlayerIndex(SquadListView.Items.IndexOf(SquadListView.SelectedItem));
+            _window.SetSquadFrame(new PlayerPage(this, player));
         }
 
         public void ReturnPage()

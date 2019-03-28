@@ -109,7 +109,10 @@ namespace MOBA_Manager
             SetSquadFrame(_squadPage);
         }
 
-
+        public PlaySession GetSession()
+        {
+            return _session;
+        }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -131,7 +134,7 @@ namespace MOBA_Manager
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            _playerSearchPage = new PlayerSearchPage();
+            _playerSearchPage = new PlayerSearchPage(this);
             _playerSearchPage.PopulateSquadBox(_session.GetPlayerList());
             SetSquadFrame(_playerSearchPage);
         }

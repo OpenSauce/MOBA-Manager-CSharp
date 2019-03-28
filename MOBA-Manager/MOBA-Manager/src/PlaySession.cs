@@ -5,39 +5,46 @@ namespace MOBA_Manager
 {
     public class PlaySession
     {
-        private List<MOBAPlayer>  totalPlayerList;
-        private List<Team> totalTeamList;
+        private List<MOBAPlayer>  _totalPlayerList;
+        private List<Team> _totalTeamList;
+
+        public List<MOBAPlayer> TotalPlayerList { get => _totalPlayerList; set => _totalPlayerList = value; }
 
         public PlaySession() 
         {
-            totalPlayerList = new List<MOBAPlayer>();
-            totalTeamList = new List<Team>();
+            _totalPlayerList = new List<MOBAPlayer>();
+            _totalTeamList = new List<Team>();
         }
 
         public void AddPlayerToSession(MOBAPlayer player) 
         {
             if(player != null)
             {
-                totalPlayerList.Add(player);
+                _totalPlayerList.Add(player);
             }
         }
 
         public List<MOBAPlayer> GetPlayerList() 
         {
-            return totalPlayerList;
+            return _totalPlayerList;
+        }
+
+        public MOBAPlayer GetPlayerIndex(int index)
+        {
+            return _totalPlayerList[index];
         }
 
         public void AddTeamToSession(Team team) 
         {
             if(team != null) 
             {
-                totalTeamList.Add(team);
+                _totalTeamList.Add(team);
             }                          
         }
 
         public List<Team> GetTeamList() 
         {
-            return totalTeamList;
+            return _totalTeamList;
         }
 
     }
