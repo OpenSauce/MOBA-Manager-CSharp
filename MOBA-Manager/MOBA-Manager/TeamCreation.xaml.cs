@@ -50,7 +50,7 @@ namespace MOBA_Manager
             }
             _player.SetTeam(new Team(teamName));
             SetupTeam(_player);
-            GeneratePlayers(_player);
+            GeneratePlayers(50);
             _window.BeginGame();
         }
 

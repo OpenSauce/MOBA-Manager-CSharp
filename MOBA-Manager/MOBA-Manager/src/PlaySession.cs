@@ -1,25 +1,28 @@
-﻿namespace MOBA_Manager
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace MOBA_Manager
 {
     public class PlaySession
     {
-        private ArrayList<MOBAPlayer>  totalPlayerList;
-        private ArrayList<Team> totalTeamList;
+        private List<MOBAPlayer>  totalPlayerList;
+        private List<Team> totalTeamList;
 
         public PlaySession() 
         {
-            totalPlayerList = new ArrayList<MOBAPlayer>();
-            totalTeamList = new ArrayList<Team>();
+            totalPlayerList = new List<MOBAPlayer>();
+            totalTeamList = new List<Team>();
         }
 
         public void AddPlayerToSession(MOBAPlayer player) 
         {
             if(player != null)
             {
-                totalPlayerList.add(player);
+                totalPlayerList.Add(player);
             }
         }
 
-        public ArrayList<MOBAPlayer> GetPlayerList() 
+        public List<MOBAPlayer> GetPlayerList() 
         {
             return totalPlayerList;
         }
@@ -28,11 +31,11 @@
         {
             if(team != null) 
             {
-                totalTeamList.add(team);
+                totalTeamList.Add(team);
             }                          
         }
 
-        public ArrayList<Team> GetTeamList() 
+        public List<Team> GetTeamList() 
         {
             return totalTeamList;
         }
