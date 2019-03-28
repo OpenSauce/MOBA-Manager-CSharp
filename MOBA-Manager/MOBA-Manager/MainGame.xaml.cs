@@ -25,6 +25,7 @@ namespace MOBA_Manager
     {
         private User _player;
         private MainWindow _window;
+        private PlaySession _session;
         private GameEngine _engine;
         private List<Manager> _managerList;
         private SquadPage _squadPage;
@@ -35,11 +36,12 @@ namespace MOBA_Manager
 
         public DateTime Date { get => _date; set => _date = value; }
 
-        public MainGame(MainWindow window, User player)
+        public MainGame(MainWindow window, User player, PlaySession session)
         {
             InitializeComponent();
             this._window = window;
             this._player = player;
+            this._session = session;
             SetupGame();
         }
 

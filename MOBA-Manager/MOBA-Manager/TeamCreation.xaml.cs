@@ -23,8 +23,9 @@ namespace MOBA_Manager
     {
         MainWindow _window;
         User _player;
+        PlaySession _session;
 
-        public TeamCreation(MainWindow window, User player)
+        public TeamCreation(MainWindow window, User player, PlaySession session)
         {
             InitializeComponent();
             //Hardcode some teams
@@ -33,6 +34,7 @@ namespace MOBA_Manager
             TeamComboBox.SelectedIndex = 0;
             this._window = window;
             this._player = player;
+            this._session = session;
         }
 
         private void userNextButton_Click(object sender, RoutedEventArgs e)
@@ -52,9 +54,12 @@ namespace MOBA_Manager
             _window.BeginGame();
         }
 
-        private void GeneratePlayers(User player)
+        private void GeneratePlayers(int numberOfPlayers)
         {
-
+            for(int i = 0; i < numberOfPlayers; i++) 
+            {
+                _session.AddPlayerToSession(new MOBAPlayerFactory().generateRandomPlayer());
+            }
         }
 
         private void SetupTeam(User player)
