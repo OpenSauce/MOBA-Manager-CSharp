@@ -25,8 +25,10 @@ namespace MOBA_Manager
     {
         private User _player;
         private MainWindow _window;
+        private PlaySession _session;
         private GameEngine _engine;
         private List<Manager> _managerList;
+        private PlayerSearchPage _playerSearchPage;
         private SquadPage _squadPage;
         private ClubPage _clubPage;
         private NewsPage _newsPage;
@@ -35,11 +37,12 @@ namespace MOBA_Manager
 
         public DateTime Date { get => _date; set => _date = value; }
 
-        public MainGame(MainWindow window, User player)
+        public MainGame(MainWindow window, User player, PlaySession session)
         {
             InitializeComponent();
             this._window = window;
             this._player = player;
+            this._session = session;
             SetupGame();
         }
 
@@ -50,8 +53,8 @@ namespace MOBA_Manager
             this._engine = new GameEngine(this);
             _engine.SetManagerList(_managerList);
             _engine.SetUser(_player);
-
-            _date = DateTime.Parse("7 June 2018", new CultureInfo("en-GB"));
+            //_engine.SetSession(_session);
+            _date = DateTime.Parse("7 June 2019", new CultureInfo("en-GB"));
             Refresh();
         }
 
@@ -106,6 +109,11 @@ namespace MOBA_Manager
             SetSquadFrame(_squadPage);
         }
 
+        public PlaySession GetSession()
+        {
+            return _session;
+        }
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             _newsPage = new NewsPage();
@@ -122,6 +130,13 @@ namespace MOBA_Manager
         private void OptionsButton_Click(object sender, RoutedEventArgs e)
         {
             SettingsPage settings = new SettingsPage(_gameSettings);
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            _playerSearchPage = new PlayerSearchPage(this);
+            _playerSearchPage.PopulateSquadBox(_session.GetPlayerList());
+            SetSquadFrame(_playerSearchPage);
         }
     }
 }

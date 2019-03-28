@@ -22,9 +22,12 @@ namespace MOBA_Manager
     public partial class MainWindow : Window
     {
         User _player;
+        PlaySession _session;
+
         public MainWindow()
         {
             InitializeComponent();
+            this._session = new PlaySession();
             MainFrame.Content = new UserCreation(this);
         }
 
@@ -33,13 +36,13 @@ namespace MOBA_Manager
             this._player = player;
             if(_player.IsCreated())
             {
-                MainFrame.Content = new TeamCreation(this, _player);
+                MainFrame.Content = new TeamCreation(this, _player, _session);
             }
         }
 
         public void BeginGame()
         {
-            MainFrame.Content = new MainGame(this, _player);
+            MainFrame.Content = new MainGame(this, _player, _session);
         }
 
     }

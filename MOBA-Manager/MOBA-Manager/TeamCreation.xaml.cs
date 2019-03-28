@@ -23,8 +23,9 @@ namespace MOBA_Manager
     {
         MainWindow _window;
         User _player;
+        PlaySession _session;
 
-        public TeamCreation(MainWindow window, User player)
+        public TeamCreation(MainWindow window, User player, PlaySession session)
         {
             InitializeComponent();
             //Hardcode some teams
@@ -33,6 +34,7 @@ namespace MOBA_Manager
             TeamComboBox.SelectedIndex = 0;
             this._window = window;
             this._player = player;
+            this._session = session;
         }
 
         private void userNextButton_Click(object sender, RoutedEventArgs e)
@@ -48,14 +50,20 @@ namespace MOBA_Manager
             }
             _player.SetTeam(new Team(teamName));
             SetupTeam(_player);
+            GeneratePlayers(50);
             _window.BeginGame();
+        }
+
+        private void GeneratePlayers(int numberOfPlayers)
+        {
+            MOBAPlayerFactory playerGenerator = new MOBAPlayerFactory();
+            _session.TotalPlayerList = playerGenerator.GenerateRandomPlayers(100);
         }
 
         private void SetupTeam(User player)
         {
             //Hardcode Team
             Team playerTeam = player.GetTeam();
-            Console.WriteLine("Hi1");
             if(playerTeam.GetTeamName().Equals("OG"))
             {
                 Console.WriteLine("Hi2");
