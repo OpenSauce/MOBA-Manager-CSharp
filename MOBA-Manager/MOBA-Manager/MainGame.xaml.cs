@@ -52,7 +52,7 @@ namespace MOBA_Manager
             this._engine = new GameEngine(this);
             _engine.SetManagerList(_managerList);
             _engine.SetUser(_player);
-
+            _engine.SetSession(_session);
             _date = DateTime.Parse("7 June 2019", new CultureInfo("en-GB"));
             Refresh();
         }
