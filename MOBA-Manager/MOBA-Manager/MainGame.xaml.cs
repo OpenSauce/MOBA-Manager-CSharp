@@ -28,6 +28,7 @@ namespace MOBA_Manager
         private PlaySession _session;
         private GameEngine _engine;
         private List<Manager> _managerList;
+        private PlayerSearchPage _playerSearchPage;
         private SquadPage _squadPage;
         private ClubPage _clubPage;
         private NewsPage _newsPage;
@@ -108,6 +109,8 @@ namespace MOBA_Manager
             SetSquadFrame(_squadPage);
         }
 
+
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             _newsPage = new NewsPage();
@@ -124,6 +127,13 @@ namespace MOBA_Manager
         private void OptionsButton_Click(object sender, RoutedEventArgs e)
         {
             SettingsPage settings = new SettingsPage(_gameSettings);
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            _playerSearchPage = new PlayerSearchPage();
+            _playerSearchPage.PopulateSquadBox(_session.GetPlayerList());
+            SetSquadFrame(_playerSearchPage);
         }
     }
 }

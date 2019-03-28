@@ -27,6 +27,7 @@ namespace MOBA_Manager
         public MainWindow()
         {
             InitializeComponent();
+            this._session = new PlaySession();
             MainFrame.Content = new UserCreation(this);
         }
 

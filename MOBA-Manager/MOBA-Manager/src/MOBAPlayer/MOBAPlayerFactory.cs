@@ -15,22 +15,24 @@ namespace MOBA_Manager.src
             iteration = 0;
         }
 
-        public MOBAPlayer generateRandomPlayer()
+        public MOBAPlayer GenerateRandomPlayer()
         {
             iteration += 1;
-            return generateRandomPlayer("PlayerName" + iteration);
+            return GenerateRandomPlayer("PlayerName" + iteration);
         }
 
-        public MOBAPlayer generateRandomPlayer(String name)
+        public MOBAPlayer GenerateRandomPlayer(String name)
         {
             int weight = new Random().Next(0, 100);
-            return generateRandomPlayer(name, weight);
+            return GenerateRandomPlayer(name, weight);
         }
 
-        public MOBAPlayer generateRandomPlayer(String name, int weight)
+        public MOBAPlayer GenerateRandomPlayer(String name, int weight)
         {
-            MOBAPlayer player = new MOBAPlayer(name);
-            player.PlayerSkill = new MOBAPlayerSkill().PopulateSkills(weight);
+            MOBAPlayer player = new MOBAPlayer(name)
+            {
+                PlayerSkill = new MOBAPlayerSkill().PopulateSkills(weight)
+            };
             return player;
         }
     }

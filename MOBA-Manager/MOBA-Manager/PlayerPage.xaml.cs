@@ -37,6 +37,13 @@ namespace MOBA_Manager
             LoadPlayerDetails(_player);
         }
 
+        public PlayerPage(PlayerSearchPage parent, MOBAPlayer player)
+        {
+            InitializeComponent();
+            this._player = player;
+            LoadPlayerDetails(_player);
+        }
+
         private void LoadPlayerDetails(MOBAPlayer player)
         {
             playerNameLabel.Content = _player.Nickname;
