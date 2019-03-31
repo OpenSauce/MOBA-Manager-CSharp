@@ -32,7 +32,6 @@ namespace MOBA_Manager
         private SquadPage _squadPage;
         private ClubPage _clubPage;
         private NewsPage _newsPage;
-        private Settings _gameSettings;
         private DateTime _date;
 
         public DateTime Date { get => _date; set => _date = value; }
@@ -48,7 +47,6 @@ namespace MOBA_Manager
 
         private void SetupGame()
         {
-            this._gameSettings = new Settings().LoadSettings();
             _managerList = CreateManagerList();
             this._engine = new GameEngine(this);
             _engine.SetManagerList(_managerList);
@@ -125,11 +123,6 @@ namespace MOBA_Manager
         {
             _clubPage = new ClubPage();
             SetSquadFrame(_clubPage);
-        }
-
-        private void OptionsButton_Click(object sender, RoutedEventArgs e)
-        {
-            SettingsPage settings = new SettingsPage(_gameSettings);
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
