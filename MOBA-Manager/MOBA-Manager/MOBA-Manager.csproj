@@ -121,6 +121,7 @@
     <Compile Include="PlayerSearchPage.xaml.cs">
       <DependentUpon>PlayerSearchPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\ControlledRandom.cs" />
     <Compile Include="src\PlaySession.cs" />
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>

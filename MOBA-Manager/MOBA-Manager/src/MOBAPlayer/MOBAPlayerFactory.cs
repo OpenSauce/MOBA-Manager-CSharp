@@ -18,11 +18,10 @@ namespace MOBA_Manager.src
         public List<MOBAPlayer> GenerateRandomPlayers(int number)
         {
             List<MOBAPlayer> list = new List<MOBAPlayer>();
-            Random rnd = new Random();
             for (int i = 0; i < number; i++)
             {
                 iteration += 1;
-                list.Add(GenerateRandomPlayer("PlayerName" + iteration, rnd.Next(0, 100)));
+                list.Add(GenerateRandomPlayer("PlayerName" + iteration, ControlledRandom.RandomNumber(0, 100)));
             }
             return list;
         }
@@ -35,7 +34,7 @@ namespace MOBA_Manager.src
 
         public MOBAPlayer GenerateRandomPlayer(String name)
         {
-            int weight = new Random().Next(0, 100);
+            int weight = ControlledRandom.RandomNumber(0, 100);
             return GenerateRandomPlayer(name, weight);
         }
 
