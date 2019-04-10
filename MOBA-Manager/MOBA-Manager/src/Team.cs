@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MOBA_Manager
 {
-    public class Team
+    public class Team : MOBATeam
     {
         protected String _teamName;
         protected List<MOBAPlayer> _squad;

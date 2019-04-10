@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MOBA_Manager"
         mc:Ignorable="d"
-        Title="MOBA-Manager" Height="Auto" Width="Auto" MinWidth="800" MinHeight="450">
+        Title="MOBA-Manager" Height="Auto" Width="Auto" MinWidth="800" MinHeight="450" WindowState="Maximized">
 
     <DockPanel>
         <Menu DockPanel.Dock="Top" Background="#FF7C0F0F" FontWeight="Bold">

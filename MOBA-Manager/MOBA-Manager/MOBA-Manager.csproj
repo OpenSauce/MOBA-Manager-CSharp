@@ -122,6 +122,8 @@
       <DependentUpon>PlayerSearchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\ControlledRandom.cs" />
+    <Compile Include="src\MOBATeam\MOBATeam.cs" />
+    <Compile Include="src\MOBATeam\MOBATeamFactory.cs" />
     <Compile Include="src\PlaySession.cs" />
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>

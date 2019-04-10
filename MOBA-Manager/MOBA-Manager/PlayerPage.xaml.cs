@@ -37,6 +37,9 @@ namespace MOBA_Manager
             this._searchParent = null;
             this._player = player;
             LoadPlayerDetails(_player);
+            this.OptionsCombo.Items.Insert(0, "Tennis");
+
+            OptionsCombo.Text = "Hello";
         }
 
         public PlayerPage(PlayerSearchPage parent, MOBAPlayer player)
@@ -70,6 +73,11 @@ namespace MOBA_Manager
             {
                 _squadParent.ReturnPage();
             }
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
