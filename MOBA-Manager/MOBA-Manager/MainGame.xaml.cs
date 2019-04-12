@@ -34,7 +34,7 @@ namespace MOBA_Manager
         private NewsPage _newsPage;
         private DateTime _date;
 
-        public DateTime Date { get => _date; set => _date = value; }
+        public DateTime Date { get => this._date; set => this._date = value; }
 
         public MainGame(MainWindow window, User player, PlaySession session)
         {

@@ -37,7 +37,7 @@ namespace MOBA_Manager
         public void CreateTeam(User player)
         {
             this._player = player;
-            if(_player.IsCreated())
+            if (_player.IsCreated())
             {
                 MainFrame.Content = new TeamCreation(this, _player, _session);
             }

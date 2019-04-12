@@ -22,32 +22,18 @@ namespace MOBA_Manager
     public partial class PlayerPage : Page
     {
         private MOBAPlayer _player;
-        private SquadPage _squadParent;
-        private PlayerSearchPage _searchParent;
+        private Page _parent;
 
         private PlayerPage()
         {
             InitializeComponent();
         }
 
-        public PlayerPage(SquadPage parent, MOBAPlayer player)
+        public PlayerPage(Page parent, MOBAPlayer player)
         {
             InitializeComponent();
-            this._squadParent = parent;
-            this._searchParent = null;
+            this._parent = parent;
             this._player = player;
-            LoadPlayerDetails(_player);
-            this.OptionsCombo.Items.Insert(0, "Tennis");
-
-            OptionsCombo.Text = "Hello";
-        }
-
-        public PlayerPage(PlayerSearchPage parent, MOBAPlayer player)
-        {
-            InitializeComponent();
-            this._player = player;
-            this._searchParent = parent;
-            this._squadParent = null;
             LoadPlayerDetails(_player);
         }
 
@@ -66,18 +52,15 @@ namespace MOBA_Manager
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-            if(_searchParent != null)
+            if(_parent is SquadPage)
             {
-                _searchParent.ReturnPage();
+                ((SquadPage) _parent).ReturnPage();
             } else
             {
-                _squadParent.ReturnPage();
+                ((PlayerSearchPage) _parent).ReturnPage();
             }
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) { }
     }
 }
