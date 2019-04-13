@@ -61,6 +61,9 @@ namespace MOBA_Manager
             }
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) { }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ((SquadPage)_parent).Window.SetSquadFrame(new PlayerOptionsPage(_player));
+        }
     }
 }

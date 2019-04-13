@@ -14,15 +14,15 @@
 
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="1"/>
-                <GradientStop Color="#FF911212" Offset="0.9"/>
+                <GradientStop Color="#FF272E3B" Offset="1"/>
+                <GradientStop Color="#FF911212" Offset="0.923"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Grid Height="50" Width="Auto" VerticalAlignment="Top">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                    <GradientStop Color="#FF911212" Offset="1"/>
-                    <GradientStop Color="#FF272E3B" Offset="0.75"/>
+                    <GradientStop Color="#FF911212" Offset="0.32"/>
+                    <GradientStop Color="#FF272E3B"/>
                 </LinearGradientBrush>
             </Grid.Background>
             <Label x:Name="NameLabel" Content="Name: N/A" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" Width="Auto" Margin="110,0,0,0" Foreground="#FF911212"/>

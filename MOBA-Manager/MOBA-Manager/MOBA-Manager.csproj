@@ -124,6 +124,9 @@
     <Compile Include="src\ControlledRandom.cs" />
     <Compile Include="src\MOBATeam\MOBATeam.cs" />
     <Compile Include="src\MOBATeam\MOBATeamFactory.cs" />
+    <Compile Include="PlayersOptionsPage.xaml.cs">
+      <DependentUpon>PlayersOptionsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\PlaySession.cs" />
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
@@ -185,6 +188,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="SquadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayersOptionsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
