@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.src;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,15 +39,14 @@ using System.Threading.Tasks;
 
     public MOBAPlayerSkill PopulateSkills(int weight)
         {
-            Random number = new Random();
-            currentSkill = number.Next(weight, 100) * 2;
-            potentialSkill = number.Next(weight, 100) * 2;
-            mentalSkill = number.Next(weight, 100) / 5;
-            technique = number.Next(weight, 100) / 5;
-            supportSkill = number.Next(weight, 100) / 5;
-            carrySkill = number.Next(weight, 100) / 5;
-            midSkill = number.Next(weight, 100) / 5;
-            offlaneSkill = number.Next(weight, 100) / 5;
+            currentSkill = ControlledRandom.RandomNumber(weight, 100) * 2;
+            potentialSkill = ControlledRandom.RandomNumber(weight, 100) * 2;
+            mentalSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
+            technique = ControlledRandom.RandomNumber(weight, 100) / 5;
+            supportSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
+            carrySkill = ControlledRandom.RandomNumber(weight, 100) / 5;
+            midSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
+            offlaneSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
             return this;
         }
 

@@ -1,27 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-namespace MOBA_Manager
+﻿namespace MOBA_Manager
 {
+    using System.Windows;
+    using System.Windows.Controls;
+
     /// <summary>
     /// Interaction logic for UserCreation.xaml
     /// </summary>
     public partial class UserCreation : Page
     {
-        User _player;
-        MainWindow _window;
+        private User _player;
+        private MainWindow _window;
 
         public UserCreation(MainWindow window)
         {
@@ -37,7 +25,7 @@ namespace MOBA_Manager
 
         private void NameField_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (!String.IsNullOrEmpty(NameField.Text))
+            if (!string.IsNullOrEmpty(NameField.Text))
             {
                 userNextButton.IsEnabled = true;
             }

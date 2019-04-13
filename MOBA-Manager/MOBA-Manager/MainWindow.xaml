@@ -6,14 +6,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MOBA_Manager"
         mc:Ignorable="d"
-        Title="MOBA-Manager" Height="Auto" Width="Auto" MinWidth="800" MinHeight="450">
+        Title="MOBA-Manager" Height="Auto" Width="Auto" MinWidth="800" MinHeight="450" WindowState="Maximized">
 
     <DockPanel>
         <Menu DockPanel.Dock="Top" Background="#FF7C0F0F" FontWeight="Bold">
             <MenuItem Header="_File">
-                <MenuItem Header="_Open"/>
-                <MenuItem Header="_Close"/>
+                <MenuItem Header="_Load"/>
                 <MenuItem Header="_Save"/>
+                <MenuItem Header="_Settings" Click="MenuItem_Click"/>
+                <MenuItem Header="_Close"/>
             </MenuItem>
         </Menu>
         <Grid Margin="0" Height="Auto" Width="Auto">

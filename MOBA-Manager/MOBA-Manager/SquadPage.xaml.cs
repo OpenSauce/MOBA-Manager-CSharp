@@ -24,6 +24,8 @@ namespace MOBA_Manager
         private Team _team;
         private MainGame _window;
 
+        public MainGame Window { get => _window; set => _window = value; }
+
         public SquadPage()
         {
             InitializeComponent();

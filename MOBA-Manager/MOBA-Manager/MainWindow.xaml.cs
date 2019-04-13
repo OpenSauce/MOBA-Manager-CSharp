@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.src.Settings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +24,12 @@ namespace MOBA_Manager
     {
         User _player;
         PlaySession _session;
+        private Settings _gameSettings;
 
         public MainWindow()
         {
             InitializeComponent();
+            this._gameSettings = new Settings().LoadSettings();
             this._session = new PlaySession();
             MainFrame.Content = new UserCreation(this);
         }
@@ -34,7 +37,7 @@ namespace MOBA_Manager
         public void CreateTeam(User player)
         {
             this._player = player;
-            if(_player.IsCreated())
+            if (_player.IsCreated())
             {
                 MainFrame.Content = new TeamCreation(this, _player, _session);
             }
@@ -45,5 +48,9 @@ namespace MOBA_Manager
             MainFrame.Content = new MainGame(this, _player, _session);
         }
 
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsPage settings = new SettingsPage(_gameSettings);
+        }
     }
 }

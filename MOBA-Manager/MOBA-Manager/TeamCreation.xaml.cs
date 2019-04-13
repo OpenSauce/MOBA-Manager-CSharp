@@ -66,12 +66,35 @@ namespace MOBA_Manager
             Team playerTeam = player.GetTeam();
             if(playerTeam.GetTeamName().Equals("OG"))
             {
-                Console.WriteLine("Hi2");
-                playerTeam.AddPlayer(new MOBAPlayer("N0Tail", playerTeam, 25, "Support", 20000));
-                playerTeam.AddPlayer(new MOBAPlayer("Ceb", playerTeam, 25, "Offlane", 20000));
-                playerTeam.AddPlayer(new MOBAPlayer("Klaxon", playerTeam, 24, "Mid", 20000));
-                playerTeam.AddPlayer(new MOBAPlayer("Jerax", playerTeam, 23, "Support", 20000));
-                playerTeam.AddPlayer(new MOBAPlayer("Ana", playerTeam, 24, "Carry", 20000));
+                MOBAPlayer n0tail = new MOBAPlayer("N0Tail", playerTeam, 25, "Support", 20000)
+                {
+                    PlayerSkill = new MOBAPlayerSkill().PopulateSkills(90)
+                };
+                playerTeam.AddPlayer(n0tail);
+
+                MOBAPlayer ceb = new MOBAPlayer("Ceb", playerTeam, 25, "Offlane", 20000)
+                {
+                    PlayerSkill = new MOBAPlayerSkill().PopulateSkills(90)
+                };
+                playerTeam.AddPlayer(ceb);
+
+                MOBAPlayer klax = new MOBAPlayer("Klaxon", playerTeam, 24, "Mid", 20000)
+                {
+                    PlayerSkill = new MOBAPlayerSkill().PopulateSkills(90)
+                };
+                playerTeam.AddPlayer(klax);
+
+                MOBAPlayer jerax = new MOBAPlayer("Jerax", playerTeam, 23, "Support", 20000)
+                {
+                    PlayerSkill = new MOBAPlayerSkill().PopulateSkills(90)
+                };
+                playerTeam.AddPlayer(jerax);
+
+                MOBAPlayer ana = new MOBAPlayer("Ana", playerTeam, 24, "Carry", 20000)
+                {
+                    PlayerSkill = new MOBAPlayerSkill().PopulateSkills(90)
+                };
+                playerTeam.AddPlayer(ana);
             }
         }
 
