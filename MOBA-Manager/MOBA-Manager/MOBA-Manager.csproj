@@ -106,105 +106,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ClubPage.xaml.cs">
-      <DependentUpon>ClubPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainGame.xaml.cs">
-      <DependentUpon>MainGame.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="NewsPage.xaml.cs">
-      <DependentUpon>NewsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PlayerPage.xaml.cs">
-      <DependentUpon>PlayerPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="PlayerSearchPage.xaml.cs">
-      <DependentUpon>PlayerSearchPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="src\ControlledRandom.cs" />
-    <Compile Include="src\MOBATeam\MOBATeam.cs" />
-    <Compile Include="src\MOBATeam\MOBATeamFactory.cs" />
-    <Compile Include="PlayersOptionsPage.xaml.cs">
-      <DependentUpon>PlayersOptionsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="src\PlaySession.cs" />
-    <Compile Include="SettingsPage.xaml.cs">
-      <DependentUpon>SettingsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SquadPage.xaml.cs">
-      <DependentUpon>SquadPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="src\Fixture.cs" />
-    <Compile Include="src\GameEngine.cs" />
-    <Compile Include="src\Manager.cs" />
-    <Compile Include="src\MOBAPlayer\MOBAPlayer.cs" />
-    <Compile Include="src\MOBAPlayer\MOBAPlayerFactory.cs" />
-    <Compile Include="src\MOBAPlayer\MOBAPlayerSkill.cs" />
-    <Compile Include="src\NewsPost.cs" />
-    <Compile Include="src\Schedule.cs" />
-    <Compile Include="src\Settings\Settings.cs" />
-    <Compile Include="src\Team.cs" />
-    <Compile Include="src\User.cs" />
-    <Compile Include="TeamCreation.xaml.cs">
-      <DependentUpon>TeamCreation.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserCreation.xaml.cs">
-      <DependentUpon>UserCreation.xaml</DependentUpon>
-    </Compile>
-    <Page Include="ClubPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainGame.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="NewsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PlayerPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SettingsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PlayerSearchPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="SquadPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PlayersOptionsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TeamCreation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserCreation.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -222,8 +132,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="MOBA-Manager_TemporaryKey.pfx" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -245,7 +153,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Colours.txt" />
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

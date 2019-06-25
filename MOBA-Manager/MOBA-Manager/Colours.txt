@@ -1,2 +1,0 @@
-﻿Text Colour: #FFFFCFCF
-Background Colour: #FF911212
