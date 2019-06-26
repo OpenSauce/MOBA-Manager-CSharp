@@ -10,31 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MOBA_Manager.UI;
 
-namespace MOBA_Manager
+namespace MOBA_Manager.UI
 {
     /// <summary>
     /// Interaction logic for IntoScreen.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class IntroScreen : Page
     {
-        public MainWindow()
+        public IntroScreen()
         {
             InitializeComponent();
-            Switcher.pageSwitcher = this;
-            SetupGameIntro();
         }
 
-        private void SetupGameIntro()
+        public IntroScreen(MainWindow window)
         {
-            Switcher.Switch(new MOBA_Manager.UI.IntroScreen());
         }
 
-        public void Navigate(Page nextPage)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            this.Content = nextPage;
+
         }
     }
 }

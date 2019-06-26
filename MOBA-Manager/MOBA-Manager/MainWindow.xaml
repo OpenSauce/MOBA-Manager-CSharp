@@ -1,4 +1,4 @@
-﻿<Window x:Class="MOBA_Manager.IntoScreen"
+﻿<Window x:Class="MOBA_Manager.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="IntoScreen" Height="450" Width="800">
     <Grid>
-        
+        <Frame x:Name="MainWindowFrame" Content="Frame" Height="419" Width="792"/>
+
     </Grid>
 </Window>
