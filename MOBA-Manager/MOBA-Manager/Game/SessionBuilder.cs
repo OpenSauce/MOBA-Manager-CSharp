@@ -27,6 +27,7 @@ namespace MOBA_Manager.Game
 
         public Session SetupGame()
         {
+            MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation());
             return new Session();
         }
 

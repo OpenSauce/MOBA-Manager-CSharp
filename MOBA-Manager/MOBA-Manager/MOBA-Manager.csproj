@@ -116,6 +116,9 @@
       <DependentUpon>IntroScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Switcher.cs" />
+    <Compile Include="UI\UserCreation.xaml.cs">
+      <DependentUpon>UserCreation.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindow.xaml.cs">
@@ -164,6 +167,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\IntroScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UserCreation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
