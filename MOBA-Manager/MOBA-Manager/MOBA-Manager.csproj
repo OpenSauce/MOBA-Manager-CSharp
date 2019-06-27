@@ -110,6 +110,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataModel\BaseEntity.cs" />
+    <Compile Include="DataModel\Player.cs" />
+    <Compile Include="DataModel\User.cs" />
     <Compile Include="Game\Session.cs" />
     <Compile Include="Game\SessionBuilder.cs" />
     <Compile Include="UI\IntroScreen.xaml.cs">
@@ -175,5 +178,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

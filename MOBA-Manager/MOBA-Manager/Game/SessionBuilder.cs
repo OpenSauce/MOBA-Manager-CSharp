@@ -8,6 +8,8 @@ namespace MOBA_Manager.Game
 {
     class SessionBuilder
     {
+        private Session session;
+
         public SessionBuilder()
         {
             SetupGame();
@@ -25,11 +27,23 @@ namespace MOBA_Manager.Game
             }
         }
 
-        public Session SetupGame()
+        public Session GetSession()
         {
-            MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation());
-            return new Session();
+            return this.session;
         }
+
+        private void SetupGame()
+        {
+            PrepareUserCreation();
+        }
+
+        private void PrepareUserCreation()
+        {
+            LoadGameDetails();
+            MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation());
+        }
+
+
 
         public Session LoadSession()
         {
