@@ -16,7 +16,7 @@ using MOBA_Manager.UI;
 namespace MOBA_Manager
 {
     /// <summary>
-    /// Interaction logic for IntoScreen.xaml
+    /// Interaction logic for IntroScreen.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
