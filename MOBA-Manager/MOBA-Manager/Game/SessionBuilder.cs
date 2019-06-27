@@ -39,7 +39,7 @@ namespace MOBA_Manager.Game
 
         private void PrepareUserCreation()
         {
-            LoadGameDetails();
+            //LoadGameDetails();
             MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation());
         }
 
