@@ -8,23 +8,16 @@ namespace MOBA_Manager.Game
 {
     class SessionBuilder
     {
-        private Session session;
+        private Session session = null;
 
         public SessionBuilder()
         {
-            SetupGame();
+            SetupSessionAndUI();
         }
 
         public SessionBuilder(bool onLoad)
         {
-            if(onLoad)
-            {
-                LoadSession();
-            }
-            else
-            {
-                new SessionBuilder();
-            }
+            new SessionBuilder();
         }
 
         public Session GetSession()
@@ -32,22 +25,21 @@ namespace MOBA_Manager.Game
             return this.session;
         }
 
-        private void SetupGame()
+        private void SetupSessionAndUI()
         {
-            PrepareUserCreation();
+            SetupSession();
+            SetUserCreationUI();
         }
 
-        private void PrepareUserCreation()
+        private void SetupSession()
         {
-            //LoadGameDetails();
+            this.session = new Session();
+            this.session.LoadGameEntities();
+        }
+
+        private void SetUserCreationUI()
+        {
             MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation());
-        }
-
-
-
-        public Session LoadSession()
-        {
-            return new Session();
         }
 
     }
