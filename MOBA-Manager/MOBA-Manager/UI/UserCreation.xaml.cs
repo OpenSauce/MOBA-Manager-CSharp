@@ -13,19 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MOBA_Manager.src
+namespace MOBA_Manager.UI
 {
     /// <summary>
-    /// Interaction logic for PlayerOptionsPage.xaml
+    /// Interaction logic for UserCreation.xaml
     /// </summary>
-    public partial class PlayerOptionsPage : Page
+    public partial class UserCreation : Page
     {
-        public PlayerOptionsPage()
-        {
-            InitializeComponent();
-        }
-
-        public PlayerOptionsPage(MOBAPlayer player)
+        public UserCreation()
         {
             InitializeComponent();
         }

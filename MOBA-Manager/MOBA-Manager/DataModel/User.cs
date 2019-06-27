@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MOBA_Manager.src
+namespace MOBA_Manager.DataModel
 {
-    class Fixture
+    class User : BaseEntity
     {
     }
 }

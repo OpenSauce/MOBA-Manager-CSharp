@@ -13,16 +13,30 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MOBA_Manager
+namespace MOBA_Manager.UI
 {
     /// <summary>
-    /// Interaction logic for ClubPage.xaml
+    /// Interaction logic for IntoScreen.xaml
     /// </summary>
-    public partial class ClubPage : Page
+    public partial class IntroScreen : Page
     {
-        public ClubPage()
+        public IntroScreen()
         {
             InitializeComponent();
+        }
+
+        public IntroScreen(MainWindow window)
+        {
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new MOBA_Manager.Game.SessionBuilder();
         }
     }
 }

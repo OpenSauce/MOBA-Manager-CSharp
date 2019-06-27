@@ -1,5 +1,4 @@
-﻿using MOBA_Manager.src.Settings;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,46 +10,31 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Xceed.Wpf.Toolkit;
+using MOBA_Manager.UI;
 
 namespace MOBA_Manager
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for IntoScreen.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        User _player;
-        PlaySession _session;
-        private Settings _gameSettings;
-
         public MainWindow()
         {
             InitializeComponent();
-            this._gameSettings = new Settings().LoadSettings();
-            this._session = new PlaySession();
-            MainFrame.Content = new UserCreation(this);
+            Switcher.pageSwitcher = this;
+            SetupGameIntro();
         }
 
-        public void CreateTeam(User player)
+        private void SetupGameIntro()
         {
-            this._player = player;
-            if (_player.IsCreated())
-            {
-                MainFrame.Content = new TeamCreation(this, _player, _session);
-            }
+            Switcher.Switch(new MOBA_Manager.UI.IntroScreen());
         }
 
-        public void BeginGame()
+        public void Navigate(Page nextPage)
         {
-            MainFrame.Content = new MainGame(this, _player, _session);
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            SettingsPage settings = new SettingsPage(_gameSettings);
+            this.Content = nextPage;
         }
     }
 }
