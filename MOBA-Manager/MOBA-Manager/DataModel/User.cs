@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace MOBA_Manager.DataModel
 {
-    class User : IBaseEntity
+    class User
     {
+        public User()
+        {
+
+        }
     }
 }

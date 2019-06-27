@@ -8,5 +8,8 @@ namespace MOBA_Manager.DataModel
 {
     class Player : IBaseEntity
     {
+        public string firstName { get; set; }
+        public string middleName { get; set; }
+        public string lastName { get; set; }
     }
 }
