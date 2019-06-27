@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MOBA_Manager"
         mc:Ignorable="d"
-        Title="IntoScreen" Height="450" Width="800">
+        Title="IntoScreen">
     <Grid>
         <Frame x:Name="MainWindowFrame" Content="Frame" Height="419" Width="792"/>
 

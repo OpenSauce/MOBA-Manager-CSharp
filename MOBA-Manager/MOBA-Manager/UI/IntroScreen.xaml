@@ -11,7 +11,7 @@
     <Grid>
         <TextBox HorizontalAlignment="Center" Height="23" Margin="0,150,0,0" TextWrapping="Wrap" Text="PooPoo" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <Label Content="Enter Your Name:" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top" FontSize="48"/>
-        <Button Content="Begin MoBA Manager " HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom"/>
+        <Button Content="Begin" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="75" Click="Button_Click"/>
 
     </Grid>
 </Page>

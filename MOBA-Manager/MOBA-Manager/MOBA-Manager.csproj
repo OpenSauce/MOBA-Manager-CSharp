@@ -110,6 +110,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Game\Session.cs" />
+    <Compile Include="Game\SessionBuilder.cs" />
     <Compile Include="UI\IntroScreen.xaml.cs">
       <DependentUpon>IntroScreen.xaml</DependentUpon>
     </Compile>

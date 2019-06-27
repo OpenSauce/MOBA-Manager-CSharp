@@ -33,5 +33,10 @@ namespace MOBA_Manager.UI
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new MOBA_Manager.Game.SessionBuilder();
+        }
     }
 }
