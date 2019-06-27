@@ -38,5 +38,15 @@ namespace MOBA_Manager.UI
         {
             new MOBA_Manager.Game.SessionBuilder();
         }
+
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            BeginButton.Content = "Ooo";
+        }
+
+        private void BeginButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            BeginButton.Content = "Begin";
+        }
     }
 }

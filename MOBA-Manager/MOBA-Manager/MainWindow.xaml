@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:MOBA_Manager"
         mc:Ignorable="d"
         Title="IntoScreen">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
     <Grid>
         <Frame x:Name="MainWindowFrame" Content="Frame" Height="419" Width="792"/>
 

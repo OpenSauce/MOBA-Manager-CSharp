@@ -16,7 +16,6 @@ namespace MOBA_Manager.Game
         {
             Console.WriteLine("Entities loaded KEEEK");
             IPlayerFactory hello = new PlayerGenerator();
-            hello.DoIt();
         }
     }
 }
