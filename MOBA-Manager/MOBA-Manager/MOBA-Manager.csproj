@@ -122,6 +122,9 @@
     <Compile Include="UI\IntroScreen.xaml.cs">
       <DependentUpon>IntroScreen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\MainGame.xaml.cs">
+      <DependentUpon>MainGame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Switcher.cs" />
     <Compile Include="UI\UserCreation.xaml.cs">
       <DependentUpon>UserCreation.xaml</DependentUpon>
@@ -174,6 +177,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\IntroScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\MainGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

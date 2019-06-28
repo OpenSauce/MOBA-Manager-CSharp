@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,14 +11,10 @@ namespace MOBA_Manager.Game
     public class Session
     {
         private User mainPlayer;
+        private List<Player> playerList;
+
         public Session() 
         {
-        }
-
-        public void LoadGameEntities()
-        {
-            IPlayerFactory hello = new PlayerGenerator();
-            hello.LoadPlayers();
         }
 
         public Session SetUser(User user)
@@ -26,9 +23,14 @@ namespace MOBA_Manager.Game
             return this;
         }
 
+        public void SetData(List<Player> playerList)
+        {
+            this.playerList = playerList;
+        }
+
         public void Start()
         {
-
+            Switcher.Switch(new MainGame(this));
         }
     }
 }

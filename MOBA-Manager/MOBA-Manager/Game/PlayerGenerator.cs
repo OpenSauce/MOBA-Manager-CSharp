@@ -27,7 +27,7 @@ namespace MOBA_Manager.Game
 
         private Player GenerateNewPlayer()
         {
-            return new Player();
+            return new Player("Player", "Obo");
         }
     }
 }

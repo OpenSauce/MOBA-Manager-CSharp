@@ -35,7 +35,13 @@ namespace MOBA_Manager.Game
         private void SetupSession()
         {
             this.session = new Session();
-            this.session.LoadGameEntities();
+            this.session.SetData(LoadGameEntities());
+        }
+
+        public List<Player> LoadGameEntities()
+        {
+            IPlayerFactory hello = new PlayerGenerator();
+            return hello.LoadPlayers();
         }
 
         private void SetUserCreationUI()

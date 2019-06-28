@@ -23,7 +23,7 @@ namespace MOBA_Manager.UI
     public partial class UserCreation : Page
     {
         private SessionBuilder sessionBuilder;
-        private UserCreation()
+        UserCreation()
         {
             InitializeComponent();
         }
@@ -31,6 +31,7 @@ namespace MOBA_Manager.UI
         public UserCreation(SessionBuilder sessionBuilder)
         {
             this.sessionBuilder = sessionBuilder;
+            InitializeComponent();
         }
 
         private void BeginButton_Click(object sender, RoutedEventArgs e)

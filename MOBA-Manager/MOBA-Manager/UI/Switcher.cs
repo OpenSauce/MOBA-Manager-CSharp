@@ -15,5 +15,10 @@ namespace MOBA_Manager.UI
         {
             pageSwitcher.Navigate(newPage);
         }
+
+        public static Frame GetMainFrame()
+        {
+            return pageSwitcher.MainWindowFrame;
+        }
     }
 }

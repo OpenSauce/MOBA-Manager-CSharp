@@ -9,9 +9,10 @@ namespace MOBA_Manager.Game
 {
     class UserBuilder
     {
+
         public User CreateUser(string firstName, string lastName)
         {
-            return new User();
+            return new User().WithName(firstName, lastName);
         }
     }
 }
