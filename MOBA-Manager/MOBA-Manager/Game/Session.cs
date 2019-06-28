@@ -17,6 +17,7 @@ namespace MOBA_Manager.Game
         public void LoadGameEntities()
         {
             IPlayerFactory hello = new PlayerGenerator();
+            hello.LoadPlayers();
         }
 
         public Session SetUser(User user)

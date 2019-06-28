@@ -23,7 +23,7 @@ namespace MOBA_Manager.UI
     public partial class UserCreation : Page
     {
         private SessionBuilder sessionBuilder;
-        public UserCreation()
+        private UserCreation()
         {
             InitializeComponent();
         }
