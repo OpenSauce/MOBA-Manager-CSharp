@@ -40,8 +40,8 @@ namespace MOBA_Manager.Game
 
         public List<Player> LoadGameEntities()
         {
-            IPlayerFactory hello = new PlayerGenerator();
-            return hello.LoadPlayers();
+            IPlayerFactory playerCreator = new PlayerGenerator();
+            return playerCreator.LoadPlayers();
         }
 
         private void SetUserCreationUI()

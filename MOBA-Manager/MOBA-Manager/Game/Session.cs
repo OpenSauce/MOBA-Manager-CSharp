@@ -30,7 +30,7 @@ namespace MOBA_Manager.Game
 
         public void Start()
         {
-            Switcher.Switch(new MainGame(this));
+            Switcher.Switch(new MainGame(new MainGameEngine(this)));
         }
     }
 }

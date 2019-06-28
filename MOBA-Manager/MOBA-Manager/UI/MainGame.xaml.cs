@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.Game;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,16 @@ namespace MOBA_Manager.UI
     /// </summary>
     public partial class MainGame : Page
     {
+        private MainGameEngine playerSession;
+
         public MainGame()
         {
+            InitializeComponent();
+        }
+
+        public MainGame(MainGameEngine playerSession)
+        {
+            this.playerSession = playerSession;
             InitializeComponent();
         }
     }
