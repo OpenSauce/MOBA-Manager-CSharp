@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace MOBA_Manager.DataModel
 {
-    public class User
+    class Team
     {
-        public User()
-        {
-
-        }
     }
 }

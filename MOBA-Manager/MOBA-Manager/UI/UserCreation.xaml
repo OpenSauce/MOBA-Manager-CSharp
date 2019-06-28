@@ -10,7 +10,7 @@
 
     <Grid Background="#FF1B3B91">
         <Label Content="User Creation" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48"/>
-        <Button x:Name="BeginButton" Content="Start" HorizontalAlignment="Right" Margin="0,0,20,20" VerticalAlignment="Bottom" Width="75" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" FontSize="20"/>
+        <Button x:Name="BeginButton" Content="Start" HorizontalAlignment="Right" Margin="0,0,20,20" VerticalAlignment="Bottom" Width="75" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" FontSize="20" Click="BeginButton_Click"/>
 
     </Grid>
 </Page>

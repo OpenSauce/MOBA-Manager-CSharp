@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MOBA_Manager.Game
 {
-    class SessionBuilder
+    public class SessionBuilder
     {
         private Session session = null;
 
@@ -39,8 +40,14 @@ namespace MOBA_Manager.Game
 
         private void SetUserCreationUI()
         {
-            MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation());
+            MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation(this));
         }
+
+        public Session SetSessionUser(User user)
+        {
+            return this.session.SetUser(user);
+        }
+
 
     }
 }
