@@ -12,5 +12,6 @@ namespace MOBA_Manager.DataModel
         string middleName { get; set; }
         string lastName { get; set; }
         int age { get; set; }
+        Int64 salary { get; set; }
     }
 }

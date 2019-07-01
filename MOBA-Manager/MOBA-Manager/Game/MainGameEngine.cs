@@ -14,5 +14,10 @@ namespace MOBA_Manager.Game
         {
             this.playerSession = session;
         }
+
+        public void ProceedGame()
+        {
+            //Do some logic onto session.
+        }
     }
 }
