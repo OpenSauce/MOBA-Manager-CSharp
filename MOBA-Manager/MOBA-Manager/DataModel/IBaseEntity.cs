@@ -8,9 +8,10 @@ namespace MOBA_Manager.DataModel
 {
     interface IBaseEntity
     {
-        string firstName { get; set; }
-        string middleName { get; set; }
-        string lastName { get; set; }
-        int age { get; set; }
+        string FirstName { get; set; }
+        string MiddleName { get; set; }
+        string LastName { get; set; }
+        int Age { get; set; }
+        string FullName();
     }
 }

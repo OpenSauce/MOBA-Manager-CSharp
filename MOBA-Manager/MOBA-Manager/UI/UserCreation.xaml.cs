@@ -42,8 +42,7 @@ namespace MOBA_Manager.UI
 
         private User CreateUser()
         {
-            //Check if the user is okay and create the user
-            return new User();
+            return new User().WithName(FirstNameBox.Text, LastNameBox.Text);
         }
     }
 }

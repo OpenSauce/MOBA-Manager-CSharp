@@ -21,17 +21,23 @@ namespace MOBA_Manager.UI
     /// </summary>
     public partial class MainGame : Page
     {
-        private MainGameEngine playerSession;
+        private MainGameEngine gameEngine;
 
         public MainGame()
         {
             InitializeComponent();
         }
 
-        public MainGame(MainGameEngine playerSession)
+        public MainGame(MainGameEngine gameEngine)
         {
-            this.playerSession = playerSession;
+            this.gameEngine = gameEngine;
             InitializeComponent();
+            SetupUI();
+        }
+
+        private void SetupUI()
+        {
+            FullNameLabel.Content = gameEngine.PlayerSession.GetUserFullName();
         }
     }
 }

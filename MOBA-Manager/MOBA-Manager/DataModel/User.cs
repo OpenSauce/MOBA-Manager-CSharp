@@ -8,21 +8,26 @@ namespace MOBA_Manager.DataModel
 {
     public class User : IBaseEntity
     {
-        public string firstName { get; set; }
-        public string middleName { get; set; }
-        public string lastName { get; set; }
-        public int age { get; set; }
+        private string firstName;
+        private string middleName;
+        private string lastName;
+        private int age;
 
-        public User()
-        {
-
-        }
+        public string FirstName { get => firstName; set => firstName = value; }
+        public string MiddleName { get => middleName; set => middleName = value; }
+        public string LastName { get => lastName; set => lastName = value; }
+        public int Age { get => age; set => age = value; }
 
         public User WithName(string firstName, string lastName)
         {
             this.firstName = firstName;
             this.lastName = lastName;
             return this;
+        }
+
+        public string FullName()
+        {
+            return this.firstName + " " + this.lastName;
         }
     }
 }

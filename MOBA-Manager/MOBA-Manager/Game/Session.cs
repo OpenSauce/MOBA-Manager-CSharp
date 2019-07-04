@@ -12,6 +12,11 @@ namespace MOBA_Manager.Game
     {
         private User mainPlayer;
         private List<Player> playerList;
+        private List<Team> teamList;
+        private long cash;
+
+        public User MainPlayer { get => mainPlayer; set => mainPlayer = value; }
+        public long Cash { get => cash; set => cash = value; }
 
         public Session() 
         {
@@ -21,6 +26,11 @@ namespace MOBA_Manager.Game
         {
             this.mainPlayer = user;
             return this;
+        }
+
+        public String GetUserFullName()
+        {
+            return mainPlayer.FullName();
         }
 
         public void SetData(List<Player> playerList)
