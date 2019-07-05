@@ -9,8 +9,9 @@
       Title="MainGame">
 
     <Grid Background="#FF1B3B91">
-        <Label x:Name="FullNameLabel" Content="Label" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="741,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="FullNameLabel" Content="Label" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="CashLabel" Content="Label" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16"/>
+        <Frame Content="Frame" Margin="0,100,0,0"/>
 
     </Grid>
 </Page>

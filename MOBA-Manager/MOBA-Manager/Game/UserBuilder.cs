@@ -7,12 +7,32 @@ using MOBA_Manager.DataModel;
 
 namespace MOBA_Manager.Game
 {
-    class UserBuilder
+    static class UserBuilder
     {
+        //Singleton?
+        private static User onlyUser = null;
 
-        public User CreateUser(string firstName, string lastName)
+        public static User CreateUser()
         {
-            return new User().WithName(firstName, lastName);
+            if(onlyUser == null)
+            {
+                onlyUser = new User();
+                return onlyUser;
+            } else
+            {
+                throw new Exception();
+            }
+        }
+
+        public static User GetInstance()
+        {
+            return onlyUser;
+        }
+
+        public static User WithName(string firstName, string lastName)
+        {
+            onlyUser.SetFullName(firstName, lastName);
+            return onlyUser;
         }
     }
 }

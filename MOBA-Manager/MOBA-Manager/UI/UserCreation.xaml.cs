@@ -23,26 +23,24 @@ namespace MOBA_Manager.UI
     public partial class UserCreation : Page
     {
         private SessionBuilder sessionBuilder;
-        UserCreation()
-        {
-            InitializeComponent();
-        }
 
         public UserCreation(SessionBuilder sessionBuilder)
         {
             this.sessionBuilder = sessionBuilder;
             InitializeComponent();
+            UserBuilder.CreateUser();
         }
 
         private void BeginButton_Click(object sender, RoutedEventArgs e)
         {
-            Session newSession = this.sessionBuilder.SetSessionUser(CreateUser());
+            BuildUser();
+            Session newSession = this.sessionBuilder.SetSessionUser(UserBuilder.GetInstance());
             newSession.Start();
         }
 
-        private User CreateUser()
+        private void BuildUser()
         {
-            return new User().WithName(FirstNameBox.Text, LastNameBox.Text);
+           UserBuilder.WithName(FirstNameBox.Text, LastNameBox.Text);
         }
     }
 }

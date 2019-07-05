@@ -30,11 +30,17 @@ namespace MOBA_Manager.Game
 
         public String GetUserFullName()
         {
-            return mainPlayer.FullName();
+            return mainPlayer.GetFullName();
+        }
+        
+        public string GetCash()
+        {
+            return "£" + cash;
         }
 
         public void SetData(List<Player> playerList)
         {
+            this.cash = 5000;
             this.playerList = playerList;
         }
 

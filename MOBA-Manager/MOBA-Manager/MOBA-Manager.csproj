@@ -110,6 +110,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataModel\BaseEntity.cs" />
     <Compile Include="DataModel\IBaseEntity.cs" />
     <Compile Include="DataModel\Player.cs" />
     <Compile Include="DataModel\Team.cs" />

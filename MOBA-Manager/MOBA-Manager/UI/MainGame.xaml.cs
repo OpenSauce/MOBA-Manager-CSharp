@@ -38,6 +38,7 @@ namespace MOBA_Manager.UI
         private void SetupUI()
         {
             FullNameLabel.Content = gameEngine.PlayerSession.GetUserFullName();
+            CashLabel.Content = gameEngine.PlayerSession.GetCash();
         }
     }
 }
