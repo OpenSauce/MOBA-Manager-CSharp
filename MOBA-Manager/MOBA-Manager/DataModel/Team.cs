@@ -8,5 +8,7 @@ namespace MOBA_Manager.DataModel
 {
     public class Team
     {
+        private int _reputation;
+        private List<Player> _roster;
     }
 }

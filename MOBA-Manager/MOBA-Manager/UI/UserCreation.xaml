@@ -15,6 +15,8 @@
         <Label Content="Last Name:" Width="100" HorizontalAlignment="Left" Margin="51,157,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Light"/>
         <TextBox x:Name="LastNameBox" HorizontalAlignment="Left" Height="23" Margin="151,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="FirstNameBox" HorizontalAlignment="Left" Height="23" Margin="151,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Team Name:" HorizontalAlignment="Left" Margin="522,116,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Light"/>
+        <TextBox x:Name="TeamNameBox" HorizontalAlignment="Left" Height="23" Margin="643,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Page>

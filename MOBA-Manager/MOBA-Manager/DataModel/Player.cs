@@ -8,10 +8,18 @@ namespace MOBA_Manager.DataModel
 {
     public class Player : BaseEntity
     {
+        private PlayerSkill skillset;
+
         public Player(string firstName, string lastName)
         {
             this.firstName = firstName;
             this.lastName = lastName;
         }
+
+        public void SetSkillset(PlayerSkill skillset)
+        {
+            this.skillset = skillset;
+        }
+
     }
 }

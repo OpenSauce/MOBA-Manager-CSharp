@@ -27,7 +27,9 @@ namespace MOBA_Manager.Game
 
         private Player GenerateNewPlayer()
         {
-            return new Player("Player", "Obo");
+            Player generatedPlayer = new Player("Player", "Obo");
+            generatedPlayer.SetSkillset(new PlayerSkill().PopulateSkills(ControlledRandom.RandomNumber(0, 100)));
+            return generatedPlayer;
         }
     }
 }

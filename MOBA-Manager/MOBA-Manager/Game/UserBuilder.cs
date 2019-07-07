@@ -34,5 +34,11 @@ namespace MOBA_Manager.Game
             onlyUser.SetFullName(firstName, lastName);
             return onlyUser;
         }
+
+        public static User SetTeam(Team team)
+        {
+
+            return onlyUser;
+        }
     }
 }
