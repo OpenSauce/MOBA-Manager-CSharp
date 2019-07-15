@@ -38,10 +38,15 @@ namespace MOBA_Manager.Game
             return "£" + cash;
         }
 
-        public void SetData(List<Player> playerList)
+        public void SetPlayerData(List<Player> playerList)
         {
             this.cash = 5000;
             this.playerList = playerList;
+        }
+
+        public void SetTeamData(List<Team> teamList)
+        {
+            this.teamList = teamList;
         }
 
         public void Start()

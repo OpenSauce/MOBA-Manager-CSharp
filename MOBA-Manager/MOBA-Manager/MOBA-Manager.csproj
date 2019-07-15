@@ -123,6 +123,7 @@
     <Compile Include="Game\PlayerGenerator.cs" />
     <Compile Include="Game\Session.cs" />
     <Compile Include="Game\SessionBuilder.cs" />
+    <Compile Include="Game\TeamGenerator.cs" />
     <Compile Include="Game\UserBuilder.cs" />
     <Compile Include="UI\IntroScreen.xaml.cs">
       <DependentUpon>IntroScreen.xaml</DependentUpon>

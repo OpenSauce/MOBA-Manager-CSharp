@@ -35,13 +35,26 @@ namespace MOBA_Manager.Game
         private void SetupSession()
         {
             this.session = new Session();
-            this.session.SetData(LoadGameEntities());
+            LoadGameEntities();
+            
         }
 
-        public List<Player> LoadGameEntities()
+        private void LoadGameEntities()
+        {
+            this.session.SetPlayerData(LoadPlayers());
+            this.session.SetTeamData(LoadTeams());
+        }
+
+        public List<Player> LoadPlayers()
         {
             IPlayerFactory playerCreator = new PlayerGenerator();
             return playerCreator.LoadPlayers();
+        }
+
+        public List<Team> LoadTeams()
+        {
+            ITeamFactory teamCreator = new TeamGenerator();
+            return teamCreator.LoadTeams();
         }
 
         private void SetUserCreationUI()

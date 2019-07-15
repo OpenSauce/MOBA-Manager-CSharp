@@ -15,8 +15,10 @@
         <Button Content="Home" HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Team House" HorizontalAlignment="Left" Margin="150,30,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Fixtures" HorizontalAlignment="Right" Margin="0,32,25,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Buy Players" HorizontalAlignment="Right" Margin="0,30,150,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Buy Players" HorizontalAlignment="Left" Margin="275,30,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Continue" Margin="0" Height="50" VerticalAlignment="Bottom"/>
+        <Button x:Name="AllTeamsButton" Content="All Teams" HorizontalAlignment="Right" Margin="0,32,129,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="AllPlayerButton" Content="All Players" HorizontalAlignment="Right" Margin="0,32,235,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Page>
