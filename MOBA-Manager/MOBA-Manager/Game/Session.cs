@@ -49,6 +49,11 @@ namespace MOBA_Manager.Game
             this.teamList = teamList;
         }
 
+        public List<Player> GetPlayerList()
+        {
+            return this.playerList;
+        }
+
         public void Start()
         {
             Switcher.Switch(new MainGame(new MainGameEngine(this)));

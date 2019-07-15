@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.Game;
+using MOBA_Manager.UI.InGameUI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,11 @@ namespace MOBA_Manager.UI
         {
             FullNameLabel.Content = gameEngine.PlayerSession.GetUserFullName();
             CashLabel.Content = gameEngine.PlayerSession.GetCash();
+        }
+
+        private void AllPlayerButton_Click(object sender, RoutedEventArgs e)
+        {
+            InMainGameFrame.Navigate(new AllPlayersPage(this.gameEngine.PlayerSession.GetPlayerList()));
         }
     }
 }

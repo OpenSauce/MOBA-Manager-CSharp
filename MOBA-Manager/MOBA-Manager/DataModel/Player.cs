@@ -21,5 +21,9 @@ namespace MOBA_Manager.DataModel
             this.skillset = skillset;
         }
 
+        public override string ToString()
+        {
+            return this.firstName + " " + this.lastName;
+        }
     }
 }
