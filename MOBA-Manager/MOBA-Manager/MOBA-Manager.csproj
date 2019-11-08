@@ -63,6 +63,9 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RandomNameGeneratorLibrary, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RandomNameGeneratorLibrary.1.2.2.0\lib\net40\RandomNameGeneratorLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite">
@@ -110,15 +113,29 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataModel\BaseEntity.cs" />
+    <Compile Include="DataModel\ControlledRandom.cs" />
     <Compile Include="DataModel\IBaseEntity.cs" />
     <Compile Include="DataModel\Player.cs" />
+    <Compile Include="DataModel\PlayerSkill.cs" />
+    <Compile Include="DataModel\Team.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="Game\IPlayerFactory.cs" />
+    <Compile Include="Game\ITeamFactory.cs" />
+    <Compile Include="Game\MainGameEngine.cs" />
     <Compile Include="Game\PlayerGenerator.cs" />
     <Compile Include="Game\Session.cs" />
     <Compile Include="Game\SessionBuilder.cs" />
+    <Compile Include="Game\TeamGenerator.cs" />
+    <Compile Include="Game\UserBuilder.cs" />
+    <Compile Include="UI\InGameUI\AllPlayersPage.xaml.cs">
+      <DependentUpon>AllPlayersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\IntroScreen.xaml.cs">
       <DependentUpon>IntroScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainGame.xaml.cs">
+      <DependentUpon>MainGame.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\Switcher.cs" />
     <Compile Include="UI\UserCreation.xaml.cs">
@@ -146,6 +163,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -171,7 +189,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UI\InGameUI\AllPlayersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\IntroScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\MainGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

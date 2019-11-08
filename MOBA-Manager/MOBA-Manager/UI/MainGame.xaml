@@ -1,0 +1,24 @@
+﻿<Page x:Class="MOBA_Manager.UI.MainGame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MOBA_Manager.UI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainGame">
+
+    <Grid Background="#FF1B3B91">
+        <Label x:Name="FullNameLabel" Content="Label" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
+        <Label x:Name="CashLabel" Content="Label" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Frame x:Name="InMainGameFrame" Content="Frame" Margin="0,100,0,50" NavigationUIVisibility="Hidden"/>
+        <Button Content="Home" HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Team House" HorizontalAlignment="Left" Margin="150,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Fixtures" HorizontalAlignment="Right" Margin="0,32,25,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Buy Players" HorizontalAlignment="Left" Margin="275,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Continue" Margin="0" Height="50" VerticalAlignment="Bottom"/>
+        <Button x:Name="AllTeamsButton" Content="All Teams" HorizontalAlignment="Right" Margin="0,32,129,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="AllPlayerButton" Content="All Players" HorizontalAlignment="Right" Margin="0,32,235,0" VerticalAlignment="Top" Width="75" Click="AllPlayerButton_Click"/>
+
+    </Grid>
+</Page>

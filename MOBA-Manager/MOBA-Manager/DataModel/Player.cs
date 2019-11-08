@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace MOBA_Manager.DataModel
 {
-    class Player : BaseEntity
+    public class Player : BaseEntity
     {
+        private PlayerSkill skillset;
+
+        public Player(string firstName, string lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        public void SetSkillset(PlayerSkill skillset)
+        {
+            this.skillset = skillset;
+        }
+
+        public override string ToString()
+        {
+            return this.firstName + " " + this.lastName;
+        }
     }
 }

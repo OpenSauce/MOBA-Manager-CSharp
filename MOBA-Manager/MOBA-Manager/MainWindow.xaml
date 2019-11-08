@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MOBA_Manager"
         mc:Ignorable="d"
-        Title="IntoScreen">
+        Title="MobA Manager">
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
     <Grid>
         <Frame x:Name="MainWindowFrame" Content="Frame" Height="419" Width="792"/>
 

@@ -1,14 +1,15 @@
-﻿using System;
+﻿using MOBA_Manager.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MOBA_Manager.DataModel;
 
 namespace MOBA_Manager.Game
 {
-    interface IPlayerFactory
+    interface ITeamFactory
     {
-        List<Player> LoadPlayers();
+        List<Team> LoadTeams();
+        void PopulateTeamsWithPlayers();
     }
 }

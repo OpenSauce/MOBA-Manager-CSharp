@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,31 +11,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MOBA_Manager.UI;
 
-namespace MOBA_Manager
+namespace MOBA_Manager.UI.InGameUI
 {
     /// <summary>
-    /// Interaction logic for IntroScreen.xaml
+    /// Interaction logic for AllPlayersPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AllPlayersPage : Page
     {
-        public MainWindow()
+        public AllPlayersPage()
         {
             InitializeComponent();
-            Switcher.pageSwitcher = this;
-            SetupGameIntro();
         }
 
-        private void SetupGameIntro()
+        public AllPlayersPage(List<Player> playerList)
         {
-            Switcher.Switch(new MOBA_Manager.UI.IntroScreen());
-        }
-
-        public void Navigate(Page nextPage)
-        {
-            this.Content = nextPage;
+            InitializeComponent();
+            foreach(Player p in playerList) {
+                PlayerListBox.Items.Add(p);
+            }
         }
     }
 }

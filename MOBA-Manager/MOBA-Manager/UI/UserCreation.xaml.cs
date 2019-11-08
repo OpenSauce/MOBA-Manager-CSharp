@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MOBA_Manager.DataModel;
+using MOBA_Manager.Game;
 
 namespace MOBA_Manager.UI
 {
@@ -20,9 +22,25 @@ namespace MOBA_Manager.UI
     /// </summary>
     public partial class UserCreation : Page
     {
-        public UserCreation()
+        private SessionBuilder sessionBuilder;
+
+        public UserCreation(SessionBuilder sessionBuilder)
         {
+            this.sessionBuilder = sessionBuilder;
             InitializeComponent();
+            UserBuilder.CreateUser();
+        }
+
+        private void BeginButton_Click(object sender, RoutedEventArgs e)
+        {
+            BuildUser();
+            Session newSession = this.sessionBuilder.SetSessionUser(UserBuilder.GetInstance());
+            newSession.Start();
+        }
+
+        private void BuildUser()
+        {
+           UserBuilder.WithName(FirstNameBox.Text, LastNameBox.Text);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,25 +7,18 @@ using System.Threading.Tasks;
 
 namespace MOBA_Manager.Game
 {
-    class SessionBuilder
+    public class SessionBuilder
     {
-        private Session session;
+        private Session session = null;
 
         public SessionBuilder()
         {
-            SetupGame();
+            SetupSessionAndUI();
         }
 
         public SessionBuilder(bool onLoad)
         {
-            if(onLoad)
-            {
-                LoadSession();
-            }
-            else
-            {
-                new SessionBuilder();
-            }
+            new SessionBuilder();
         }
 
         public Session GetSession()
@@ -32,23 +26,48 @@ namespace MOBA_Manager.Game
             return this.session;
         }
 
-        private void SetupGame()
+        private void SetupSessionAndUI()
         {
-            PrepareUserCreation();
+            SetupSession();
+            SetUserCreationUI();
         }
 
-        private void PrepareUserCreation()
+        private void SetupSession()
         {
-            //LoadGameDetails();
-            MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation());
+            this.session = new Session();
+            LoadGameEntities();
+            
         }
 
-
-
-        public Session LoadSession()
+        private void LoadGameEntities()
         {
-            return new Session();
+            this.session.SetPlayerData(LoadPlayers());
+            this.session.SetTeamData(LoadTeams());
+
         }
+
+        public List<Player> LoadPlayers()
+        {
+            IPlayerFactory playerCreator = new PlayerGenerator();
+            return playerCreator.LoadPlayers();
+        }
+
+        public List<Team> LoadTeams()
+        {
+            ITeamFactory teamCreator = new TeamGenerator();
+            return teamCreator.LoadTeams();
+        }
+
+        private void SetUserCreationUI()
+        {
+            MOBA_Manager.UI.Switcher.Switch(new MOBA_Manager.UI.UserCreation(this));
+        }
+
+        public Session SetSessionUser(User user)
+        {
+            return this.session.SetUser(user);
+        }
+
 
     }
 }
