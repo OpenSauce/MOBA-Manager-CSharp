@@ -45,6 +45,8 @@ namespace MOBA_Manager.UI
         private void AllPlayerButton_Click(object sender, RoutedEventArgs e)
         {
             InMainGameFrame.Navigate(new AllPlayersPage(this.gameEngine.PlayerSession.GetPlayerList()));
+
+            //Test commit
         }
     }
 }

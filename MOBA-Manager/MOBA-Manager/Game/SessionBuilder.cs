@@ -43,6 +43,7 @@ namespace MOBA_Manager.Game
         {
             this.session.SetPlayerData(LoadPlayers());
             this.session.SetTeamData(LoadTeams());
+
         }
 
         public List<Player> LoadPlayers()

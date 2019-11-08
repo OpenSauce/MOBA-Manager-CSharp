@@ -10,5 +10,6 @@ namespace MOBA_Manager.Game
     interface ITeamFactory
     {
         List<Team> LoadTeams();
+        void PopulateTeamsWithPlayers();
     }
 }
