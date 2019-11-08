@@ -29,28 +29,8 @@ namespace MOBA_Manager.DataModel
             offlaneSkill = 0;
         }
 
-        public int CurrentSkill { get => currentSkill; set => currentSkill = value; }
-        public int PotentialSkill { get => potentialSkill; set => potentialSkill = value; }
-        public int MentalSkill { get => mentalSkill; set => mentalSkill = value; }
-        public int Technique { get => technique; set => technique = value; }
-        public int SupportSkill { get => supportSkill; set => supportSkill = value; }
-        public int CarrySkill { get => carrySkill; set => carrySkill = value; }
-        public int MidSkill { get => midSkill; set => midSkill = value; }
-        public int OfflaneSkill { get => offlaneSkill; set => offlaneSkill = value; }
 
-        public PlayerSkill PopulateSkills(int weight)
-        { 
 
-            currentSkill = ControlledRandom.RandomNumber(weight, 100) * 2;
-            potentialSkill = ControlledRandom.RandomNumber(weight, 100) * 2;
-            mentalSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
-            technique = ControlledRandom.RandomNumber(weight, 100) / 5;
-            supportSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
-            carrySkill = ControlledRandom.RandomNumber(weight, 100) / 5;
-            midSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
-            offlaneSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
-            return this;
-        }
 
     }
 }

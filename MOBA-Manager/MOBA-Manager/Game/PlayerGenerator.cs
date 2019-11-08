@@ -30,7 +30,7 @@ namespace MOBA_Manager.Game
         private Player GenerateNewPlayer(String firstName, String lastName)
         {
             Player generatedPlayer = new Player(firstName, lastName);
-            generatedPlayer.SetSkillset(new PlayerSkill().PopulateSkills(ControlledRandom.RandomNumber(0, 100)));
+            generatedPlayer.PopulateSkills(ControlledRandom.RandomNumber(1, 200));
             return generatedPlayer;
         }
     }
