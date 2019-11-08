@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MOBA_Manager.DataModel;
+using RandomNameGeneratorLibrary;
 
 namespace MOBA_Manager.Game
 {
@@ -18,9 +19,10 @@ namespace MOBA_Manager.Game
 
         private List<Player> GenerateListOfPlayers(List<Player> listOfPlayers)
         {
-            for(int i = 0; i<MAX_PLAYERS; i++)
+            PersonNameGenerator _g = new PersonNameGenerator();
+            for (int i = 0; i<MAX_PLAYERS; i++)
             {
-                listOfPlayers.Add(GenerateNewPlayer("GeneratedPlayer", i.ToString()));
+                listOfPlayers.Add(GenerateNewPlayer(_g.GenerateRandomMaleFirstName(), _g.GenerateRandomLastName()));
             }
             return listOfPlayers;
         }
