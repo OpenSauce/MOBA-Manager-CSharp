@@ -1,6 +1,7 @@
 ﻿using MOBA_Manager.DataModel;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -29,9 +31,12 @@ namespace MOBA_Manager.UI.InGameUI
         public AllPlayersPage(List<Player> playerList)
         {
             InitializeComponent();
-            foreach(Player p in playerList) {
-                PlayerListBox.Items.Add(p);
+
+            ObservableCollection<Player> users = new ObservableCollection<Player>();
+            foreach (Player p in playerList) {
+                users.Add(p);
             }
+            dataGrid.ItemsSource = users;
         }
     }
 }

@@ -40,6 +40,7 @@ namespace MOBA_Manager.DataModel
 
         public PlayerSkill PopulateSkills(int weight)
         { 
+
             currentSkill = ControlledRandom.RandomNumber(weight, 100) * 2;
             potentialSkill = ControlledRandom.RandomNumber(weight, 100) * 2;
             mentalSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
@@ -50,5 +51,6 @@ namespace MOBA_Manager.DataModel
             offlaneSkill = ControlledRandom.RandomNumber(weight, 100) / 5;
             return this;
         }
+
     }
 }

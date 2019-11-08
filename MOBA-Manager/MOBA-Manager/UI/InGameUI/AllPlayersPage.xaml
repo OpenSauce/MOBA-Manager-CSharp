@@ -9,7 +9,6 @@
       Title="AllPlayersPage">
 
     <Grid>
-        <ListBox x:Name="PlayerListBox" Margin="0"/>
-
+        <DataGrid x:Name="dataGrid" Margin="0" ColumnWidth="Auto" IsReadOnly="True"/>
     </Grid>
 </Page>
