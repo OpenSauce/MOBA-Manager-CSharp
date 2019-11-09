@@ -48,5 +48,10 @@ namespace MOBA_Manager.UI
 
             //Test commit
         }
+
+        private void BuyPlayersButton_Click(object sender, RoutedEventArgs e)
+        {
+            InMainGameFrame.Navigate(new BuyPlayersPage(this.gameEngine.PlayerSession.GetPlayerList()));
+        }
     }
 }

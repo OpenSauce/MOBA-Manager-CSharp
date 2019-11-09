@@ -131,6 +131,9 @@
     <Compile Include="UI\InGameUI\AllPlayersPage.xaml.cs">
       <DependentUpon>AllPlayersPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\InGameUI\BuyPlayersPage.xaml.cs">
+      <DependentUpon>BuyPlayersPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\IntroScreen.xaml.cs">
       <DependentUpon>IntroScreen.xaml</DependentUpon>
     </Compile>
@@ -190,6 +193,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\InGameUI\AllPlayersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\InGameUI\BuyPlayersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
