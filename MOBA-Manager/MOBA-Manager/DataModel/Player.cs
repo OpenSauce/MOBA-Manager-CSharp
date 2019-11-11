@@ -16,6 +16,7 @@ namespace MOBA_Manager.DataModel
         private int carrySkill;
         private int midSkill;
         private int offlaneSkill;
+        private int playerRating;
         public int CurrentSkill { get => currentSkill; set => currentSkill = value; }
         public int PotentialSkill { get => potentialSkill; set => potentialSkill = value; }
         public int MentalSkill { get => mentalSkill; set => mentalSkill = value; }
@@ -24,6 +25,7 @@ namespace MOBA_Manager.DataModel
         public int CarrySkill { get => carrySkill; set => carrySkill = value; }
         public int MidSkill { get => midSkill; set => midSkill = value; }
         public int OfflaneSkill { get => offlaneSkill; set => offlaneSkill = value; }
+        public int PlayerRating { get => playerRating; set => playerRating = value; }
 
         public Player(string firstName, string lastName)
         {
@@ -31,18 +33,26 @@ namespace MOBA_Manager.DataModel
             this.lastName = lastName;
         }
 
+        public Player(string firstName, string middleName, string lastName)
+        {
+            this.firstName = firstName;
+            this.middleName = middleName;
+            this.lastName = lastName;
+        }
+
         public void PopulateSkills(int weight)
         {
             currentSkill = ControlledRandom.RandomNumber(0, weight);
-            potentialSkill = ControlledRandom.RandomNumber(0, weight) - (currentSkill / 2);
+            potentialSkill = weight;
 
 
-            mentalSkill = ControlledRandom.RandomNumber(0, currentSkill / 2) /5;
-            technique = ControlledRandom.RandomNumber(0, currentSkill / 2) / 5;
-            supportSkill = ControlledRandom.RandomNumber(0, currentSkill / 2) / 5;
-            carrySkill = ControlledRandom.RandomNumber(0, currentSkill / 2) / 5;
-            midSkill = ControlledRandom.RandomNumber(0, currentSkill / 2) / 5;
-            offlaneSkill = ControlledRandom.RandomNumber(0, currentSkill / 2) / 5;
+            mentalSkill = ControlledRandom.RandomNumber((currentSkill /2), (weight / 2)) /5;
+            technique = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
+            supportSkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
+            carrySkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
+            midSkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
+            offlaneSkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
+            this.playerRating = GetPlayerRating();
         }
 
         public int GetPlayerRating()

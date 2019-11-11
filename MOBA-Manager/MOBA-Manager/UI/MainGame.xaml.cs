@@ -53,5 +53,10 @@ namespace MOBA_Manager.UI
         {
             InMainGameFrame.Navigate(new BuyPlayersPage(this.gameEngine.PlayerSession.GetPlayerList()));
         }
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            InMainGameFrame.Navigate(new HomeScreenPage());
+        }
     }
 }

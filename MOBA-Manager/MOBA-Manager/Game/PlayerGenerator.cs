@@ -22,16 +22,23 @@ namespace MOBA_Manager.Game
             PersonNameGenerator _g = new PersonNameGenerator();
             for (int i = 0; i<MAX_PLAYERS; i++)
             {
-                listOfPlayers.Add(GenerateNewPlayer(_g.GenerateRandomMaleFirstName(), _g.GenerateRandomLastName()));
+                listOfPlayers.Add(GenerateNewPlayer(_g.GenerateRandomMaleFirstName(),_g.GenerateRandomMaleFirstName(), _g.GenerateRandomLastName()));
             }
             return listOfPlayers;
         }
 
         private Player GenerateNewPlayer(String firstName, String lastName)
         {
-            Player generatedPlayer = new Player(firstName, lastName);
+            return GenerateNewPlayer(firstName, "", lastName);
+        }
+
+        private Player GenerateNewPlayer(String firstName, String middleName, String lastName)
+        {
+            Player generatedPlayer = new Player(firstName, middleName, lastName);
+            generatedPlayer.Age = ControlledRandom.RandomNumber(16, 26);
             generatedPlayer.PopulateSkills(ControlledRandom.RandomNumber(1, 200));
             return generatedPlayer;
         }
+
     }
 }
