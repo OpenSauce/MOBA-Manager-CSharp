@@ -114,7 +114,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataModel\BaseEntity.cs" />
-    <Compile Include="DataModel\ControlledRandom.cs" />
+    <Compile Include="Utilities\ControlledRandom.cs" />
     <Compile Include="DataModel\IBaseEntity.cs" />
     <Compile Include="DataModel\Player.cs" />
     <Compile Include="DataModel\PlayerSkill.cs" />
