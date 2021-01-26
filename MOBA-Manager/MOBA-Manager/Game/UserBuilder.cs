@@ -37,7 +37,6 @@ namespace MOBA_Manager.Game
 
         public static User SetTeam(Team team)
         {
-
             return onlyUser;
         }
     }

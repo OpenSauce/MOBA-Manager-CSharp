@@ -21,5 +21,6 @@ namespace MOBA_Manager.DataModel
         {
             this._teamName = name;
         }
+
     }
 }
