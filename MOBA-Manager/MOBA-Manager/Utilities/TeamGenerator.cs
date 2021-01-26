@@ -16,11 +16,6 @@ namespace MOBA_Manager.Game
             return GenerateListOfTeams(new List<Team>());
         }
 
-        public void PopulateTeamsWithPlayers()
-        {
-            throw new NotImplementedException();
-        }
-
         private List<Team> GenerateListOfTeams(List<Team> teamList)
         {
             for (int i = 0; i < MAX_TEAMS; i++)
