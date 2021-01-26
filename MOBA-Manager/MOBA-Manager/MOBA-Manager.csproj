@@ -120,14 +120,14 @@
     <Compile Include="DataModel\PlayerSkill.cs" />
     <Compile Include="DataModel\Team.cs" />
     <Compile Include="DataModel\User.cs" />
-    <Compile Include="Game\IPlayerFactory.cs" />
-    <Compile Include="Game\ITeamFactory.cs" />
+    <Compile Include="Utilities\IPlayerFactory.cs" />
+    <Compile Include="Utilities\ITeamFactory.cs" />
     <Compile Include="Game\MainGameEngine.cs" />
-    <Compile Include="Game\PlayerGenerator.cs" />
+    <Compile Include="Utilities\PlayerGenerator.cs" />
     <Compile Include="Game\Session.cs" />
-    <Compile Include="Game\SessionBuilder.cs" />
-    <Compile Include="Game\TeamGenerator.cs" />
-    <Compile Include="Game\UserBuilder.cs" />
+    <Compile Include="Utilities\SessionBuilder.cs" />
+    <Compile Include="Utilities\TeamGenerator.cs" />
+    <Compile Include="Utilities\UserBuilder.cs" />
     <Compile Include="UI\InGameUI\AllPlayersPage.xaml.cs">
       <DependentUpon>AllPlayersPage.xaml</DependentUpon>
     </Compile>
