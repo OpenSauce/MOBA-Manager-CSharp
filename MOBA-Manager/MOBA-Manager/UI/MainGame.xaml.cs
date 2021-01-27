@@ -48,6 +48,7 @@ namespace MOBA_Manager.UI
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.gameEngine.ProceedGame();
+            SetupUI();
         }
     }
 }

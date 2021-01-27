@@ -32,6 +32,7 @@ namespace MOBA_Manager.Game
         {
             Team generatedTeam = new Team();
             generatedTeam.SetTeamName(teamName);
+            generatedTeam.Reputation = ControlledRandom.RandomNumber(1, 1000);
             return generatedTeam;
         }
     }
