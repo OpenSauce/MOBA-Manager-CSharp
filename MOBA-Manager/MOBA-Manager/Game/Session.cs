@@ -56,6 +56,7 @@ namespace MOBA_Manager.Game
 
         public void Start()
         {
+            //Logic for loading or creating new game
             Switcher.Switch(new MainGame(new MainGameEngine(this)));
         }
     }

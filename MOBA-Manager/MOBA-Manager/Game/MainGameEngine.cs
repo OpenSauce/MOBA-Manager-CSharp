@@ -19,7 +19,24 @@ namespace MOBA_Manager.Game
 
         public void ProceedGame()
         {
+            CalculateCash(playerSession);
+            CalculateTransfers(playerSession);
+            ContinueTime(playerSession);
+        }
 
+        private void ContinueTime(Session playerSession)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void CalculateTransfers(Session playerSession)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void CalculateCash(Session playerSession)
+        {
+            throw new NotImplementedException();
         }
     }
 }

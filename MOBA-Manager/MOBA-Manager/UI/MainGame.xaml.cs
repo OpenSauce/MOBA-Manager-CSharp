@@ -58,5 +58,10 @@ namespace MOBA_Manager.UI
         {
             InMainGameFrame.Navigate(new HomeScreenPage());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.gameEngine.ProceedGame();
+        }
     }
 }
