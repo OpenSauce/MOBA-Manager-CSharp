@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MOBA_Manager.DataModel;
+﻿using MOBA_Manager.DataModel;
+using System;
 
 namespace MOBA_Manager.Game
 {
-    static class UserBuilder
+    internal static class UserBuilder
     {
         //Singleton?
         private static User onlyUser = null;
 
         public static User CreateUser()
         {
-            if(onlyUser == null)
+            if (onlyUser == null)
             {
                 onlyUser = new User();
                 return onlyUser;
-            } else
+            }
+            else
             {
                 throw new Exception();
             }

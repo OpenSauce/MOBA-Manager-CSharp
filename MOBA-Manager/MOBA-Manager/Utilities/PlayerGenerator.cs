@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MOBA_Manager.DataModel;
+﻿using MOBA_Manager.DataModel;
 using RandomNameGeneratorLibrary;
+using System;
+using System.Collections.Generic;
 
 namespace MOBA_Manager.Game
 {
-    class PlayerGenerator : IPlayerFactory
+    internal class PlayerGenerator : IPlayerFactory
     {
         private const int MAX_PLAYERS = 100;
 
@@ -20,9 +17,9 @@ namespace MOBA_Manager.Game
         private List<Player> GenerateListOfPlayers(List<Player> listOfPlayers)
         {
             PersonNameGenerator _g = new PersonNameGenerator();
-            for (int i = 0; i<MAX_PLAYERS; i++)
+            for (int i = 0; i < MAX_PLAYERS; i++)
             {
-                listOfPlayers.Add(GenerateNewPlayer(_g.GenerateRandomMaleFirstName(),_g.GenerateRandomMaleFirstName(), _g.GenerateRandomLastName()));
+                listOfPlayers.Add(GenerateNewPlayer(_g.GenerateRandomMaleFirstName(), _g.GenerateRandomMaleFirstName(), _g.GenerateRandomLastName()));
             }
             return listOfPlayers;
         }
@@ -39,6 +36,5 @@ namespace MOBA_Manager.Game
             generatedPlayer.PopulateSkills(ControlledRandom.RandomNumber(1, 200));
             return generatedPlayer;
         }
-
     }
 }

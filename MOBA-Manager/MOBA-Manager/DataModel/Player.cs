@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MOBA_Manager.DataModel
 {
@@ -45,8 +41,7 @@ namespace MOBA_Manager.DataModel
             currentSkill = ControlledRandom.RandomNumber(0, weight);
             potentialSkill = weight;
 
-
-            mentalSkill = ControlledRandom.RandomNumber((currentSkill /2), (weight / 2)) /5;
+            mentalSkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
             technique = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
             supportSkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
             carrySkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
@@ -59,7 +54,6 @@ namespace MOBA_Manager.DataModel
         {
             return Math.Abs(CurrentSkill / 40);
         }
-
 
         public override string ToString()
         {

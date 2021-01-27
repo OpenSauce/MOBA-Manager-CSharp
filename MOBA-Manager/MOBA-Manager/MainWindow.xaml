@@ -7,10 +7,9 @@
         mc:Ignorable="d"
         Title="MobA Manager">
     <Window.Effect>
-        <DropShadowEffect/>
+        <DropShadowEffect />
     </Window.Effect>
     <Grid>
-        <Frame x:Name="MainWindowFrame" Content="Frame" Height="419" Width="792"/>
-
+        <Frame x:Name="MainWindowFrame" Content="Frame" Height="419" Width="792" />
     </Grid>
 </Window>

@@ -2,9 +2,6 @@
 using MOBA_Manager.UI;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MOBA_Manager.Game
 {
@@ -18,7 +15,7 @@ namespace MOBA_Manager.Game
         public User MainPlayer { get => mainPlayer; set => mainPlayer = value; }
         public long Cash { get => cash; set => cash = value; }
 
-        public Session() 
+        public Session()
         {
         }
 
@@ -32,7 +29,7 @@ namespace MOBA_Manager.Game
         {
             return mainPlayer.GetFullName();
         }
-        
+
         public string GetCash()
         {
             return "£" + cash;

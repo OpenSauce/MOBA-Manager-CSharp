@@ -1,9 +1,5 @@
 ﻿using MOBA_Manager.DataModel;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MOBA_Manager.Game
 {
@@ -36,14 +32,12 @@ namespace MOBA_Manager.Game
         {
             this.session = new Session();
             LoadGameEntities();
-            
         }
 
         private void LoadGameEntities()
         {
             this.session.SetPlayerData(LoadPlayers());
             this.session.SetTeamData(LoadTeams());
-
         }
 
         public List<Player> LoadPlayers()
@@ -67,7 +61,5 @@ namespace MOBA_Manager.Game
         {
             return this.session.SetUser(user);
         }
-
-
     }
 }
