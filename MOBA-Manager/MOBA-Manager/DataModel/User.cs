@@ -1,4 +1,6 @@
-﻿namespace MOBA_Manager.DataModel
+﻿using System;
+
+namespace MOBA_Manager.DataModel
 {
     public class User : BaseEntity
     {

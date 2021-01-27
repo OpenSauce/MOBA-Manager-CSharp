@@ -28,7 +28,7 @@ namespace MOBA_Manager.Game
             return teamList;
         }
 
-        private Team GenerateNewTeam(String teamName)
+        public static Team GenerateNewTeam(String teamName)
         {
             Team generatedTeam = new Team();
             generatedTeam.SetTeamName(teamName);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.DataModel;
+using System;
 
 namespace MOBA_Manager.Game
 {
@@ -16,8 +17,8 @@ namespace MOBA_Manager.Game
         public void ProceedGame()
         {
             CalculateCash(playerSession);
-            CalculateTransfers(playerSession);
-            ContinueTime(playerSession);
+            //CalculateTransfers(playerSession);
+            //ContinueTime(playerSession);
         }
 
         private void ContinueTime(Session playerSession)
@@ -32,7 +33,11 @@ namespace MOBA_Manager.Game
 
         private void CalculateCash(Session playerSession)
         {
-            throw new NotImplementedException();
+            var TeamList = playerSession.TeamList;
+            foreach (Team t in TeamList)
+            {
+                t.AddCash(t.Reputation * 800);
+            }
         }
     }
 }

@@ -28,6 +28,7 @@ namespace MOBA_Manager.UI
         private void BuildUser()
         {
             UserBuilder.WithName(FirstNameBox.Text, LastNameBox.Text);
+            UserBuilder.WithTeam(TeamNameBox.Text);
         }
     }
 }

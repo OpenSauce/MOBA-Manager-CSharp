@@ -34,7 +34,13 @@ namespace MOBA_Manager.Game
 
         public static User SetTeam(Team team)
         {
+            onlyUser.Team = team;
             return onlyUser;
+        }
+
+        public static User WithTeam(string teamName)
+        {
+            return SetTeam(TeamGenerator.GenerateNewTeam(teamName));
         }
     }
 }

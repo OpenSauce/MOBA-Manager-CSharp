@@ -10,10 +10,8 @@ namespace MOBA_Manager.Game
         private User mainPlayer;
         private List<Player> playerList;
         private List<Team> teamList;
-        private long cash;
-
         public User MainPlayer { get => mainPlayer; set => mainPlayer = value; }
-        public long Cash { get => cash; set => cash = value; }
+        public List<Team> TeamList { get => teamList; set => teamList = value; }
 
         public Session()
         {
@@ -32,12 +30,11 @@ namespace MOBA_Manager.Game
 
         public string GetCash()
         {
-            return "£" + cash;
+            return "£" + this.mainPlayer.Team.Cash;
         }
 
         public void SetPlayerData(List<Player> playerList)
         {
-            this.cash = 5000;
             this.playerList = playerList;
         }
 
@@ -53,8 +50,8 @@ namespace MOBA_Manager.Game
 
         public void Start()
         {
-            //Logic for loading or creating new game
             Switcher.Switch(new MainGame(new MainGameEngine(this)));
+            this.mainPlayer.Team.Cash = 5000;
         }
     }
 }
