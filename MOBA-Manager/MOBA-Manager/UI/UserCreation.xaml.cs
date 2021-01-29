@@ -1,4 +1,5 @@
-﻿using MOBA_Manager.Game;
+﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Game;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -20,15 +21,16 @@ namespace MOBA_Manager.UI
 
         private void BeginButton_Click(object sender, RoutedEventArgs e)
         {
-            BuildUser();
-            Session newSession = this.sessionBuilder.SetSessionUser(UserBuilder.GetInstance());
+            User gameUser = BuildUser();
+            Session newSession = this.sessionBuilder.SetSessionUser(gameUser);
             newSession.Start();
         }
 
-        private void BuildUser()
+        private User BuildUser()
         {
             UserBuilder.WithName(FirstNameBox.Text, LastNameBox.Text);
             UserBuilder.WithTeam(TeamNameBox.Text);
+            return UserBuilder.GetInstance();
         }
     }
 }
