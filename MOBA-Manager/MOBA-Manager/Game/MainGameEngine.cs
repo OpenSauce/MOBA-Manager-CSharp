@@ -36,7 +36,7 @@ namespace MOBA_Manager.Game
             var TeamList = playerSession.TeamList;
             foreach (Team t in TeamList)
             {
-                t.AddCash(t.Reputation * 800);
+                t.AddCash(t.Reputation * 0.8);
             }
         }
     }

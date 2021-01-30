@@ -5,13 +5,13 @@ namespace MOBA_Manager.DataModel
 {
     public class Team
     {
-        private int reputation;
+        private double reputation;
         private List<Player> roster;
         private String teamName;
-        private int cash;
+        private Double cash;
 
-        public int Reputation { get => reputation; set => reputation = value; }
-        public int Cash { get => cash; set => cash = value; }
+        public Double Reputation { get => reputation; set => reputation = value; }
+        public Double Cash { get => cash; set => cash = value; }
 
         public String GetTeamName()
         {
@@ -23,7 +23,7 @@ namespace MOBA_Manager.DataModel
             this.teamName = name;
         }
 
-        internal void AddCash(int increment)
+        internal void AddCash(Double increment)
         {
             this.cash += increment;
         }
