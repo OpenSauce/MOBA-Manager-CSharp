@@ -16,22 +16,39 @@ namespace MOBA_Manager.Game
 
         public void ProceedGame()
         {
-            CalculateCash(playerSession);
-            //CalculateTransfers(playerSession);
-            //ContinueTime(playerSession);
+            CalculateDataUpdates();
+            ContinueTime();
         }
 
-        private void ContinueTime(Session playerSession)
+        private void CalculateDataUpdates()
+        {
+            CalculateCash();
+            CalculateTransfers();
+            CalculatePlayerUpdates();
+            CalculateTeamUpdates();
+        }
+
+        private void CalculateTeamUpdates()
         {
             throw new NotImplementedException();
         }
 
-        private void CalculateTransfers(Session playerSession)
+        private void CalculatePlayerUpdates()
         {
             throw new NotImplementedException();
         }
 
-        private void CalculateCash(Session playerSession)
+        private void ContinueTime()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void CalculateTransfers()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void CalculateCash()
         {
             var TeamList = playerSession.TeamList;
             foreach (Team t in TeamList)
