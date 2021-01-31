@@ -17,15 +17,15 @@ namespace MOBA_Manager.Game
         public void ProceedGame()
         {
             CalculateDataUpdates();
-            ContinueTime();
+            //ContinueTime();
         }
 
         private void CalculateDataUpdates()
         {
             CalculateCash();
-            CalculateTransfers();
-            CalculatePlayerUpdates();
-            CalculateTeamUpdates();
+            ///CalculateTransfers();
+            //CalculatePlayerUpdates();
+           // CalculateTeamUpdates();
         }
 
         private void CalculateTeamUpdates()
