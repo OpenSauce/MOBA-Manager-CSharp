@@ -1,6 +1,7 @@
 ﻿using MOBA_Manager.DataModel;
 using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 
 namespace MOBA_Manager.UI.InGameUI
 {
@@ -13,6 +14,10 @@ namespace MOBA_Manager.UI.InGameUI
         {
             //List<Player> playerList;
             InitializeComponent();
+
+            playerPortrait.Source = playerList[0].IconIndex;
         }
+
+
     }
 }

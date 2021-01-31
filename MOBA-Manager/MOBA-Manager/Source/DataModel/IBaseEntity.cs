@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+﻿using System.Windows.Media.Imaging;
 
 namespace MOBA_Manager.DataModel
 {
@@ -9,7 +9,7 @@ namespace MOBA_Manager.DataModel
         string LastName { get; set; }
         int Age { get; set; }
         Team Team { get; set; }
-        Image iconIndex { get; set; }
+        BitmapImage iconIndex { get; set; }
 
         string FullName();
     }

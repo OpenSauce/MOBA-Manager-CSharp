@@ -2,6 +2,8 @@
 using RandomNameGeneratorLibrary;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Media.Imaging;
 
 namespace MOBA_Manager.Game
 {
@@ -34,7 +36,18 @@ namespace MOBA_Manager.Game
             Player generatedPlayer = new Player(firstName, middleName, lastName);
             generatedPlayer.Age = ControlledRandom.RandomNumber(16, 26);
             generatedPlayer.PopulateSkills(ControlledRandom.RandomNumber(1, 200));
+            generatedPlayer.IconIndex = GetPlayerPortrait(true);
             return generatedPlayer;
+        }
+
+        public static BitmapImage GetPlayerPortrait(bool male)
+        {
+            BitmapImage bi = new BitmapImage();
+            // BitmapImage.UriSource must be in a BeginInit/EndInit block.
+            bi.BeginInit();
+            bi.UriSource = new Uri(@"\Assets\Pixel Portraits\male_01.png", UriKind.RelativeOrAbsolute);
+            bi.EndInit();
+            return bi;
         }
     }
 }

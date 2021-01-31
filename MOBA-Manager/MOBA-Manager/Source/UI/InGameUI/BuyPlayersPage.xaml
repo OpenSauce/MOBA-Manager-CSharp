@@ -11,5 +11,6 @@
     <Grid>
         <StackPanel HorizontalAlignment="Left" Height="276" Margin="46,77,0,0" VerticalAlignment="Top" Width="694" Background="#FF191B1B" />
         <Button Content="Button" HorizontalAlignment="Left" Margin="363,393,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="playerPortrait" Height="75" Width="79" Margin="150,365,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
     </Grid>
 </Page>
