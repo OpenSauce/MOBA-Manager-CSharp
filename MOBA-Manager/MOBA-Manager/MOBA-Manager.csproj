@@ -114,6 +114,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Source\DataModel\BaseEntity.cs" />
+    <Compile Include="Source\Game\AssetHandler.cs" />
     <Compile Include="Source\UI\InGameUI\AllTeamsPage.xaml.cs">
       <DependentUpon>AllTeamsPage.xaml</DependentUpon>
     </Compile>
