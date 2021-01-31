@@ -56,5 +56,6 @@ namespace MOBA_Manager.UI
         {
             InMainGameFrame.Navigate(new AllTeamsPage(this.gameEngine.PlayerSession.GetTeamList()));
         }
+
     }
 }

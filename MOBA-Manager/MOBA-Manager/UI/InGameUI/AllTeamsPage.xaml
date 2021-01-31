@@ -9,6 +9,6 @@
       Title="AllTeamsPage">
 
     <Grid>
-        <DataGrid x:Name="dataGrid" Margin="0" ColumnWidth="Auto" IsReadOnly="True" />
+        <DataGrid x:Name="dataGrid" Margin="0" ColumnWidth="Auto" IsReadOnly="True" FontFamily="Segoe UI Light" FontSize="14" />
     </Grid>
 </Page>
