@@ -12,12 +12,12 @@
         <Label x:Name="FullNameLabel" Content="Label" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White" />
         <Label x:Name="CashLabel" Content="Label" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" />
         <Frame x:Name="InMainGameFrame" Content="Frame" Margin="0,100,0,50" NavigationUIVisibility="Hidden" />
-        <Button x:Name="HomeButton" Content="Home" HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top" Width="75" Click="HomeButton_Click" />
-        <Button Content="Team House" HorizontalAlignment="Left" Margin="150,30,0,0" VerticalAlignment="Top" Width="75" />
-        <Button Content="Fixtures" HorizontalAlignment="Right" Margin="0,32,25,0" VerticalAlignment="Top" Width="75" />
-        <Button x:Name="BuyPlayers" Content="Buy Players" HorizontalAlignment="Left" Margin="275,30,0,0" VerticalAlignment="Top" Width="75" Click="BuyPlayersButton_Click" />
+        <Button x:Name="HomeButton" Content="Home" HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top" Width="75" Click="HomeButton_Click" FontFamily="Segoe UI Light" Height="25" Background="White" BorderBrush="Black" BorderThickness="2" />
+        <Button Content="Team House" HorizontalAlignment="Left" Margin="150,30,0,0" VerticalAlignment="Top" Width="75" FontFamily="Segoe UI Light" Background="White" BorderThickness="2" BorderBrush="Black" Height="25" />
+        <Button Content="Fixtures" HorizontalAlignment="Right" Margin="0,32,25,0" VerticalAlignment="Top" Width="75" Height="25" BorderThickness="2" Background="White" BorderBrush="Black" />
+        <Button x:Name="BuyPlayers" Content="Buy Players" HorizontalAlignment="Left" Margin="275,30,0,0" VerticalAlignment="Top" Width="75" Click="BuyPlayersButton_Click" Height="25" Background="White" BorderBrush="Black" BorderThickness="2" />
         <Button Content="Continue" Margin="0" Height="50" VerticalAlignment="Bottom" Click="Button_Click" />
-        <Button x:Name="AllTeamsButton" Content="All Teams" HorizontalAlignment="Right" Margin="0,32,129,0" VerticalAlignment="Top" Width="75" />
-        <Button x:Name="AllPlayerButton" Content="All Players" HorizontalAlignment="Right" Margin="0,32,235,0" VerticalAlignment="Top" Width="75" Click="AllPlayerButton_Click" />
+        <Button x:Name="AllTeamsButton" Content="All Teams" HorizontalAlignment="Right" Margin="0,32,129,0" VerticalAlignment="Top" Width="75" Height="25" BorderThickness="2" Background="White" BorderBrush="Black" />
+        <Button x:Name="AllPlayerButton" Content="All Players" HorizontalAlignment="Right" Margin="0,32,235,0" VerticalAlignment="Top" Width="75" Click="AllPlayerButton_Click" Height="25" BorderThickness="2" BorderBrush="Black" Background="White" />
     </Grid>
 </Page>
