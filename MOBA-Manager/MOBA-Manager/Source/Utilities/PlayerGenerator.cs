@@ -45,7 +45,9 @@ namespace MOBA_Manager.Game
             BitmapImage bi = new BitmapImage();
             // BitmapImage.UriSource must be in a BeginInit/EndInit block.
             bi.BeginInit();
-            bi.UriSource = new Uri(@"\Assets\Pixel Portraits\male_01.png", UriKind.RelativeOrAbsolute);
+            int number = ControlledRandom.RandomNumber(0, 15);
+            var myString = number < 10 ? "0" + number : number.ToString();
+            bi.UriSource = new Uri(@"\Assets\Pixel Portraits\male_"+ myString + ".png", UriKind.RelativeOrAbsolute);
             bi.EndInit();
             return bi;
         }
