@@ -1,4 +1,6 @@
-﻿namespace MOBA_Manager.DataModel
+﻿using System.Drawing;
+
+namespace MOBA_Manager.DataModel
 {
     internal interface IBaseEntity
     {
