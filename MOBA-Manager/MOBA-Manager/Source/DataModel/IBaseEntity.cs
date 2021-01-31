@@ -7,6 +7,7 @@
         string LastName { get; set; }
         int Age { get; set; }
         Team Team { get; set; }
+        Image iconIndex { get; set; }
 
         string FullName();
     }
