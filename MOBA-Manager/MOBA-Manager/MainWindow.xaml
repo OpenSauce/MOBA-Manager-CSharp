@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MOBA_Manager"
         mc:Ignorable="d"
-        Title="MobA Manager">
+        Title="MobA Manager" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Window.Effect>
         <DropShadowEffect />
     </Window.Effect>
