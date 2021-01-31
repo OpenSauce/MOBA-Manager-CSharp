@@ -105,54 +105,54 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <ApplicationDefinition Include="Source\App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="App.xaml.cs">
+    <Compile Include="Source\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataModel\BaseEntity.cs" />
-    <Compile Include="UI\InGameUI\AllTeamsPage.xaml.cs">
+    <Compile Include="Source\DataModel\BaseEntity.cs" />
+    <Compile Include="Source\UI\InGameUI\AllTeamsPage.xaml.cs">
       <DependentUpon>AllTeamsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Utilities\ControlledRandom.cs" />
-    <Compile Include="DataModel\IBaseEntity.cs" />
-    <Compile Include="DataModel\Player.cs" />
-    <Compile Include="DataModel\PlayerSkill.cs" />
-    <Compile Include="DataModel\Team.cs" />
-    <Compile Include="DataModel\User.cs" />
-    <Compile Include="Utilities\IPlayerFactory.cs" />
-    <Compile Include="Utilities\ITeamFactory.cs" />
-    <Compile Include="Game\MainGameEngine.cs" />
-    <Compile Include="Utilities\PlayerGenerator.cs" />
-    <Compile Include="Game\Session.cs" />
-    <Compile Include="Utilities\SessionBuilder.cs" />
-    <Compile Include="Utilities\TeamGenerator.cs" />
-    <Compile Include="Utilities\UserBuilder.cs" />
-    <Compile Include="UI\InGameUI\AllPlayersPage.xaml.cs">
+    <Compile Include="Source\Utilities\ControlledRandom.cs" />
+    <Compile Include="Source\DataModel\IBaseEntity.cs" />
+    <Compile Include="Source\DataModel\Player.cs" />
+    <Compile Include="Source\DataModel\PlayerSkill.cs" />
+    <Compile Include="Source\DataModel\Team.cs" />
+    <Compile Include="Source\DataModel\User.cs" />
+    <Compile Include="Source\Utilities\IPlayerFactory.cs" />
+    <Compile Include="Source\Utilities\ITeamFactory.cs" />
+    <Compile Include="Source\Game\MainGameEngine.cs" />
+    <Compile Include="Source\Utilities\PlayerGenerator.cs" />
+    <Compile Include="Source\Game\Session.cs" />
+    <Compile Include="Source\Utilities\SessionBuilder.cs" />
+    <Compile Include="Source\Utilities\TeamGenerator.cs" />
+    <Compile Include="Source\Utilities\UserBuilder.cs" />
+    <Compile Include="Source\UI\InGameUI\AllPlayersPage.xaml.cs">
       <DependentUpon>AllPlayersPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\InGameUI\BuyPlayersPage.xaml.cs">
+    <Compile Include="Source\UI\InGameUI\BuyPlayersPage.xaml.cs">
       <DependentUpon>BuyPlayersPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\InGameUI\HomeScreenPage.xaml.cs">
+    <Compile Include="Source\UI\InGameUI\HomeScreenPage.xaml.cs">
       <DependentUpon>HomeScreenPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\IntroScreen.xaml.cs">
+    <Compile Include="Source\UI\IntroScreen.xaml.cs">
       <DependentUpon>IntroScreen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\MainGame.xaml.cs">
+    <Compile Include="Source\UI\MainGame.xaml.cs">
       <DependentUpon>MainGame.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Switcher.cs" />
-    <Compile Include="UI\UserCreation.xaml.cs">
+    <Compile Include="Source\UI\Switcher.cs" />
+    <Compile Include="Source\UI\UserCreation.xaml.cs">
       <DependentUpon>UserCreation.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Source\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -172,14 +172,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
+    <None Include="Source\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Source\App.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -194,39 +194,69 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Source\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\InGameUI\AllTeamsPage.xaml">
+    <Page Include="Source\UI\InGameUI\AllTeamsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UI\InGameUI\AllPlayersPage.xaml">
+    <Page Include="Source\UI\InGameUI\AllPlayersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\InGameUI\BuyPlayersPage.xaml">
+    <Page Include="Source\UI\InGameUI\BuyPlayersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\InGameUI\HomeScreenPage.xaml">
+    <Page Include="Source\UI\InGameUI\HomeScreenPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\IntroScreen.xaml">
+    <Page Include="Source\UI\IntroScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\MainGame.xaml">
+    <Page Include="Source\UI\MainGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UI\UserCreation.xaml">
+    <Page Include="Source\UI\UserCreation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Assets\Badges\b1.png" />
+    <Resource Include="Assets\Badges\b10.png" />
+    <Resource Include="Assets\Badges\b11.png" />
+    <Resource Include="Assets\Badges\b12.png" />
+    <Resource Include="Assets\Badges\b13.png" />
+    <Resource Include="Assets\Badges\b14.png" />
+    <Resource Include="Assets\Badges\b15.png" />
+    <Resource Include="Assets\Badges\b16.png" />
+    <Resource Include="Assets\Badges\b17.png" />
+    <Resource Include="Assets\Badges\b18.png" />
+    <Resource Include="Assets\Badges\b2.png" />
+    <Resource Include="Assets\Badges\b3.png" />
+    <Resource Include="Assets\Badges\b4.png" />
+    <Resource Include="Assets\Badges\b5.png" />
+    <Resource Include="Assets\Badges\b6.png" />
+    <Resource Include="Assets\Badges\b7.png" />
+    <Resource Include="Assets\Badges\b8.png" />
+    <Resource Include="Assets\Badges\b9.png" />
+    <Resource Include="Assets\Badges\badges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Badges\Templates\t1.png" />
+    <Resource Include="Assets\Badges\Templates\t2.png" />
+    <Resource Include="Assets\Badges\Templates\t3.png" />
+    <Resource Include="Assets\Badges\Templates\t4.png" />
+    <Resource Include="Assets\Badges\Templates\t5.png" />
+    <Resource Include="Assets\Badges\Templates\t6.png" />
+    <Resource Include="Assets\Badges\Templates\t7.png" />
+    <Resource Include="Assets\Badges\Templates\templates.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
