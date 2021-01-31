@@ -327,10 +327,10 @@
     <Resource Include="Assets\Pixel Portraits\male_15.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\SplashScreen\3bfe59e5ed109239c6e89b9b05997983.png" />
-    <Resource Include="Assets\SplashScreen\6729a315a8541d1dc3c4aa64d14e8230.png" />
-    <Resource Include="Assets\SplashScreen\818d4a62ddbd591fbea4685562efdcc0.png" />
-    <Resource Include="Assets\SplashScreen\fd27a3beb4a9b4ea0ad34653c9324fb6.png" />
+    <Resource Include="Assets\SplashScreen\MANAGER-Black.png" />
+    <Resource Include="Assets\SplashScreen\MANAGER-Gray.png" />
+    <Resource Include="Assets\SplashScreen\MOBA-Gray.png" />
+    <Resource Include="Assets\SplashScreen\MOBA-Black.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
