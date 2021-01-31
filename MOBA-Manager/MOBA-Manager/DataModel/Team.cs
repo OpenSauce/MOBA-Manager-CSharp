@@ -10,6 +10,7 @@ namespace MOBA_Manager.DataModel
         private String teamName;
         private Double cash;
 
+        public String TeamName { get => teamName; set => teamName = value; }
         public Double Reputation { get => reputation; set => reputation = value; }
         public Double Cash { get => cash; set => cash = value; }
 

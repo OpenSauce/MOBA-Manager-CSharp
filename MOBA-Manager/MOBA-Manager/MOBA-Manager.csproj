@@ -114,6 +114,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataModel\BaseEntity.cs" />
+    <Compile Include="UI\InGameUI\AllTeamsPage.xaml.cs">
+      <DependentUpon>AllTeamsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\ControlledRandom.cs" />
     <Compile Include="DataModel\IBaseEntity.cs" />
     <Compile Include="DataModel\Player.cs" />
@@ -194,6 +197,10 @@
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\InGameUI\AllTeamsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UI\InGameUI\AllPlayersPage.xaml">
       <SubType>Designer</SubType>

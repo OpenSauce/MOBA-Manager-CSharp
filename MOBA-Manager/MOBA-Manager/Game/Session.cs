@@ -54,5 +54,10 @@ namespace MOBA_Manager.Game
             teamList.Add(this.mainPlayer.Team);
             Switcher.Switch(new MainGame(new MainGameEngine(this)));
         }
+
+        internal List<Team> GetTeamList()
+        {
+            return this.teamList;
+        }
     }
 }

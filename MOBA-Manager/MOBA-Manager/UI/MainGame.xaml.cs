@@ -49,6 +49,12 @@ namespace MOBA_Manager.UI
         {
             this.gameEngine.ProceedGame();
             SetupUI();
+            InMainGameFrame.Navigate(new MOBA_Manager.UI.InGameUI.HomeScreenPage());
+        }
+
+        private void AllTeamsButton_Click(object sender, RoutedEventArgs e)
+        {
+            InMainGameFrame.Navigate(new AllTeamsPage(this.gameEngine.PlayerSession.GetTeamList()));
         }
     }
 }

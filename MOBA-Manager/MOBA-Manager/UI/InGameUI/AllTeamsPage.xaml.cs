@@ -8,23 +8,23 @@ namespace MOBA_Manager.UI.InGameUI
     /// <summary>
     /// Interaction logic for AllPlayersPage.xaml
     /// </summary>
-    public partial class AllPlayersPage : Page
+    public partial class AllTeamsPage : Page
     {
-        public AllPlayersPage()
+        public AllTeamsPage()
         {
             InitializeComponent();
         }
 
-        public AllPlayersPage(List<Player> playerList)
+        public AllTeamsPage(List<Team> teamList)
         {
             InitializeComponent();
 
-            ObservableCollection<Player> playerCollection = new ObservableCollection<Player>();
-            foreach (Player p in playerList)
+            ObservableCollection<Team> teamCollection = new ObservableCollection<Team>();
+            foreach (Team t in teamList)
             {
-                playerCollection.Add(p);
+                teamCollection.Add(t);
             }
-            dataGrid.ItemsSource = playerCollection;
+            dataGrid.ItemsSource = teamCollection;
         }
     }
 }
