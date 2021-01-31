@@ -28,6 +28,7 @@ namespace MOBA_Manager.UI
         {
             FullNameLabel.Content = gameEngine.PlayerSession.GetUserFullName();
             CashLabel.Content = gameEngine.PlayerSession.GetCash();
+            InMainGameFrame.Navigate(new HomeScreenPage());
         }
 
         private void AllPlayerButton_Click(object sender, RoutedEventArgs e)
@@ -49,7 +50,6 @@ namespace MOBA_Manager.UI
         {
             this.gameEngine.ProceedGame();
             SetupUI();
-            InMainGameFrame.Navigate(new MOBA_Manager.UI.InGameUI.HomeScreenPage());
         }
 
         private void AllTeamsButton_Click(object sender, RoutedEventArgs e)
