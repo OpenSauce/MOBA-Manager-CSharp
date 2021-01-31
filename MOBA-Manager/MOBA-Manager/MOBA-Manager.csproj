@@ -172,6 +172,39 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Assets\Pixel Portraits\all_sprites.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_00.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_01.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_02.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_03.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_04.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_05.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_06.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_07.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_08.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_09.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_10.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_11.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_12.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_13.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_14.aseprite" />
+    <None Include="Assets\Pixel Portraits\female_15.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_00.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_01.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_02.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_03.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_04.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_05.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_06.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_07.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_08.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_09.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_10.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_11.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_12.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_13.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_14.aseprite" />
+    <None Include="Assets\Pixel Portraits\male_15.aseprite" />
     <None Include="Source\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -257,6 +290,41 @@
     <Resource Include="Assets\Badges\Templates\t6.png" />
     <Resource Include="Assets\Badges\Templates\t7.png" />
     <Resource Include="Assets\Badges\Templates\templates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pixel Portraits\all_sprites.png" />
+    <Resource Include="Assets\Pixel Portraits\female_00.png" />
+    <Resource Include="Assets\Pixel Portraits\female_01.png" />
+    <Resource Include="Assets\Pixel Portraits\female_02.png" />
+    <Resource Include="Assets\Pixel Portraits\female_03.png" />
+    <Resource Include="Assets\Pixel Portraits\female_04.png" />
+    <Resource Include="Assets\Pixel Portraits\female_05.png" />
+    <Resource Include="Assets\Pixel Portraits\female_06.png" />
+    <Resource Include="Assets\Pixel Portraits\female_07.png" />
+    <Resource Include="Assets\Pixel Portraits\female_08.png" />
+    <Resource Include="Assets\Pixel Portraits\female_09.png" />
+    <Resource Include="Assets\Pixel Portraits\female_10.png" />
+    <Resource Include="Assets\Pixel Portraits\female_11.png" />
+    <Resource Include="Assets\Pixel Portraits\female_12.png" />
+    <Resource Include="Assets\Pixel Portraits\female_13.png" />
+    <Resource Include="Assets\Pixel Portraits\female_14.png" />
+    <Resource Include="Assets\Pixel Portraits\female_15.png" />
+    <Resource Include="Assets\Pixel Portraits\male_00.png" />
+    <Resource Include="Assets\Pixel Portraits\male_01.png" />
+    <Resource Include="Assets\Pixel Portraits\male_02.png" />
+    <Resource Include="Assets\Pixel Portraits\male_03.png" />
+    <Resource Include="Assets\Pixel Portraits\male_04.png" />
+    <Resource Include="Assets\Pixel Portraits\male_05.png" />
+    <Resource Include="Assets\Pixel Portraits\male_06.png" />
+    <Resource Include="Assets\Pixel Portraits\male_07.png" />
+    <Resource Include="Assets\Pixel Portraits\male_08.png" />
+    <Resource Include="Assets\Pixel Portraits\male_09.png" />
+    <Resource Include="Assets\Pixel Portraits\male_10.png" />
+    <Resource Include="Assets\Pixel Portraits\male_11.png" />
+    <Resource Include="Assets\Pixel Portraits\male_12.png" />
+    <Resource Include="Assets\Pixel Portraits\male_13.png" />
+    <Resource Include="Assets\Pixel Portraits\male_14.png" />
+    <Resource Include="Assets\Pixel Portraits\male_15.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
