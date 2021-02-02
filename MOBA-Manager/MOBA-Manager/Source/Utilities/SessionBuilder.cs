@@ -37,7 +37,14 @@ namespace MOBA_Manager.Game
         private void LoadGameEntities()
         {
             this.session.SetPlayerData(LoadPlayers());
+            this.session.BuyablePlayers = LoadBuyablePlayers();
             this.session.SetTeamData(LoadTeams());
+        }
+
+        private List<Player> LoadBuyablePlayers()
+        {
+            IPlayerFactory playerCreator = new PlayerGenerator();
+            return playerCreator.LoadPlayers();
         }
 
         public List<Player> LoadPlayers()

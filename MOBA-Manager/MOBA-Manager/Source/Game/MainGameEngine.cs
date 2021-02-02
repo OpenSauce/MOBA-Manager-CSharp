@@ -34,7 +34,7 @@ namespace MOBA_Manager.Game
 
         private void GenerateBuyablePlayers()
         {
-            if(playerSession.BuyablePlayers != null && playerSession.BuyablePlayers.Count > 0) 
+            if (playerSession.BuyablePlayers != null && playerSession.BuyablePlayers.Count > 0)
             {
                 List<Player> newList = playerSession.GetPlayerList();
                 newList.AddRange(playerSession.BuyablePlayers);
@@ -46,7 +46,6 @@ namespace MOBA_Manager.Game
                 newBuyableList.Add(playerGenerator.GenerateNewPlayer());
             }
             playerSession.BuyablePlayers = newBuyableList;
-
         }
 
         private void CalculateTeamUpdates()

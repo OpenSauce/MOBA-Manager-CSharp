@@ -1,21 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MOBA_Manager.Source.Game
+﻿namespace MOBA_Manager.Source.Game
 {
-    class AssetHandler
+    internal class AssetHandler
     {
-
-
         private bool LoadPortraits()
         {
             var result = true;
 
             return result;
         }
-
     }
 }

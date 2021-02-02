@@ -2,7 +2,6 @@
 using RandomNameGeneratorLibrary;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Windows.Media.Imaging;
 
 namespace MOBA_Manager.Game
@@ -19,11 +18,12 @@ namespace MOBA_Manager.Game
 
         public List<Player> LoadPlayers()
         {
-            return GenerateListOfPlayers(new List<Player>());
+            return GenerateListOfPlayers();
         }
 
-        public List<Player> GenerateListOfPlayers(List<Player> listOfPlayers)
+        public List<Player> GenerateListOfPlayers()
         {
+            List<Player> listOfPlayers = new List<Player>();
             for (int i = 0; i < MAX_PLAYERS; i++)
             {
                 listOfPlayers.Add(GenerateNewPlayer());
@@ -51,7 +51,7 @@ namespace MOBA_Manager.Game
             bi.BeginInit();
             int number = ControlledRandom.RandomNumber(0, 15);
             var myString = number < 10 ? "0" + number : number.ToString();
-            bi.UriSource = new Uri(@"\Assets\Pixel Portraits\male_"+ myString + ".png", UriKind.RelativeOrAbsolute);
+            bi.UriSource = new Uri(@"\Assets\Pixel Portraits\male_" + myString + ".png", UriKind.RelativeOrAbsolute);
             bi.EndInit();
             return bi;
         }

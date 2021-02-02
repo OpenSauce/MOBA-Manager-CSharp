@@ -19,6 +19,6 @@
         <Button Content="Continue" Margin="0" Height="50" VerticalAlignment="Bottom" Click="Button_Click" Background="White" BorderBrush="White" FontFamily="Segoe UI Light" FontSize="16" />
         <Button x:Name="AllTeamsButton" Content="All Teams" HorizontalAlignment="Right" Margin="0,35,150,0" VerticalAlignment="Top" Width="90" Height="35" BorderThickness="2" Background="White" BorderBrush="Black" Click="AllTeamsButton_Click" FontFamily="Segoe UI Light" FontSize="16" />
         <Button x:Name="AllPlayerButton" Content="All Players" HorizontalAlignment="Right" Margin="0,35,275,0" VerticalAlignment="Top" Width="90" Click="AllPlayerButton_Click" Height="35" BorderThickness="2" BorderBrush="Black" Background="White" FontFamily="Segoe UI Light" FontSize="16" />
-        <Button Content="S" HorizontalAlignment="Right" Margin="0,5,5,0" VerticalAlignment="Top" Width="25" Background="White" BorderBrush="Black" BorderThickness="2" Height="25"/>
+        <Button Content="S" HorizontalAlignment="Right" Margin="0,5,5,0" VerticalAlignment="Top" Width="25" Background="White" BorderBrush="Black" BorderThickness="2" Height="25" />
     </Grid>
 </Page>

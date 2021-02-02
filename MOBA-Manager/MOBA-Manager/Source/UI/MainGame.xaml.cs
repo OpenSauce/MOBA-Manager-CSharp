@@ -38,7 +38,7 @@ namespace MOBA_Manager.UI
 
         private void BuyPlayersButton_Click(object sender, RoutedEventArgs e)
         {
-            InMainGameFrame.Navigate(new BuyPlayersPage(this.gameEngine.PlayerSession.GetPlayerList()));
+            InMainGameFrame.Navigate(new BuyPlayersPage(this.gameEngine.PlayerSession.BuyablePlayers));
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -56,6 +56,5 @@ namespace MOBA_Manager.UI
         {
             InMainGameFrame.Navigate(new AllTeamsPage(this.gameEngine.PlayerSession.GetTeamList()));
         }
-
     }
 }
