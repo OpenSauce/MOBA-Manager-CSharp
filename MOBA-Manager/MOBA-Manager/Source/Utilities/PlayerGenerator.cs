@@ -33,15 +33,23 @@ namespace MOBA_Manager.Game
 
         public Player GenerateNewPlayer()
         {
-            return GenerateNewPlayer(_g.GenerateRandomMaleFirstName(), "", _g.GenerateRandomLastName());
+            int number = ControlledRandom.RandomNumber(0, 10);
+            if (number < 5)
+            {
+                return GenerateNewPlayer(_g.GenerateRandomMaleFirstName(), "", _g.GenerateRandomLastName(), true);
+            }
+            else
+            {
+                return GenerateNewPlayer(_g.GenerateRandomFemaleFirstName(), "", _g.GenerateRandomLastName(), false);
+            }
         }
 
-        public Player GenerateNewPlayer(String firstName, String middleName, String lastName)
+        public Player GenerateNewPlayer(String firstName, String middleName, String lastName, bool gender)
         {
             Player generatedPlayer = new Player(firstName, middleName, lastName);
             generatedPlayer.Age = ControlledRandom.RandomNumber(16, 26);
             generatedPlayer.PopulateSkills(ControlledRandom.RandomNumber(1, 200));
-            generatedPlayer.IconIndex = GetPlayerPortrait(true);
+            generatedPlayer.IconIndex = GetPlayerPortrait(gender);
             return generatedPlayer;
         }
 
@@ -51,7 +59,8 @@ namespace MOBA_Manager.Game
             bi.BeginInit();
             int number = ControlledRandom.RandomNumber(0, 15);
             var myString = number < 10 ? "0" + number : number.ToString();
-            bi.UriSource = new Uri(@"\Assets\Pixel Portraits\male_" + myString + ".png", UriKind.RelativeOrAbsolute);
+            var gender = male ? "male" : "female";
+            bi.UriSource = new Uri(@"\Assets\Pixel Portraits\" + gender + "_" + myString + ".png", UriKind.RelativeOrAbsolute);
             bi.EndInit();
             return bi;
         }
