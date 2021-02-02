@@ -12,6 +12,7 @@ namespace MOBA_Manager.Game
         private List<Team> teamList;
         public User MainPlayer { get => mainPlayer; set => mainPlayer = value; }
         public List<Team> TeamList { get => teamList; set => teamList = value; }
+        public List<Player> BuyablePlayers { get; set; }
 
         public Session()
         {

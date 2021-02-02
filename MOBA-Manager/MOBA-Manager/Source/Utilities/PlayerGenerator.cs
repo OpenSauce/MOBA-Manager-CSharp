@@ -10,28 +10,33 @@ namespace MOBA_Manager.Game
     internal class PlayerGenerator : IPlayerFactory
     {
         private const int MAX_PLAYERS = 100;
+        private PersonNameGenerator _g;
+
+        public PlayerGenerator()
+        {
+            _g = new PersonNameGenerator();
+        }
 
         public List<Player> LoadPlayers()
         {
             return GenerateListOfPlayers(new List<Player>());
         }
 
-        private List<Player> GenerateListOfPlayers(List<Player> listOfPlayers)
+        public List<Player> GenerateListOfPlayers(List<Player> listOfPlayers)
         {
-            PersonNameGenerator _g = new PersonNameGenerator();
             for (int i = 0; i < MAX_PLAYERS; i++)
             {
-                listOfPlayers.Add(GenerateNewPlayer(_g.GenerateRandomMaleFirstName(), _g.GenerateRandomMaleFirstName(), _g.GenerateRandomLastName()));
+                listOfPlayers.Add(GenerateNewPlayer());
             }
             return listOfPlayers;
         }
 
-        private Player GenerateNewPlayer(String firstName, String lastName)
+        public Player GenerateNewPlayer()
         {
-            return GenerateNewPlayer(firstName, "", lastName);
+            return GenerateNewPlayer(_g.GenerateRandomMaleFirstName(), "", _g.GenerateRandomLastName());
         }
 
-        private Player GenerateNewPlayer(String firstName, String middleName, String lastName)
+        public Player GenerateNewPlayer(String firstName, String middleName, String lastName)
         {
             Player generatedPlayer = new Player(firstName, middleName, lastName);
             generatedPlayer.Age = ControlledRandom.RandomNumber(16, 26);
@@ -43,7 +48,6 @@ namespace MOBA_Manager.Game
         public static BitmapImage GetPlayerPortrait(bool male)
         {
             BitmapImage bi = new BitmapImage();
-            // BitmapImage.UriSource must be in a BeginInit/EndInit block.
             bi.BeginInit();
             int number = ControlledRandom.RandomNumber(0, 15);
             var myString = number < 10 ? "0" + number : number.ToString();
