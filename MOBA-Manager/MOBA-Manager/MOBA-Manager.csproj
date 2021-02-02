@@ -118,6 +118,9 @@
     <Compile Include="Source\UI\InGameUI\AllTeamsPage.xaml.cs">
       <DependentUpon>AllTeamsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Source\UI\InGameUI\BuyPlayerControl.xaml.cs">
+      <DependentUpon>BuyPlayerControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Source\Utilities\ControlledRandom.cs" />
     <Compile Include="Source\DataModel\IBaseEntity.cs" />
     <Compile Include="Source\DataModel\Player.cs" />
@@ -237,6 +240,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Source\UI\InGameUI\AllPlayersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\UI\InGameUI\BuyPlayerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
