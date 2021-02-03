@@ -340,5 +340,8 @@
     <Resource Include="Assets\SplashScreen\MOBA-Gray.png" />
     <Resource Include="Assets\SplashScreen\MOBA-Black.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\UI\money-stack.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
