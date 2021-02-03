@@ -5,8 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:MOBA_Manager.Source.UI.InGameUI"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Height="64">
-        <Image HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="64" />
+             d:DesignHeight="450" d:DesignWidth="800" BorderBrush="White" Height="64" Margin="0">
+    <UserControl.Background>
+        <SolidColorBrush Color="Black" Opacity="0.4" />
+    </UserControl.Background>
+    <Grid Height="64" Margin="0">
+        <Image x:Name="PlayerPortrait" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="64" />
+        <Label x:Name="PlayerNameLabel" Content="Label" HorizontalAlignment="Left" Margin="116,18,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Light" />
     </Grid>
 </UserControl>

@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Source.UI.InGameUI;
 using System.Collections.Generic;
 using System.Windows.Controls;
 
@@ -14,7 +15,10 @@ namespace MOBA_Manager.UI.InGameUI
             //List<Player> playerList;
             InitializeComponent();
 
-            playerPortrait.Source = playerList[0].IconIndex;
+            foreach (Player p in playerList)
+            {
+                BuyPlayerStackPanel.Children.Add(new BuyPlayerControl(p));
+            }
         }
     }
 }

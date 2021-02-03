@@ -9,9 +9,10 @@
       Title="BuyPlayersPage">
 
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="276" Margin="46,77,0,0" VerticalAlignment="Top" Width="694" Background="#FF191B1B">
-            <Image x:Name="playerPortrait" Height="75" Width="79" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" />
+        <StackPanel x:Name="BuyPlayerStackPanel" Margin="100">
+            <StackPanel.Background>
+                <SolidColorBrush Color="#FF191B1B" Opacity="0.6" />
+            </StackPanel.Background>
         </StackPanel>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="363,393,0,0" VerticalAlignment="Top" Width="75" />
     </Grid>
 </Page>
