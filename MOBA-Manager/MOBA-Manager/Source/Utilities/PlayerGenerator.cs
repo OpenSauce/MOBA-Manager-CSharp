@@ -31,6 +31,16 @@ namespace MOBA_Manager.Game
             return listOfPlayers;
         }
 
+        public List<Player> GeneratePlayers(int numberOfPlayers)
+        {
+            List<Player> playerList = new List<Player>();
+            for (int i = 0; i < numberOfPlayers; i++)
+            {
+                playerList.Add(GenerateNewPlayer());
+            }
+            return playerList;
+        }
+
         public Player GenerateNewPlayer()
         {
             int number = ControlledRandom.RandomNumber(0, 10);

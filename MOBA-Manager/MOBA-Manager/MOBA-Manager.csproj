@@ -270,7 +270,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Badges\b1.png" />
-    <Resource Include="Assets\Badges\b10.png" />
+    <Resource Include="Assets\Badges\Kryptonite.png" />
     <Resource Include="Assets\Badges\b11.png" />
     <Resource Include="Assets\Badges\b12.png" />
     <Resource Include="Assets\Badges\b13.png" />

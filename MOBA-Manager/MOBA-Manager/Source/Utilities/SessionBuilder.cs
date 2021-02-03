@@ -43,8 +43,8 @@ namespace MOBA_Manager.Game
 
         private List<Player> LoadBuyablePlayers()
         {
-            IPlayerFactory playerCreator = new PlayerGenerator();
-            return playerCreator.LoadPlayers();
+            PlayerGenerator playerCreator = new PlayerGenerator();
+            return playerCreator.GeneratePlayers(5);
         }
 
         public List<Player> LoadPlayers()
