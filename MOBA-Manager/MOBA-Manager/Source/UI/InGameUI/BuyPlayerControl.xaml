@@ -12,12 +12,12 @@
     <Grid Height="64" Margin="0">
         <Image x:Name="PlayerPortrait" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="64" />
         <Label x:Name="PlayerNameLabel" Content="Label" HorizontalAlignment="Left" Margin="116,18,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Light" />
-        <Button Content="" HorizontalAlignment="Left" Margin="758,17,0,0" VerticalAlignment="Top" Width="32" Height="32">
+        <Button Content="" HorizontalAlignment="Right" Margin="0,0,20,0" VerticalAlignment="Center" Width="75" Height="45">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Background>
-                <ImageBrush ImageSource="/MOBA-Manager;component/Assets/UI/money-stack.png" Stretch="Uniform"/>
+                <ImageBrush ImageSource="/MOBA-Manager;component/Assets/UI/money-stack.png" Stretch="None"/>
             </Button.Background>
         </Button>
     </Grid>
