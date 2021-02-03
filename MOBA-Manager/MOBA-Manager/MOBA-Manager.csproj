@@ -115,10 +115,10 @@
     </Compile>
     <Compile Include="Source\DataModel\BaseEntity.cs" />
     <Compile Include="Source\Game\AssetHandler.cs" />
-    <Compile Include="Source\UI\InGameUI\AllTeamsPage.xaml.cs">
+    <Compile Include="Source\UI\InGameUI\AllTeams\AllTeamsPage.xaml.cs">
       <DependentUpon>AllTeamsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Source\UI\InGameUI\BuyPlayerControl.xaml.cs">
+    <Compile Include="Source\UI\InGameUI\BuyPlayers\BuyPlayerControl.xaml.cs">
       <DependentUpon>BuyPlayerControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Source\Utilities\ControlledRandom.cs" />
@@ -135,10 +135,10 @@
     <Compile Include="Source\Utilities\SessionBuilder.cs" />
     <Compile Include="Source\Utilities\TeamGenerator.cs" />
     <Compile Include="Source\Utilities\UserBuilder.cs" />
-    <Compile Include="Source\UI\InGameUI\AllPlayersPage.xaml.cs">
+    <Compile Include="Source\UI\InGameUI\AllPlayers\AllPlayersPage.xaml.cs">
       <DependentUpon>AllPlayersPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Source\UI\InGameUI\BuyPlayersPage.xaml.cs">
+    <Compile Include="Source\UI\InGameUI\BuyPlayers\BuyPlayersPage.xaml.cs">
       <DependentUpon>BuyPlayersPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Source\UI\InGameUI\HomeScreenPage.xaml.cs">
@@ -235,19 +235,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\InGameUI\AllTeamsPage.xaml">
+    <Page Include="Source\UI\InGameUI\AllTeams\AllTeamsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Source\UI\InGameUI\AllPlayersPage.xaml">
+    <Page Include="Source\UI\InGameUI\AllPlayers\AllPlayersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\InGameUI\BuyPlayerControl.xaml">
+    <Page Include="Source\UI\InGameUI\BuyPlayers\BuyPlayerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\InGameUI\BuyPlayersPage.xaml">
+    <Page Include="Source\UI\InGameUI\BuyPlayers\BuyPlayersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
