@@ -271,20 +271,20 @@
   <ItemGroup>
     <Resource Include="Assets\Badges\PineappleFury.png" />
     <Resource Include="Assets\Badges\Kryptonite.png" />
-    <Resource Include="Assets\Badges\b11.png" />
+    <Resource Include="Assets\Badges\DugglyHucklings.png" />
     <Resource Include="Assets\Badges\b12.png" />
     <Resource Include="Assets\Badges\b13.png" />
     <Resource Include="Assets\Badges\ShrewCrew.png" />
     <Resource Include="Assets\Badges\b15.png" />
-    <Resource Include="Assets\Badges\b16.png" />
+    <Resource Include="Assets\Badges\TheStabbyStabbers.png" />
     <Resource Include="Assets\Badges\b17.png" />
     <Resource Include="Assets\Badges\b18.png" />
-    <Resource Include="Assets\Badges\b2.png" />
+    <Resource Include="Assets\Badges\ConcertCrashers.png" />
     <Resource Include="Assets\Badges\b3.png" />
     <Resource Include="Assets\Badges\b4.png" />
     <Resource Include="Assets\Badges\GoochyConkers.png" />
     <Resource Include="Assets\Badges\b6.png" />
-    <Resource Include="Assets\Badges\b7.png" />
+    <Resource Include="Assets\Badges\CoolKidsCollective.png" />
     <Resource Include="Assets\Badges\b8.png" />
     <Resource Include="Assets\Badges\TheDuelists.png" />
     <Resource Include="Assets\Badges\badges.png" />
