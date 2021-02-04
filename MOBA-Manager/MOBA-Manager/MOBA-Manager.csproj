@@ -286,7 +286,7 @@
     <Resource Include="Assets\Badges\b6.png" />
     <Resource Include="Assets\Badges\b7.png" />
     <Resource Include="Assets\Badges\b8.png" />
-    <Resource Include="Assets\Badges\b9.png" />
+    <Resource Include="Assets\Badges\TheDuelists.png" />
     <Resource Include="Assets\Badges\badges.png" />
   </ItemGroup>
   <ItemGroup>
