@@ -210,6 +210,7 @@
     <None Include="Assets\Pixel Portraits\male_13.aseprite" />
     <None Include="Assets\Pixel Portraits\male_14.aseprite" />
     <None Include="Assets\Pixel Portraits\male_15.aseprite" />
+    <Content Include="Fonts\ThaleahFat.ttf" />
     <None Include="Source\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
