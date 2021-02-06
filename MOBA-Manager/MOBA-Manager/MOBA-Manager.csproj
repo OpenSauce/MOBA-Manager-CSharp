@@ -210,7 +210,7 @@
     <None Include="Assets\Pixel Portraits\male_13.aseprite" />
     <None Include="Assets\Pixel Portraits\male_14.aseprite" />
     <None Include="Assets\Pixel Portraits\male_15.aseprite" />
-    <Content Include="Fonts\ThaleahFat.ttf" />
+    <Resource Include="Fonts\ThaleahFat.ttf" />
     <None Include="Source\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -271,24 +271,24 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Badges\PineappleFury.png" />
+    <Resource Include="Assets\Badges\Pineapple Fury.png" />
     <Resource Include="Assets\Badges\Kryptonite.png" />
-    <Resource Include="Assets\Badges\DugglyHucklings.png" />
-    <Resource Include="Assets\Badges\b12.png" />
-    <Resource Include="Assets\Badges\b13.png" />
-    <Resource Include="Assets\Badges\ShrewCrew.png" />
-    <Resource Include="Assets\Badges\BlueAzuls.png" />
-    <Resource Include="Assets\Badges\TheStabbyStabbers.png" />
-    <Resource Include="Assets\Badges\RedRouges.png" />
-    <Resource Include="Assets\Badges\b18.png" />
-    <Resource Include="Assets\Badges\ConcertCrashers.png" />
-    <Resource Include="Assets\Badges\TheFisters.png" />
-    <Resource Include="Assets\Badges\b4.png" />
-    <Resource Include="Assets\Badges\GoochyConkers.png" />
-    <Resource Include="Assets\Badges\b6.png" />
-    <Resource Include="Assets\Badges\WePissInBottles.png" />
-    <Resource Include="Assets\Badges\b8.png" />
-    <Resource Include="Assets\Badges\TheDuelists.png" />
+    <Resource Include="Assets\Badges\Duggly Hucklings.png" />
+    <Resource Include="Assets\Badges\Team 2.png" />
+    <Resource Include="Assets\Badges\Team 3.png" />
+    <Resource Include="Assets\Badges\Shrew Crew.png" />
+    <Resource Include="Assets\Badges\Blue Azuls.png" />
+    <Resource Include="Assets\Badges\The Stabby Stabbers.png" />
+    <Resource Include="Assets\Badges\Red Rouges.png" />
+    <Resource Include="Assets\Badges\Team 4.png" />
+    <Resource Include="Assets\Badges\Concert Crashers.png" />
+    <Resource Include="Assets\Badges\The Fisters.png" />
+    <Resource Include="Assets\Badges\Team 5.png" />
+    <Resource Include="Assets\Badges\Goochy Conkers.png" />
+    <Resource Include="Assets\Badges\Team 6.png" />
+    <Resource Include="Assets\Badges\We Piss In Bottles.png" />
+    <Resource Include="Assets\Badges\Team 1.png" />
+    <Resource Include="Assets\Badges\The Duelists.png" />
     <Resource Include="Assets\Badges\badges.png" />
   </ItemGroup>
   <ItemGroup>

@@ -9,9 +9,11 @@
       Title="IntoScreen">
 
     <Grid Background="#FF1B3B91">
-        <Button x:Name="BeginButton" Content="Begin" HorizontalAlignment="Left" Margin="200,399,0,0" VerticalAlignment="Top" Width="126" Click="Button_Click" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" MouseEnter="Button_MouseEnter" MouseLeave="BeginButton_MouseLeave" FontFamily="/MOBA-Manager;component/NewFolder1/#ThaleahFat" HorizontalContentAlignment="Left" FontSize="24" />
-        <Button Content="Load" HorizontalAlignment="Left" Margin="200,460,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click" BorderBrush="#331B3B91" Foreground="White" Background="{x:Null}" FontSize="36" FontFamily="SimSun-ExtB" HorizontalContentAlignment="Left" />
+        <Button x:Name="BeginButton" Content="Begin" HorizontalAlignment="Left" Margin="200,100,0,0" VerticalAlignment="Center" Click="Button_Click" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" MouseEnter="Button_MouseEnter" MouseLeave="BeginButton_MouseLeave" FontFamily="{StaticResource ThaleahFat}" HorizontalContentAlignment="Left" FontSize="72" Style="{DynamicResource ButtonStyle1}" />
+        <Button Content="Load" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Center" Click="Button_Click" BorderBrush="#331B3B91" Foreground="White" Background="{x:Null}" FontSize="72" FontFamily="{StaticResource ThaleahFat}" HorizontalContentAlignment="Left" Style="{DynamicResource ButtonStyle1}" />
         <Image HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="431" Source="/MOBA-Manager;component/Assets/SplashScreen/MOBA-Black.png" />
         <Image HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="767" Source="/MOBA-Manager;component/Assets/SplashScreen/Manager-Black.png" />
+        <Button Content="Settings" HorizontalAlignment="Left" Margin="200,400,0,0" VerticalAlignment="Center" Click="Button_Click" BorderBrush="#331B3B91" Foreground="White" Background="{x:Null}" FontSize="72" FontFamily="{StaticResource ThaleahFat}" HorizontalContentAlignment="Left" Style="{DynamicResource ButtonStyle1}" />
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="200,550,0,0" VerticalAlignment="Center" Click="Button_Click" BorderBrush="#331B3B91" Foreground="White" Background="{x:Null}" FontSize="72" FontFamily="{StaticResource ThaleahFat}" HorizontalContentAlignment="Left" Style="{DynamicResource ButtonStyle1}" />
     </Grid>
 </Page>

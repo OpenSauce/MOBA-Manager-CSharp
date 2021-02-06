@@ -11,10 +11,10 @@
         <Label Content="User Creation" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48" FontFamily="Segoe UI Light" />
         <Button x:Name="BeginButton" Content="Start" HorizontalAlignment="Right" Margin="0,0,20,20" VerticalAlignment="Bottom" Width="75" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" FontSize="20" Click="BeginButton_Click" />
         <Label Content="First Name:" HorizontalAlignment="Left" Margin="51,116,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Semibold" />
-        <Label Content="Last Name:" Width="100" HorizontalAlignment="Left" Margin="51,157,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Semibold" />
-        <TextBox x:Name="LastNameBox" HorizontalAlignment="Left" Height="23" Margin="151,161,0,0" TextWrapping="Wrap" Text="Lawley" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Light" FontSize="16" />
+        <Label Content="Last Name:" Width="100" HorizontalAlignment="Left" Margin="368,116,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Semibold" />
+        <TextBox x:Name="LastNameBox" HorizontalAlignment="Left" Height="23" Margin="468,120,0,0" TextWrapping="Wrap" Text="Lawley" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Light" FontSize="16" />
         <TextBox x:Name="FirstNameBox" HorizontalAlignment="Left" Height="23" Margin="151,120,0,0" TextWrapping="Wrap" Text="Leigh" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Light" FontSize="16" />
-        <Label Content="Team Name:" HorizontalAlignment="Left" Margin="522,116,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Semibold" />
-        <TextBox x:Name="TeamNameBox" HorizontalAlignment="Left" Height="23" Margin="643,120,0,0" TextWrapping="Wrap" Text="The Fisters" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Light" FontSize="16" />
+        <Label Content="Team Name:" HorizontalAlignment="Left" Margin="393,152,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" FontFamily="Segoe UI Semibold" />
+        <ComboBox x:Name="teamCombo" HorizontalAlignment="Left" Margin="506,161,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" />
     </Grid>
 </Page>

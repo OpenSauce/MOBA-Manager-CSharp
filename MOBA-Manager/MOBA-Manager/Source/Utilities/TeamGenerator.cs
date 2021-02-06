@@ -1,6 +1,7 @@
 ﻿using MOBA_Manager.DataModel;
 using System;
 using System.Collections.Generic;
+using System.Windows.Media.Imaging;
 
 namespace MOBA_Manager.Game
 {
@@ -20,20 +21,57 @@ namespace MOBA_Manager.Game
 
         private List<Team> GenerateListOfTeams(List<Team> teamList)
         {
-            for (int i = 0; i < MAX_TEAMS; i++)
+            string[] teamNames = GetTeamNames();
+            for (int i = 0; i < teamNames.Length; i++)
             {
-                teamList.Add(GenerateNewTeam("GeneratedTeam" + i.ToString()));
+                teamList.Add(GenerateNewTeam(teamNames[i]));
             }
 
             return teamList;
+        }
+
+        private string[] GetTeamNames()
+        {
+            string[] teamNames = {
+                "Blue Azuls",
+                "Concert Crashers",
+                "Duggly Hucklings",
+                "Goochy Conkers",
+                "Kryptonite",
+                "Pineapple Fury",
+                "Red Rouges",
+                "Shrew Crew",
+                "Team 1",
+                "Team 2",
+                "Team 3",
+                "Team 4",
+                "Team 5",
+                "Team 6",
+                "The Duelists",
+                "The Fisters",
+                "The Stabby Stabbers",
+                "We Piss In Bottles"
+            };
+            Array.Sort(teamNames, (x, y) => String.Compare(x, y));
+            return teamNames;
         }
 
         public static Team GenerateNewTeam(String teamName)
         {
             Team generatedTeam = new Team();
             generatedTeam.SetTeamName(teamName);
+            generatedTeam.TeamBadge = GetTeamBadge(teamName);
             generatedTeam.Reputation = ControlledRandom.RandomNumber(1, 1000);
             return generatedTeam;
+        }
+
+        public static BitmapImage GetTeamBadge(string teamName)
+        {
+            BitmapImage bi = new BitmapImage();
+            bi.BeginInit();
+            bi.UriSource = new Uri(@"\Assets\Badges\" + teamName + ".png", UriKind.RelativeOrAbsolute);
+            bi.EndInit();
+            return bi;
         }
     }
 }

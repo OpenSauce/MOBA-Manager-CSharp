@@ -16,6 +16,7 @@ namespace MOBA_Manager.UI
         {
             this.sessionBuilder = sessionBuilder;
             InitializeComponent();
+            teamCombo.ItemsSource = sessionBuilder.GetSession().GetTeamList();
             UserBuilder.CreateUser();
         }
 
@@ -29,7 +30,7 @@ namespace MOBA_Manager.UI
         private User BuildUser()
         {
             UserBuilder.WithName(FirstNameBox.Text, LastNameBox.Text);
-            UserBuilder.WithTeam(TeamNameBox.Text);
+            //UserBuilder.WithTeam();
             return UserBuilder.GetInstance();
         }
     }
