@@ -1,4 +1,5 @@
-﻿using MOBA_Manager.UI;
+﻿using MOBA_Manager.Source.Sound;
+using MOBA_Manager.UI;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -19,6 +20,7 @@ namespace MOBA_Manager
         private void SetupGameIntro()
         {
             Switcher.Switch(new MOBA_Manager.UI.IntroScreen());
+            SoundHandler.PlayMainMusic();
         }
 
         public void Navigate(Page nextPage)

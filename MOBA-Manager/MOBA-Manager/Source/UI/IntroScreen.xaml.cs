@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using MOBA_Manager.Source.Sound;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
@@ -25,16 +26,15 @@ namespace MOBA_Manager.UI
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             new MOBA_Manager.Game.SessionBuilder();
+            SoundHandler.StopMainMusic();
         }
 
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
-            BeginButton.Content = "Ooo";
         }
 
         private void BeginButton_MouseLeave(object sender, MouseEventArgs e)
         {
-            BeginButton.Content = "Begin";
         }
     }
 }

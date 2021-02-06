@@ -115,6 +115,7 @@
     </Compile>
     <Compile Include="Source\DataModel\BaseEntity.cs" />
     <Compile Include="Source\Game\AssetHandler.cs" />
+    <Compile Include="Source\Sound\SoundHandler.cs" />
     <Compile Include="Source\UI\InGameUI\AllTeams\AllTeamsPage.xaml.cs">
       <DependentUpon>AllTeamsPage.xaml</DependentUpon>
     </Compile>
@@ -342,6 +343,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\UI\money-stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sound\Doomsayer.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
