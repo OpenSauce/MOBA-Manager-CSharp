@@ -217,6 +217,8 @@
     <None Include="Assets\Pixel Portraits\male_14.aseprite" />
     <None Include="Assets\Pixel Portraits\male_15.aseprite" />
     <Resource Include="Fonts\ThaleahFat.ttf" />
+    <Resource Include="Fonts\monogram.ttf" />
+    <Resource Include="Fonts\monogram_extended.ttf" />
     <None Include="Source\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

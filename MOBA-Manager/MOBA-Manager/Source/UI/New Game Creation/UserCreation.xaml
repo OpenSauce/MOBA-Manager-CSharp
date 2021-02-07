@@ -55,8 +55,8 @@
         <Button x:Name="BeginButton" Content="Start" HorizontalAlignment="Right" Margin="0,0,20,20" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" FontSize="48" Click="BeginButton_Click" Style="{StaticResource ButtonStyle1}" />
         <Label Content="First Name:" HorizontalAlignment="Left" Margin="51,116,0,0" VerticalAlignment="Top" Foreground="White"  Style="{StaticResource TextLabel}" />
         <Label Content="Last Name:" HorizontalAlignment="Left" Margin="350,116,0,0" VerticalAlignment="Top" Foreground="White"  Style="{StaticResource TextLabel}" />
-        <TextBox x:Name="LastNameBox" HorizontalAlignment="Left" Height="23" Margin="473,120,0,0" TextWrapping="Wrap" Text="Lawley" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Light" FontSize="16" />
-        <TextBox x:Name="FirstNameBox" HorizontalAlignment="Left" Height="23" Margin="181,120,0,0" TextWrapping="Wrap" Text="Leigh" VerticalAlignment="Top" Width="120" FontFamily="Segoe UI Light" FontSize="16" />
+        <TextBox x:Name="LastNameBox" TabIndex="0" HorizontalAlignment="Left" Height="23" Margin="473,120,0,0" TextWrapping="Wrap" Text="Lawley" VerticalAlignment="Top" Width="120" FontSize="24" Style="{DynamicResource TextBoxStyle}" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="FirstNameBox" TabIndex="1" HorizontalAlignment="Left" Height="23" Margin="181,120,0,0" TextWrapping="Wrap" Text="Leigh" VerticalAlignment="Top" Width="120" Style="{DynamicResource TextBoxStyle}" VerticalContentAlignment="Center" FontSize="24" />
 
         <Grid Margin="50,200,50,50">
             <Grid.ColumnDefinitions>
@@ -64,7 +64,7 @@
                 <ColumnDefinition Width="3*" />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" VerticalAlignment="Top" Content="Team Selection" Style="{StaticResource Header}"></Label>
-            <ListBox Grid.Column="0" x:Name="TeamListBox" SelectionChanged="TeamListBox_SelectionChanged" Style="{DynamicResource TeamList}" FontFamily="{DynamicResource ThaleahFat}" FontSize="24" SelectedIndex="0" Margin="20,60,20,20" HorizontalContentAlignment="Right" />
+            <ListBox Grid.Column="0" x:Name="TeamListBox" SelectionChanged="TeamListBox_SelectionChanged" Style="{DynamicResource TeamList}" FontFamily="{DynamicResource ThaleahFat}" FontSize="24" SelectedIndex="0" Margin="20,60,20,20" />
             <New_Game_Creation:TeamDisplay Grid.Column="1" x:Name="TeamUserControl" />
         </Grid>
     </Grid>
