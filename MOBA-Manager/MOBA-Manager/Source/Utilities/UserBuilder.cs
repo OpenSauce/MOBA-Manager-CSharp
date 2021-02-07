@@ -1,5 +1,4 @@
 ﻿using MOBA_Manager.DataModel;
-using System;
 
 namespace MOBA_Manager.Game
 {
@@ -10,15 +9,8 @@ namespace MOBA_Manager.Game
 
         public static User CreateUser()
         {
-            if (onlyUser == null)
-            {
-                onlyUser = new User();
-                return onlyUser;
-            }
-            else
-            {
-                throw new Exception();
-            }
+            onlyUser = new User();
+            return onlyUser;
         }
 
         public static User GetInstance()

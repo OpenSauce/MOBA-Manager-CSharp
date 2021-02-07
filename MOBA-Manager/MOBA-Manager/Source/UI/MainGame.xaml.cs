@@ -2,6 +2,7 @@
 using MOBA_Manager.UI.InGame;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace MOBA_Manager.UI
 {
@@ -55,6 +56,14 @@ namespace MOBA_Manager.UI
         private void AllTeamsButton_Click(object sender, RoutedEventArgs e)
         {
             InMainGameFrame.Navigate(new AllTeamsPage(this.gameEngine.PlayerSession.GetTeamList()));
+        }
+
+        private void SpacebarHandler_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            {
+                this.gameEngine.ProceedGame();
+                SetupUI();
+            }
         }
     }
 }

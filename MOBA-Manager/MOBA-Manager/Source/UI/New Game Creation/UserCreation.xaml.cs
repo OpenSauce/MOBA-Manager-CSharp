@@ -39,5 +39,10 @@ namespace MOBA_Manager.UI
         {
             TeamUserControl.SetTeam((Team)TeamListBox.SelectedItem);
         }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new IntroScreen());
+        }
     }
 }

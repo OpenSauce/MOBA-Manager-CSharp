@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MOBA_Manager"
         mc:Ignorable="d"
-        Title="MobA Manager" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+        Title="MobA Manager" WindowStartupLocation="CenterScreen" WindowState="Maximized" Background="Black">
     <Window.Effect>
         <DropShadowEffect />
     </Window.Effect>
     <Grid>
-        <Frame x:Name="MainWindowFrame" Content="Frame" Height="419" Width="792" />
+        <Frame x:Name="MainWindowFrame" Content="Frame" Background="Black" />
     </Grid>
 </Window>
