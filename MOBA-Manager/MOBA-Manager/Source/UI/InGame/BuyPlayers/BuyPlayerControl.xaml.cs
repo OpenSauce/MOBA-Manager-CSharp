@@ -1,7 +1,7 @@
 ﻿using MOBA_Manager.DataModel;
 using System.Windows.Controls;
 
-namespace MOBA_Manager.Source.UI.InGameUI
+namespace MOBA_Manager.Source.UI.InGame
 {
     /// <summary>
     /// Interaction logic for BuyPlayerControl.xaml

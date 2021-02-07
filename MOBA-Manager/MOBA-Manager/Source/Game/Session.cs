@@ -51,8 +51,6 @@ namespace MOBA_Manager.Game
 
         public void Start()
         {
-            this.mainPlayer.Team.Cash = 5000;
-            teamList.Add(this.mainPlayer.Team);
             Switcher.Switch(new MainGame(new MainGameEngine(this)));
         }
 

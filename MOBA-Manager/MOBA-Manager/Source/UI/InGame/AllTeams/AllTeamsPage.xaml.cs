@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
 
-namespace MOBA_Manager.UI.InGameUI
+namespace MOBA_Manager.UI.InGame
 {
     /// <summary>
     /// Interaction logic for AllPlayersPage.xaml

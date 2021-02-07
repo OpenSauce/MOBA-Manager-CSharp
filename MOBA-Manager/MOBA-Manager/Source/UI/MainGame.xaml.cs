@@ -1,5 +1,5 @@
 ﻿using MOBA_Manager.Game;
-using MOBA_Manager.UI.InGameUI;
+using MOBA_Manager.UI.InGame;
 using System.Windows;
 using System.Windows.Controls;
 

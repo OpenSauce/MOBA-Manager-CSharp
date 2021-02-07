@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="MOBA_Manager.Source.UI.InGame.GameMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:MOBA_Manager.Source.UI.InGame"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <ControlTemplate>
+        <Grid>
+            <ContentControl>
+                <ContentPresenter />
+            </ContentControl>
+            <!-- The Rectangle is what simulates the modality -->
+            <Rectangle x:Name="Overlay" Visibility="Collapsed" Opacity="0.4" Fill="LightGray" />
+            <Grid x:Name="Dialog" Visibility="Collapsed">
+                <!-- The template for the dialog goes here (borders and such...) -->
+                <ContentPresenter x:Name="PART_DialogView" />
+            </Grid>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <!-- Triggers to change the visibility of the PART_DialogView and Overlay -->
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+</UserControl>

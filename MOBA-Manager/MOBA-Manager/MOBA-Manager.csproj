@@ -116,11 +116,17 @@
     <Compile Include="Source\DataModel\BaseEntity.cs" />
     <Compile Include="Source\Game\AssetHandler.cs" />
     <Compile Include="Source\Sound\SoundHandler.cs" />
-    <Compile Include="Source\UI\InGameUI\AllTeams\AllTeamsPage.xaml.cs">
+    <Compile Include="Source\UI\InGame\AllTeams\AllTeamsPage.xaml.cs">
       <DependentUpon>AllTeamsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Source\UI\InGameUI\BuyPlayers\BuyPlayerControl.xaml.cs">
+    <Compile Include="Source\UI\InGame\BuyPlayers\BuyPlayerControl.xaml.cs">
       <DependentUpon>BuyPlayerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\InGame\GameMenu.xaml.cs">
+      <DependentUpon>GameMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\New Game Creation\TeamDisplay.xaml.cs">
+      <DependentUpon>TeamDisplay.xaml</DependentUpon>
     </Compile>
     <Compile Include="Source\Utilities\ControlledRandom.cs" />
     <Compile Include="Source\DataModel\IBaseEntity.cs" />
@@ -136,13 +142,13 @@
     <Compile Include="Source\Utilities\SessionBuilder.cs" />
     <Compile Include="Source\Utilities\TeamGenerator.cs" />
     <Compile Include="Source\Utilities\UserBuilder.cs" />
-    <Compile Include="Source\UI\InGameUI\AllPlayers\AllPlayersPage.xaml.cs">
+    <Compile Include="Source\UI\InGame\AllPlayers\AllPlayersPage.xaml.cs">
       <DependentUpon>AllPlayersPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Source\UI\InGameUI\BuyPlayers\BuyPlayersPage.xaml.cs">
+    <Compile Include="Source\UI\InGame\BuyPlayers\BuyPlayersPage.xaml.cs">
       <DependentUpon>BuyPlayersPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Source\UI\InGameUI\HomeScreenPage.xaml.cs">
+    <Compile Include="Source\UI\InGame\HomeScreenPage.xaml.cs">
       <DependentUpon>HomeScreenPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Source\UI\IntroScreen.xaml.cs">
@@ -152,7 +158,7 @@
       <DependentUpon>MainGame.xaml</DependentUpon>
     </Compile>
     <Compile Include="Source\UI\Switcher.cs" />
-    <Compile Include="Source\UI\UserCreation.xaml.cs">
+    <Compile Include="Source\UI\New Game Creation\UserCreation.xaml.cs">
       <DependentUpon>UserCreation.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -237,23 +243,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\InGameUI\AllTeams\AllTeamsPage.xaml">
+    <Page Include="Source\UI\InGame\AllTeams\AllTeamsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Source\UI\InGameUI\AllPlayers\AllPlayersPage.xaml">
+    <Page Include="Source\UI\InGame\AllPlayers\AllPlayersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\InGameUI\BuyPlayers\BuyPlayerControl.xaml">
+    <Page Include="Source\UI\InGame\BuyPlayers\BuyPlayerControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\InGameUI\BuyPlayers\BuyPlayersPage.xaml">
+    <Page Include="Source\UI\InGame\BuyPlayers\BuyPlayersPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\InGameUI\HomeScreenPage.xaml">
+    <Page Include="Source\UI\InGame\GameMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\UI\InGame\HomeScreenPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -265,7 +275,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\UserCreation.xaml">
+    <Page Include="Source\UI\New Game Creation\TeamDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\UI\New Game Creation\UserCreation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

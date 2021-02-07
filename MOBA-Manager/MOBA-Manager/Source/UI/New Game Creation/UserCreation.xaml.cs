@@ -16,7 +16,8 @@ namespace MOBA_Manager.UI
         {
             this.sessionBuilder = sessionBuilder;
             InitializeComponent();
-            teamCombo.ItemsSource = sessionBuilder.GetSession().GetTeamList();
+            //teamCombo.ItemsSource = sessionBuilder.GetSession().GetTeamList();
+            TeamListBox.ItemsSource = sessionBuilder.GetSession().GetTeamList();
             UserBuilder.CreateUser();
         }
 
@@ -30,8 +31,13 @@ namespace MOBA_Manager.UI
         private User BuildUser()
         {
             UserBuilder.WithName(FirstNameBox.Text, LastNameBox.Text);
-            //UserBuilder.WithTeam();
+            UserBuilder.WithTeam((Team)TeamListBox.SelectedItem);
             return UserBuilder.GetInstance();
+        }
+
+        private void TeamListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            TeamUserControl.SetTeam((Team)TeamListBox.SelectedItem);
         }
     }
 }

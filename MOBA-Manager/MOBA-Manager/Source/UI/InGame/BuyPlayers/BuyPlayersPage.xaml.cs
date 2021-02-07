@@ -1,9 +1,9 @@
 ﻿using MOBA_Manager.DataModel;
-using MOBA_Manager.Source.UI.InGameUI;
+using MOBA_Manager.Source.UI.InGame;
 using System.Collections.Generic;
 using System.Windows.Controls;
 
-namespace MOBA_Manager.UI.InGameUI
+namespace MOBA_Manager.UI.InGame
 {
     /// <summary>
     /// Interaction logic for BuyPlayersPage.xaml
