@@ -373,6 +373,8 @@
     <Resource Include="Assets\Background\pxArt.png" />
     <Resource Include="Assets\Background\pxArt %281%29.png" />
     <Resource Include="Assets\Background\pxArt %282%29.png" />
+    <Resource Include="Assets\UI\cog.png" />
+    <Resource Include="Assets\UI\cog %281%29.png" />
     <Content Include="Sound\Doomsayer.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
