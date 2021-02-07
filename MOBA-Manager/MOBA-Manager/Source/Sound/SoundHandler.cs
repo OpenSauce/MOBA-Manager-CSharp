@@ -11,7 +11,7 @@ namespace MOBA_Manager.Source.Sound
         {
             m_mediaPlayer = new MediaPlayer();
             m_mediaPlayer.Open(new Uri(@"D:\GitHub\MOBA-Manager\MOBA-Manager\MOBA-Manager\Sound\Doomsayer.wav", UriKind.RelativeOrAbsolute));
-            m_mediaPlayer.Volume = 0.2f;
+            m_mediaPlayer.Volume = GetMusicVolumeSettings();
             m_mediaPlayer.MediaEnded += new EventHandler(Media_Ended);
             m_mediaPlayer.Play();
         }
@@ -25,6 +25,17 @@ namespace MOBA_Manager.Source.Sound
         {
             m_mediaPlayer.Position = TimeSpan.Zero;
             m_mediaPlayer.Play();
+        }
+
+        private static float GetMusicVolumeSettings()
+        {
+            return Properties.Settings.Default.volume;
+        }
+
+        private static void SetMusicVolumeSettings(float value)
+        {
+            Properties.Settings.Default.volume = value;
+            Properties.Settings.Default.Save();
         }
     }
 }

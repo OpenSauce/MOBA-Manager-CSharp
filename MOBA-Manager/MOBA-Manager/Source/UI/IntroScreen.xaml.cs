@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.Source.Sound;
+using MOBA_Manager.Source.UI.Settings;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -35,6 +36,17 @@ namespace MOBA_Manager.UI
 
         private void BeginButton_MouseLeave(object sender, MouseEventArgs e)
         {
+        }
+
+        private void OpenSettings(object sender, RoutedEventArgs e)
+        {
+            Settings settingsWindow = new Settings();
+            settingsWindow.ShowDialog();
+        }
+
+        private void ExitApplication(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
         }
     }
 }
