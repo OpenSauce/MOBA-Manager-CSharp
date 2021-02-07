@@ -15,7 +15,11 @@
         </Grid.Background>
         <Label x:Name="FullNameLabel" Content="Label" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White" />
         <Label x:Name="CashLabel" Content="Label" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" />
-        <Frame x:Name="InMainGameFrame" Content="Frame" Margin="0,100,0,50" NavigationUIVisibility="Hidden" />
+        <Frame x:Name="InMainGameFrame" Content="Frame" Margin="50,120,50,70" NavigationUIVisibility="Hidden" >
+            <Frame.Background>
+                <SolidColorBrush Color="White" Opacity="0.1"/>
+            </Frame.Background>
+        </Frame>
         <Button x:Name="HomeButton" Content="Home" HorizontalAlignment="Left" Margin="25,35,0,0" VerticalAlignment="Top" Width="90" Click="HomeButton_Click" FontFamily="Segoe UI Light" Height="35" Background="White" BorderBrush="Black" BorderThickness="2" FontSize="16" Grid.Row="3" />
         <Button Content="Team House" HorizontalAlignment="Left" Margin="150,35,0,0" VerticalAlignment="Top" Width="90" FontFamily="Segoe UI Light" Background="White" BorderThickness="2" BorderBrush="Black" Height="35" FontSize="16" />
         <Button Content="Fixtures" HorizontalAlignment="Right" Margin="0,35,25,0" VerticalAlignment="Top" Width="90" Height="35" BorderThickness="2" Background="White" BorderBrush="Black" FontSize="16" FontFamily="Segoe UI Light" />

@@ -125,6 +125,9 @@
     <Compile Include="Source\UI\InGame\GameMenu.xaml.cs">
       <DependentUpon>GameMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Source\UI\Load Game\LoadGame.xaml.cs">
+      <DependentUpon>LoadGame.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Source\UI\New Game Creation\TeamDisplay.xaml.cs">
       <DependentUpon>TeamDisplay.xaml</DependentUpon>
     </Compile>
@@ -274,6 +277,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Source\UI\IntroScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\UI\Load Game\LoadGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
