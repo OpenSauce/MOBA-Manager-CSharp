@@ -13,24 +13,24 @@
         <Grid.Background>
             <ImageBrush ImageSource="/MOBA-Manager;component/Assets/Background/pxArt (2).png" Stretch="UniformToFill" Opacity="0.4" />
         </Grid.Background>
-        <Label x:Name="FullNameLabel" Content="Label" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White" />
-        <Label x:Name="CashLabel" Content="Label" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" />
-        <Frame x:Name="InMainGameFrame" Content="Frame" Margin="50,120,50,70" NavigationUIVisibility="Hidden" >
+        <Frame x:Name="InMainGameFrame" Content="Frame" Margin="50,120,50,70" NavigationUIVisibility="Hidden">
             <Frame.Background>
-                <SolidColorBrush Color="Black" Opacity="0.5"/>
+                <SolidColorBrush Color="Black" Opacity="0.5" />
             </Frame.Background>
         </Frame>
-        <Button x:Name="HomeButton" Content="Home" HorizontalAlignment="Left" Margin="25,35,0,0" VerticalAlignment="Top" Width="90" Click="HomeButton_Click" FontFamily="Segoe UI Light" Height="35" Background="White" BorderBrush="Black" BorderThickness="2" FontSize="16" Grid.Row="3" />
-        <Button Content="Team House" HorizontalAlignment="Left" Margin="150,35,0,0" VerticalAlignment="Top" Width="90" FontFamily="Segoe UI Light" Background="White" BorderThickness="2" BorderBrush="Black" Height="35" FontSize="16" />
-        <Button Content="Fixtures" HorizontalAlignment="Right" Margin="0,35,25,0" VerticalAlignment="Top" Width="90" Height="35" BorderThickness="2" Background="White" BorderBrush="Black" FontSize="16" FontFamily="Segoe UI Light" />
-        <Button x:Name="BuyPlayers" Content="Buy Players" HorizontalAlignment="Left" Margin="275,35,0,0" VerticalAlignment="Top" Width="90" Click="BuyPlayersButton_Click" Height="35" Background="White" BorderBrush="Black" BorderThickness="2" FontSize="16" FontFamily="Segoe UI Light" />
         <Button Content="Continue" Margin="0" Height="50" VerticalAlignment="Bottom" Click="Button_Click" Background="White" BorderBrush="White" FontFamily="Segoe UI Light" FontSize="16" />
-        <Button x:Name="AllTeamsButton" Content="All Teams" HorizontalAlignment="Right" Margin="0,35,150,0" VerticalAlignment="Top" Width="90" Height="35" BorderThickness="2" Background="White" BorderBrush="Black" Click="AllTeamsButton_Click" FontFamily="Segoe UI Light" FontSize="16" />
-        <Button x:Name="AllPlayerButton" Content="All Players" HorizontalAlignment="Right" Margin="0,35,275,0" VerticalAlignment="Top" Width="90" Click="AllPlayerButton_Click" Height="35" BorderThickness="2" BorderBrush="Black" Background="White" FontFamily="Segoe UI Light" FontSize="16" />
-        <Button  HorizontalAlignment="Right" Margin="0,5,5,0" VerticalAlignment="Top" Width="25"  Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}" >
+        <Button  HorizontalAlignment="Right" Margin="0,5,5,0" VerticalAlignment="Top" Width="25"  Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
-                <ImageBrush ImageSource="/MOBA-Manager;component/Assets/UI/cog (1).png" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="/MOBA-Manager;component/Assets/UI/cog (1).png" Stretch="UniformToFill" />
             </Button.Background>
         </Button>
+        <StackPanel Height="100" Margin="50,10,50,0" VerticalAlignment="Top" Orientation="Horizontal">
+            <Button x:Name="HomeButton" Style="{DynamicResource ButtonStyle1}" Content="Home" HorizontalAlignment="Left" Margin="0,0,20,0" VerticalAlignment="Center" Click="HomeButton_Click" Height="35" Background="White" BorderBrush="Black" BorderThickness="2" FontSize="22" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Padding="10,1" />
+            <Button Content="Team House" Style="{DynamicResource ButtonStyle1}" HorizontalAlignment="Left" VerticalAlignment="Center" Background="White" BorderThickness="2" BorderBrush="Black" Height="35" FontSize="22" Margin="0,0,20,0" Padding="10,1" />
+            <Button Content="Fixtures" Style="{DynamicResource ButtonStyle1}" HorizontalAlignment="Right" VerticalAlignment="Center" Height="35" BorderThickness="2" Background="White" BorderBrush="Black" FontSize="22" Margin="0,0,20,0"  Padding="10,1" />
+            <Button x:Name="BuyPlayers" Style="{DynamicResource ButtonStyle1}" Content="Buy Players" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BuyPlayersButton_Click" Height="35" Background="White" BorderBrush="Black" BorderThickness="2" FontSize="22" Margin="0,0,20,0"  Padding="10,1" />
+            <Button x:Name="AllTeamsButton" Style="{DynamicResource ButtonStyle1}" Content="All Teams" HorizontalAlignment="Right" VerticalAlignment="Center" Height="35" BorderThickness="2" Background="White" BorderBrush="Black" Click="AllTeamsButton_Click" FontSize="22" Margin="0,0,20,0"  Padding="10,1" />
+            <Button x:Name="AllPlayerButton" Style="{DynamicResource ButtonStyle1}" Content="All Players" HorizontalAlignment="Right" VerticalAlignment="Center" Click="AllPlayerButton_Click" Height="35" BorderThickness="2" BorderBrush="Black" Background="White" FontSize="22" Margin="0,0,20,0"  Padding="10,1" />
+        </StackPanel>
     </Grid>
 </Page>

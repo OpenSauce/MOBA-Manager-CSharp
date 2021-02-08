@@ -9,5 +9,13 @@
       Title="HomeScreenPage">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" x:Name="teamIcon" HorizontalAlignment="Right" Height="100" Margin="0,20,20,0" VerticalAlignment="Top" Width="100" />
+        <Label Grid.Column="0" x:Name="teamName" Content="Label" HorizontalAlignment="Left" Margin="65,81,0,0" VerticalAlignment="Top" Style="{DynamicResource Header}" />
+        <Label  Grid.Column="0" x:Name="playerName" Content="Label" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" Style="{DynamicResource ResourceKey=TitleLabel}" />
+        <Label Content="Team List" Grid.Column="1" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Style="{DynamicResource Header}" />
     </Grid>
 </Page>
