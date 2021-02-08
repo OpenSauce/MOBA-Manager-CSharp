@@ -46,7 +46,7 @@ namespace MOBA_Manager.Game
                 "Team 3",
                 "Team 4",
                 "Team 5",
-                "Team 6",
+                "Fire Makers",
                 "The Duelists",
                 "The Fisters",
                 "The Stabby Stabbers",
