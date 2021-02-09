@@ -125,6 +125,9 @@
     <Compile Include="Source\UI\InGame\GameMenu.xaml.cs">
       <DependentUpon>GameMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Source\UI\InGame\HomeScreen\SquadPlayerControl.xaml.cs">
+      <DependentUpon>SquadPlayerControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Source\UI\Load Game\LoadGame.xaml.cs">
       <DependentUpon>LoadGame.xaml</DependentUpon>
     </Compile>
@@ -154,7 +157,7 @@
     <Compile Include="Source\UI\InGame\BuyPlayers\BuyPlayersPage.xaml.cs">
       <DependentUpon>BuyPlayersPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Source\UI\InGame\HomeScreenPage.xaml.cs">
+    <Compile Include="Source\UI\InGame\HomeScreen\HomeScreenPage.xaml.cs">
       <DependentUpon>HomeScreenPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Source\UI\IntroScreen.xaml.cs">
@@ -272,7 +275,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Source\UI\InGame\HomeScreenPage.xaml">
+    <Page Include="Source\UI\InGame\HomeScreen\SquadPlayerControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Source\UI\InGame\HomeScreen\HomeScreenPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -383,6 +390,10 @@
     <Resource Include="Assets\UI\cog.png" />
     <Resource Include="Assets\UI\cog %281%29.png" />
     <Content Include="Sound\Doomsayer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Source\UI\InGame\Fixtures\" />
+    <Folder Include="Source\UI\InGame\TeamHouse\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

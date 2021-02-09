@@ -15,6 +15,7 @@ namespace MOBA_Manager.DataModel
         public String TeamName { get => teamName; set => teamName = value; }
         public Double Reputation { get => reputation; set => reputation = value; }
         public Double Cash { get => cash; set => cash = value; }
+        public List<Player> Roster { get; set; }
 
         public String GetTeamName()
         {

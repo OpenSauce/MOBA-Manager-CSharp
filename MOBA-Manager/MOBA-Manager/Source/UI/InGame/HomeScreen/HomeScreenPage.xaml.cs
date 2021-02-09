@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Source.UI.InGame;
+using System.Windows.Controls;
 
 namespace MOBA_Manager.UI.InGame
 {
@@ -23,6 +25,18 @@ namespace MOBA_Manager.UI.InGame
             playerName.Content = playerSession.MainPlayer.GetFullName();
             teamName.Content = playerTeam.TeamName;
             teamIcon.Source = playerTeam.TeamBadge;
+            SetupTeamList();
+        }
+
+        private void SetupTeamList()
+        {
+            if (playerTeam.Roster != null)
+            {
+                foreach (Player p in playerTeam.Roster)
+                {
+                    Squad.Children.Add(new SquadPlayerControl(p));
+                }
+            }
         }
     }
 }
