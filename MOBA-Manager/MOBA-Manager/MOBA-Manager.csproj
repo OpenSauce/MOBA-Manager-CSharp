@@ -115,6 +115,7 @@
     </Compile>
     <Compile Include="Source\DataModel\BaseEntity.cs" />
     <Compile Include="Source\Game\AssetHandler.cs" />
+    <Compile Include="Source\Game\Trade.cs" />
     <Compile Include="Source\Sound\SoundHandler.cs" />
     <Compile Include="Source\UI\InGame\AllTeams\AllTeamsPage.xaml.cs">
       <DependentUpon>AllTeamsPage.xaml</DependentUpon>

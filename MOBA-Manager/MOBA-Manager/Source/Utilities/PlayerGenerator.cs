@@ -9,6 +9,7 @@ namespace MOBA_Manager.Game
     internal class PlayerGenerator : IPlayerFactory
     {
         private const int MAX_PLAYERS = 100;
+        private int assignedID = 0;
         private PersonNameGenerator _g;
 
         public PlayerGenerator()
@@ -54,12 +55,18 @@ namespace MOBA_Manager.Game
             }
         }
 
+        private int GetPlayerID()
+        {
+            return assignedID++;
+        }
+
         public Player GenerateNewPlayer(String firstName, String middleName, String lastName, bool gender)
         {
             Player generatedPlayer = new Player(firstName, middleName, lastName);
             generatedPlayer.Age = ControlledRandom.RandomNumber(16, 26);
             generatedPlayer.PopulateSkills(ControlledRandom.RandomNumber(1, 200));
             generatedPlayer.IconIndex = GetPlayerPortrait(gender);
+            generatedPlayer.ID = GetPlayerID();
             return generatedPlayer;
         }
 

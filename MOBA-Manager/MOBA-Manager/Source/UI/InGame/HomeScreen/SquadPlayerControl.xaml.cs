@@ -6,9 +6,9 @@ namespace MOBA_Manager.Source.UI.InGame
     /// <summary>
     /// Interaction logic for BuyPlayerControl.xaml
     /// </summary>
-    public partial class BuyPlayerControl : UserControl
+    public partial class SquadPlayerControl : UserControl
     {
-        public BuyPlayerControl(Player p)
+        public SquadPlayerControl(Player p)
         {
             InitializeComponent();
             this.DataContext = this;

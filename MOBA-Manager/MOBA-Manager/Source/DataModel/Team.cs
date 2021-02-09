@@ -7,7 +7,6 @@ namespace MOBA_Manager.DataModel
     public class Team
     {
         private double reputation;
-        private List<Player> roster;
         private String teamName;
         private Double cash;
         private BitmapImage teamBadge;

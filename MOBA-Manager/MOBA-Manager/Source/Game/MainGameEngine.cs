@@ -6,12 +6,12 @@ namespace MOBA_Manager.Game
 {
     public class MainGameEngine
     {
-        private Session playerSession;
+        private static Session playerSession;
         private PlayerGenerator playerGenerator;
 
         public MainGameEngine(Session session)
         {
-            this.playerSession = session;
+            playerSession = session;
             this.playerGenerator = new PlayerGenerator();
         }
 

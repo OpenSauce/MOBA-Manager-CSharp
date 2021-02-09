@@ -37,7 +37,7 @@ namespace MOBA_Manager.UI
 
         private void BuyPlayersButton_Click(object sender, RoutedEventArgs e)
         {
-            InMainGameFrame.Navigate(new BuyPlayersPage(this.gameEngine.PlayerSession.BuyablePlayers));
+            InMainGameFrame.Navigate(new BuyPlayersPage(this.gameEngine.PlayerSession.BuyablePlayers, this.gameEngine.PlayerSession));
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
