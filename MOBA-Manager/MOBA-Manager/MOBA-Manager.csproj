@@ -114,6 +114,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Source\DataModel\BaseEntity.cs" />
+    <Compile Include="Source\DataModel\PlayerRole.cs" />
     <Compile Include="Source\Game\AssetHandler.cs" />
     <Compile Include="Source\Game\Trade.cs" />
     <Compile Include="Source\Sound\SoundHandler.cs" />

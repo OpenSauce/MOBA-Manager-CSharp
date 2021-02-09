@@ -21,6 +21,7 @@ namespace MOBA_Manager.Source.UI.InGame
         {
             this.PlayerPortrait.Source = ControlPlayer.IconIndex;
             this.PlayerNameLabel.Content = ControlPlayer.GetFullName();
+            this.PlayerAgeLabel.Content = ControlPlayer.Age;
         }
 
         public Player ControlPlayer { get; set; }
