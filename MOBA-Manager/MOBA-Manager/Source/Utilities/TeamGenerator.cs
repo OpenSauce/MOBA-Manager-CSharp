@@ -45,7 +45,7 @@ namespace MOBA_Manager.Game
                 "Team 2",
                 "Team 3",
                 "Team 4",
-                "Team 5",
+                "64 Legs",
                 "Fire Makers",
                 "The Duelists",
                 "The Fisters",
