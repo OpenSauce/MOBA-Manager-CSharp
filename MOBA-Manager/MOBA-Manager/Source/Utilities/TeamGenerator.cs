@@ -43,7 +43,7 @@ namespace MOBA_Manager.Game
                 "Shrew Crew",
                 "Team 1",
                 "Team 2",
-                "Team 3",
+                "Stars Guidance",
                 "Team 4",
                 "64 Legs",
                 "Fire Makers",
