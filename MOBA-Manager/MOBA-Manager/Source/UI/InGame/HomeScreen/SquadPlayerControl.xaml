@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800" BorderBrush="White" Height="100" Margin="5,10">
     <UserControl.Background>
-        <SolidColorBrush Color="Black" Opacity="0.4" />
+        <SolidColorBrush Color="Black" Opacity="0.7" />
     </UserControl.Background>
     <Grid Height="64" Margin="0">
         <Image x:Name="PlayerPortrait" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="64" Margin="20,0,0,0" />
