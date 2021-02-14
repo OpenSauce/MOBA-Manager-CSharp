@@ -16,6 +16,7 @@
         </Grid.ColumnDefinitions>
         <Image x:Name="PlayerPortrait" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="64" Margin="20,0,0,0" />
         <Label x:Name="PlayerNameLabel" Content="Label" HorizontalAlignment="Left" Margin="150,0,0,0" VerticalAlignment="Center" Foreground="White" Style="{DynamicResource TextLabel}" />
+        <Label x:Name="PlayerRoleLabel" Content="Label" HorizontalAlignment="Left" Margin="300,0,0,0" VerticalAlignment="Center" Foreground="White" Style="{DynamicResource TextLabel}" />
         <Button x:Name="BuyButton" Content="" HorizontalAlignment="Right" Margin="0,10,20,10" VerticalAlignment="Center" Width="75" Height="44" Grid.Column="1" Click="BuyButton_Click">
             <Button.BorderBrush>
                 <ImageBrush />
