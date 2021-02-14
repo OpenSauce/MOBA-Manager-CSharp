@@ -2,6 +2,6 @@
 {
     public enum ROLE
     {
-        HARD_SUPPORT, SOFT_SUPPORT, OFFLANE, MIDLANE, CARRY
+        CARRY, MIDLANE, OFFLANE, SUPPORT, HARD_SUPPORT
     }
 }

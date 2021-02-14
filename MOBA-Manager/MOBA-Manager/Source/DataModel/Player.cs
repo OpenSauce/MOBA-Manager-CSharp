@@ -23,6 +23,7 @@ namespace MOBA_Manager.DataModel
         public int OfflaneSkill { get => offlaneSkill; set => offlaneSkill = value; }
         public int PlayerRating { get => playerRating; set => playerRating = value; }
         public int ID { get; set; }
+        public int PlayerRole { get; set; }
 
         public Player(string firstName, string lastName)
         {

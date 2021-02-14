@@ -67,7 +67,13 @@ namespace MOBA_Manager.Game
             generatedPlayer.PopulateSkills(ControlledRandom.RandomNumber(1, 200));
             generatedPlayer.IconIndex = GetPlayerPortrait(gender);
             generatedPlayer.ID = GetPlayerID();
+            generatedPlayer.PlayerRole = GetPlayerRole();
             return generatedPlayer;
+        }
+
+        private int GetPlayerRole()
+        {
+            return ControlledRandom.RandomNumber(0, 4);
         }
 
         public static BitmapImage GetPlayerPortrait(bool male)
