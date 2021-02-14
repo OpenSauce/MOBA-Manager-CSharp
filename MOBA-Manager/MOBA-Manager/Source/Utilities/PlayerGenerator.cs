@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Source.DataModel;
 using RandomNameGeneratorLibrary;
 using System;
 using System.Collections.Generic;
@@ -71,9 +72,9 @@ namespace MOBA_Manager.Game
             return generatedPlayer;
         }
 
-        private int GetPlayerRole()
+        private ROLE GetPlayerRole()
         {
-            return ControlledRandom.RandomNumber(0, 4);
+            return (ROLE)ControlledRandom.RandomNumber(0, 4);
         }
 
         public static BitmapImage GetPlayerPortrait(bool male)

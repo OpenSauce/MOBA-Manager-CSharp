@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOBA_Manager.Source.DataModel;
+using System;
 
 namespace MOBA_Manager.DataModel
 {
@@ -23,7 +24,7 @@ namespace MOBA_Manager.DataModel
         public int OfflaneSkill { get => offlaneSkill; set => offlaneSkill = value; }
         public int PlayerRating { get => playerRating; set => playerRating = value; }
         public int ID { get; set; }
-        public int PlayerRole { get; set; }
+        public ROLE PlayerRole { get; set; }
 
         public Player(string firstName, string lastName)
         {
@@ -50,6 +51,30 @@ namespace MOBA_Manager.DataModel
             midSkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
             offlaneSkill = ControlledRandom.RandomNumber((currentSkill / 2), (weight / 2)) / 5;
             this.playerRating = GetPlayerRating();
+        }
+
+        public string GetPlayerRole()
+        {
+            switch (PlayerRole)
+            {
+                case ROLE.HARD_SUPPORT:
+                    return "Hard Support";
+
+                case ROLE.SUPPORT:
+                    return "Soft Support";
+
+                case ROLE.MIDLANE:
+                    return "Midlane";
+
+                case ROLE.OFFLANE:
+                    return "Offlane";
+
+                case ROLE.CARRY:
+                    return "Carry";
+
+                default:
+                    return "N/A";
+            }
         }
 
         public int GetPlayerRating()

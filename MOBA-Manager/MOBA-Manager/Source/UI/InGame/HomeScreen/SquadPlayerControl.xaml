@@ -11,7 +11,7 @@
     <Grid Height="64" Margin="0">
         <Image x:Name="PlayerPortrait" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="64" Margin="20,0,0,0" />
         <Label x:Name="PlayerNameLabel" Content="Label" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Center" Foreground="White" Style="{DynamicResource TextLabel}" />
-        <Label x:Name="PlayerAgeLabel" Content="Label" HorizontalAlignment="Left" Margin="407,18,0,18" VerticalAlignment="Center" Foreground="White" Style="{DynamicResource TextLabel}" />
-        <Label x:Name="PlayerRoleLabel" Content="Label" HorizontalAlignment="Left" Margin="625,18,0,17" VerticalAlignment="Center" Foreground="White" Style="{DynamicResource TextLabel}" />
+        <Label x:Name="PlayerAgeLabel" Content="Label" HorizontalAlignment="Center" Margin="50,18,0,18" VerticalAlignment="Center" Foreground="White" Style="{DynamicResource TextLabel}" />
+        <Label x:Name="PlayerRoleLabel" Content="Label" HorizontalAlignment="Right" Margin="0,18,100,17" VerticalAlignment="Center" Foreground="White" Style="{DynamicResource TextLabel}" />
     </Grid>
 </UserControl>
