@@ -406,6 +406,8 @@
     <Resource Include="Assets\UI\cog %281%29.png" />
     <Content Include="Sound\Doomsayer.wav" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Tests\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
