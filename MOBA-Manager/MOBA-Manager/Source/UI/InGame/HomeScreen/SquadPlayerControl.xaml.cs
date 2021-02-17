@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Source.UI.InGame.PlayerView;
 using System.Windows.Controls;
 
 namespace MOBA_Manager.Source.UI.InGame
@@ -26,5 +27,10 @@ namespace MOBA_Manager.Source.UI.InGame
         }
 
         public Player ControlPlayer { get; set; }
+
+        private void UserControl_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            MOBA_Manager.UI.Switcher.SwitchIngame(new PlayerPage());
+        }
     }
 }

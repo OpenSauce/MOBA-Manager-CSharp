@@ -27,6 +27,7 @@ namespace MOBA_Manager.UI
 
         private void SetupUI()
         {
+            Switcher.ingameFrame = InMainGameFrame;
             InMainGameFrame.Navigate(new HomeScreenPage(this.gameEngine.PlayerSession));
         }
 

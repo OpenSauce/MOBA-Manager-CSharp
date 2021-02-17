@@ -133,6 +133,9 @@
     <Compile Include="Source\UI\InGame\HomeScreen\SquadPlayerControl.xaml.cs">
       <DependentUpon>SquadPlayerControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Source\UI\InGame\PlayerView\PlayerPage.xaml.cs">
+      <DependentUpon>PlayerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Source\UI\InGame\TeamHouse\TeamHousePage.xaml.cs">
       <DependentUpon>TeamHousePage.xaml</DependentUpon>
     </Compile>
@@ -292,6 +295,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Source\UI\InGame\HomeScreen\HomeScreenPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\UI\InGame\PlayerView\PlayerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
