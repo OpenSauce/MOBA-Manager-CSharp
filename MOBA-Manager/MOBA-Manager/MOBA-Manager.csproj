@@ -412,6 +412,8 @@
     <Resource Include="Assets\UI\cog.png" />
     <Resource Include="Assets\UI\cog %281%29.png" />
     <Resource Include="Assets\Badges\64 Legs.png" />
+    <Resource Include="Assets\UI\two-coins %281%29.png" />
+    <Resource Include="Assets\UI\two-coins.png" />
     <Content Include="Sound\Doomsayer.wav" />
   </ItemGroup>
   <ItemGroup>
