@@ -1,5 +1,6 @@
 ﻿using MOBA_Manager.DataModel;
 using MOBA_Manager.Source.UI.InGame;
+using MOBA_Manager.Source.UI.InGame.PlayerView;
 using System.Windows.Controls;
 
 namespace MOBA_Manager.UI.InGame
@@ -30,13 +31,20 @@ namespace MOBA_Manager.UI.InGame
             SetupTeamList();
         }
 
+        private void playerSelected_Click(Player p)
+        {
+            Switcher.SwitchIngame(new PlayerPage(p));
+        }
+
         private void SetupTeamList()
         {
             if (playerTeam.Roster != null)
             {
                 foreach (Player p in playerTeam.Roster)
                 {
-                    Squad.Children.Add(new SquadPlayerControl(p));
+                    SquadPlayerControl squadPlayerControl = new SquadPlayerControl(p);
+                    squadPlayerControl.playerSelected += playerSelected_Click;
+                    Squad.Children.Add(squadPlayerControl);
                 }
             }
         }
