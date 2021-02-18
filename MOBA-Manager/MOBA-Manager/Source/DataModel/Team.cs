@@ -21,6 +21,16 @@ namespace MOBA_Manager.DataModel
             return this.teamName;
         }
 
+        public String GetCash()
+        {
+            return "£" + Math.Floor(Cash);
+        }
+
+        public int GetNumberOfPlayers()
+        {
+            return Roster.Count;
+        }
+
         public void SetTeamName(String name)
         {
             this.teamName = name;

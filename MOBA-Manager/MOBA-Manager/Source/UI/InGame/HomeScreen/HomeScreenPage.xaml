@@ -14,10 +14,16 @@
             <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
         <Border Grid.Column="0" Grid.RowSpan="4" BorderBrush="White"
-        BorderThickness="0,0,1,0" Background="{x:Null}" />
+        BorderThickness="0,0,1,0" Background="{x:Null}" >
+        </Border>
+
         <Image Grid.Column="0" x:Name="teamIcon" HorizontalAlignment="Right" Height="100" Margin="0,20,20,0" VerticalAlignment="Top" Width="100" />
-        <Label Grid.Column="0" x:Name="teamName" Content="Label" HorizontalAlignment="Left" Margin="65,81,0,0" VerticalAlignment="Top" Style="{DynamicResource Header}" />
+        <Label Grid.Column="0" x:Name="teamName" Content="Label" HorizontalAlignment="Left" Margin="40,64,0,0" VerticalAlignment="Top" Style="{DynamicResource Header}" FontFamily="/MOBA-Manager;component/Fonts/#monogram" />
         <Label  Grid.Column="0" x:Name="playerName" Content="Label" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Style="{DynamicResource ResourceKey=Header}" />
+        <Image  Grid.Column="0"  x:Name="cashIcon" HorizontalAlignment="Left" Height="64" Margin="40,115,0,0" VerticalAlignment="Top" Width="64" Source="/MOBA-Manager;component/Assets/UI/two-coins.png" />
+        <Label Grid.Column="0" x:Name="cashLabel" Content="Label" HorizontalAlignment="Left" Margin="128,123,0,0" VerticalAlignment="Top" Style="{DynamicResource Header}" FontFamily="/MOBA-Manager;component/Fonts/#monogram" />
+        <Image  Grid.Column="0"  x:Name="playerIcon" HorizontalAlignment="Left" Height="64" Margin="220,115,0,0" VerticalAlignment="Top" Width="64" Source="/MOBA-Manager;component/Assets/UI/person.png" />
+        <Label Grid.Column="0" x:Name="numberOfPlayerLabel" Content="Label" HorizontalAlignment="Left" Margin="300,123,0,0" VerticalAlignment="Top" Style="{DynamicResource Header}" FontFamily="/MOBA-Manager;component/Fonts/#monogram" />
         <Label Content="Team List" Grid.Column="1" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Style="{DynamicResource Header}" />
         <StackPanel x:Name="Squad" Grid.Column="1" Margin="0,100,0,0">
         </StackPanel>

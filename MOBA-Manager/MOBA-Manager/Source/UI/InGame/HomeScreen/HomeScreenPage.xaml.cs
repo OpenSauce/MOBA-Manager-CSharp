@@ -25,6 +25,8 @@ namespace MOBA_Manager.UI.InGame
             playerName.Content = playerSession.MainPlayer.GetFullName();
             teamName.Content = playerTeam.TeamName;
             teamIcon.Source = playerTeam.TeamBadge;
+            cashLabel.Content = playerTeam.GetCash();
+            numberOfPlayerLabel.Content = playerTeam.GetNumberOfPlayers();
             SetupTeamList();
         }
 
