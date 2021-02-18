@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.UI;
 using System.Windows.Controls;
 
 namespace MOBA_Manager.Source.UI.InGame.PlayerView
@@ -22,6 +23,9 @@ namespace MOBA_Manager.Source.UI.InGame.PlayerView
             PlayerNameLabel.Content = player.GetFullName();
         }
 
-
+        private void BackButtton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Switcher.NavigatePreviousIngame();
+        }
     }
 }

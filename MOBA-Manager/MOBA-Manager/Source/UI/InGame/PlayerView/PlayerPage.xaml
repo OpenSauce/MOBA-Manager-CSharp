@@ -10,5 +10,6 @@
 
     <Grid>
         <Label x:Name="PlayerNameLabel" Content="Label" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Style="{DynamicResource Header}"/>
+        <Button x:Name="BackButtton" Content="Button" HorizontalAlignment="Left" Margin="690,29,0,0" VerticalAlignment="Top" Width="75" Click="BackButtton_Click"/>
     </Grid>
 </Page>
