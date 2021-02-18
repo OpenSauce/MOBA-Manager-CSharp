@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Source.Game;
 using System;
 using System.Windows.Controls;
 
@@ -9,7 +10,7 @@ namespace MOBA_Manager.Source.UI.InGame
     /// </summary>
     public partial class BuyPlayerControl : UserControl
     {
-        public event Action<Player> buyPlayer;
+        public event Action<Trade> buyPlayer;
 
         public BuyPlayerControl(Player p)
         {
@@ -31,7 +32,7 @@ namespace MOBA_Manager.Source.UI.InGame
 
         private void BuyButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            buyPlayer(this.ControlPlayer);
+            buyPlayer(new Trade(this.ControlPlayer));
         }
     }
 }

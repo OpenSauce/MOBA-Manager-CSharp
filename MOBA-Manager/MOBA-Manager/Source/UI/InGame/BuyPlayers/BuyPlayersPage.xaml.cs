@@ -1,5 +1,6 @@
 ﻿using MOBA_Manager.DataModel;
 using MOBA_Manager.Game;
+using MOBA_Manager.Source.Game;
 using MOBA_Manager.Source.UI.InGame;
 using System.Collections.Generic;
 using System.Windows.Controls;
@@ -22,10 +23,10 @@ namespace MOBA_Manager.UI.InGame
             DisplayBuyablePlayers();
         }
 
-        private void BuyPlayer_Click(Player p)
+        private void BuyPlayer_Click(Trade p)
         {
-            this.session.MainPlayer.Team.Roster.Add(p);
-            playerList.Remove(p);
+            this.session.MainPlayer.Team.Roster.Add(p.TradedPlayer);
+            playerList.Remove(p.TradedPlayer);
             DisplayBuyablePlayers();
         }
 

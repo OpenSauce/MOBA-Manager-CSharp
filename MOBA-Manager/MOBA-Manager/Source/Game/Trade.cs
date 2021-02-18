@@ -1,9 +1,14 @@
-﻿namespace MOBA_Manager.Source.Game
+﻿using MOBA_Manager.DataModel;
+
+namespace MOBA_Manager.Source.Game
 {
-    internal class Trade
+    public class Trade
     {
-        public Trade()
+        public Player TradedPlayer { get; set; }
+
+        public Trade(Player player)
         {
+            this.TradedPlayer = player;
         }
     }
 }
