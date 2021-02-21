@@ -10,5 +10,10 @@ namespace MOBA_Manager.Source.Game
         {
             this.TradedPlayer = player;
         }
+
+        public void BuyPlayer(Team team)
+        {
+
+        }
     }
 }
