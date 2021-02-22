@@ -1,20 +1,22 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Source.DataModel;
+using System;
 using System.Collections.Generic;
 
 namespace MOBA_Manager.Game
 {
-    public class SessionBuilder
+    public class SessionDirector
     {
         private Session session = null;
 
-        public SessionBuilder()
+        public SessionDirector()
         {
             SetupSessionAndUI();
         }
 
-        public SessionBuilder(bool onLoad)
+        public SessionDirector(bool onLoad)
         {
-            new SessionBuilder();
+            new SessionDirector();
         }
 
         public Session GetSession()
@@ -39,6 +41,12 @@ namespace MOBA_Manager.Game
             this.session.SetPlayerData(LoadPlayers());
             this.session.BuyablePlayers = LoadBuyablePlayers();
             this.session.SetTeamData(LoadTeams());
+            this.session.FixturesList = GenerateInitialFixtures();
+        }
+
+        private List<Fixture> GenerateInitialFixtures()
+        {
+            return new List<Fixture>();
         }
 
         private List<Player> LoadBuyablePlayers()

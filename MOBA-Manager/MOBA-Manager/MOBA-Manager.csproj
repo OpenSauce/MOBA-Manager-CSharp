@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>9</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -114,6 +114,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Source\DataModel\BaseEntity.cs" />
+    <Compile Include="Source\DataModel\Fixture.cs" />
     <Compile Include="Source\DataModel\PlayerRole.cs" />
     <Compile Include="Source\Game\AssetHandler.cs" />
     <Compile Include="Source\Game\Trade.cs" />
@@ -154,12 +155,13 @@
     <Compile Include="Source\DataModel\PlayerSkill.cs" />
     <Compile Include="Source\DataModel\Team.cs" />
     <Compile Include="Source\DataModel\User.cs" />
+    <Compile Include="Source\Utilities\FixtureBuilder.cs" />
     <Compile Include="Source\Utilities\IPlayerFactory.cs" />
     <Compile Include="Source\Utilities\ITeamFactory.cs" />
     <Compile Include="Source\Game\MainGameEngine.cs" />
     <Compile Include="Source\Utilities\PlayerGenerator.cs" />
     <Compile Include="Source\Game\Session.cs" />
-    <Compile Include="Source\Utilities\SessionBuilder.cs" />
+    <Compile Include="Source\Utilities\SessionDirector.cs" />
     <Compile Include="Source\Utilities\TeamGenerator.cs" />
     <Compile Include="Source\Utilities\UserBuilder.cs" />
     <Compile Include="Source\UI\InGame\AllPlayers\AllPlayersPage.xaml.cs">

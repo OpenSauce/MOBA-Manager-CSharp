@@ -1,4 +1,5 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Source.DataModel;
 using MOBA_Manager.UI;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ namespace MOBA_Manager.Game
         private User mainPlayer;
         private List<Player> playerList;
         private List<Team> teamList;
+
+        public List<Fixture> FixturesList { get; set; }
         public User MainPlayer { get => mainPlayer; set => mainPlayer = value; }
         public List<Team> TeamList { get => teamList; set => teamList = value; }
         public List<Player> BuyablePlayers { get; set; }

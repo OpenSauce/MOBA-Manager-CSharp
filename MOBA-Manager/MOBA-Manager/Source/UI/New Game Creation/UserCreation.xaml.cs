@@ -10,21 +10,21 @@ namespace MOBA_Manager.UI
     /// </summary>
     public partial class UserCreation : Page
     {
-        private SessionBuilder sessionBuilder;
+        private SessionDirector SessionDirector;
 
-        public UserCreation(SessionBuilder sessionBuilder)
+        public UserCreation(SessionDirector SessionDirector)
         {
-            this.sessionBuilder = sessionBuilder;
+            this.SessionDirector = SessionDirector;
             InitializeComponent();
-            //teamCombo.ItemsSource = sessionBuilder.GetSession().GetTeamList();
-            TeamListBox.ItemsSource = sessionBuilder.GetSession().GetTeamList();
+            //teamCombo.ItemsSource = SessionDirector.GetSession().GetTeamList();
+            TeamListBox.ItemsSource = SessionDirector.GetSession().GetTeamList();
             UserBuilder.CreateUser();
         }
 
         private void BeginButton_Click(object sender, RoutedEventArgs e)
         {
             User gameUser = BuildUser();
-            Session newSession = this.sessionBuilder.SetSessionUser(gameUser);
+            Session newSession = this.SessionDirector.SetSessionUser(gameUser);
             newSession.Start();
         }
 
