@@ -14,6 +14,8 @@ namespace MOBA_Manager.UI
         public IntroScreen()
         {
             InitializeComponent();
+            SoundHandler.LoadMusicIcons();
+            this.SpeakerIcon.Source = SoundHandler.GetSoundIconForVolume();
         }
 
         public IntroScreen(MainWindow window)
@@ -47,6 +49,10 @@ namespace MOBA_Manager.UI
         private void ExitApplication(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
+        }
+
+        private void SpeakerIcon_MouseUp(object sender, MouseButtonEventArgs e)
+        {
         }
     }
 }

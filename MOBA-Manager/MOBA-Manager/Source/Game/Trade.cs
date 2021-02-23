@@ -13,7 +13,6 @@ namespace MOBA_Manager.Source.Game
 
         public void BuyPlayer(Team team)
         {
-
         }
     }
 }

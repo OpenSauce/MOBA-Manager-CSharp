@@ -35,7 +35,7 @@
         </StackPanel>
         <Rectangle Margin="10" Panel.ZIndex="-1">
             <Rectangle.Fill>
-                <SolidColorBrush Color="Black" Opacity="0.2"/>
+                <SolidColorBrush Color="Black" Opacity="0.2" />
             </Rectangle.Fill>
         </Rectangle>
     </Grid>

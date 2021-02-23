@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MOBA_Manager.Source.Utilities
+﻿namespace MOBA_Manager.Source.Utilities
 {
-    class FixtureBuilder
+    internal class FixtureBuilder
     {
     }
 }

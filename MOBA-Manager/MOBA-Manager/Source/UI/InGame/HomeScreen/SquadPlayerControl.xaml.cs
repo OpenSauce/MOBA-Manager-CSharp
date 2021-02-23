@@ -1,5 +1,4 @@
 ﻿using MOBA_Manager.DataModel;
-using MOBA_Manager.Source.UI.InGame.PlayerView;
 using System;
 using System.Windows.Controls;
 
@@ -33,7 +32,6 @@ namespace MOBA_Manager.Source.UI.InGame
 
         private void UserControl_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-
             playerSelected(this.ControlPlayer);
         }
     }
