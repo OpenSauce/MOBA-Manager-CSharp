@@ -8,7 +8,6 @@ namespace MOBA_Manager.Source.Sound
     {
         private static MediaPlayer m_mediaPlayer;
         private static BitmapImage speakerOn, speakerOff;
-        private float previousValue;
 
         public static void LoadMusicIcons()
         {
