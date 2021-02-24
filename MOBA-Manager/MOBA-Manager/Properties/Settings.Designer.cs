@@ -37,13 +37,13 @@ namespace MOBA_Manager.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.3")]
-        public float toggleVolume {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool volumeOn {
             get {
-                return ((float)(this["toggleVolume"]));
+                return ((bool)(this["volumeOn"]));
             }
             set {
-                this["toggleVolume"] = value;
+                this["volumeOn"] = value;
             }
         }
     }

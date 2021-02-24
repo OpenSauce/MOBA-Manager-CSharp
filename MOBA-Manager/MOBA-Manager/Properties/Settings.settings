@@ -5,8 +5,8 @@
     <Setting Name="volume" Type="System.Single" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
-    <Setting Name="toggleVolume" Type="System.Single" Scope="User">
-      <Value Profile="(Default)">0.3</Value>
+    <Setting Name="volumeOn" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

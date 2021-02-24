@@ -53,6 +53,8 @@ namespace MOBA_Manager.UI
 
         private void SpeakerIcon_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            SoundHandler.ToggleVolumeOnOff();
+            this.SpeakerIcon.Source = SoundHandler.GetSoundIconForVolume();
         }
     }
 }

@@ -39,8 +39,11 @@ namespace MOBA_Manager.Source.Sound
             m_mediaPlayer.Stop();
         }
 
-        public static void toggleVolumeOnOff()
+        public static void ToggleVolumeOnOff()
         {
+            Properties.Settings.Default.volumeOn = !Properties.Settings.Default.volumeOn;
+            Properties.Settings.Default.Save();
+            m_mediaPlayer.Volume = GetMusicVolumeSettings();
         }
 
         private static void Media_Ended(object sender, EventArgs e)
@@ -51,7 +54,14 @@ namespace MOBA_Manager.Source.Sound
 
         private static float GetMusicVolumeSettings()
         {
-            return Properties.Settings.Default.volume;
+            if (Properties.Settings.Default.volumeOn)
+            {
+                return Properties.Settings.Default.volume;
+            }
+            else
+            {
+                return 0.0F;
+            }
         }
 
         private static void SetMusicVolumeSettings(float value)
@@ -62,7 +72,7 @@ namespace MOBA_Manager.Source.Sound
 
         public static BitmapImage GetSoundIconForVolume()
         {
-            if (Properties.Settings.Default.volume > 0.0)
+            if (Properties.Settings.Default.volumeOn)
             {
                 return speakerOn;
             }
