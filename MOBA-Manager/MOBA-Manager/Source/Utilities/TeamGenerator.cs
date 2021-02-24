@@ -30,7 +30,7 @@ namespace MOBA_Manager.Game
             return teamList;
         }
 
-        private string[] GetTeamNames()
+        public static string[] GetTeamNames()
         {
             string[] teamNames = {
                 "Blue Azuls",

@@ -9,8 +9,11 @@ namespace MOBA_Manager.Source.DataModel
         private Team homeTeam;
         private Team awayTeam;
 
-        public Fixture(Team homeTeam, Team awayTeam)
+        public Fixture(Team homeTeam, Team awayTeam, DateTime matchTime)
         {
+            this.matchTime = matchTime;
+            this.homeTeam = homeTeam;
+            this.awayTeam = awayTeam;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using MOBA_Manager.DataModel;
 using MOBA_Manager.Source.DataModel;
+using MOBA_Manager.Source.Utilities;
 using System;
 using System.Collections.Generic;
 
@@ -42,12 +43,11 @@ namespace MOBA_Manager.Game
             this.session.SetPlayerData(LoadPlayers());
             this.session.BuyablePlayers = LoadBuyablePlayers();
             this.session.SetTeamData(LoadTeams());
-            this.session.FixturesList = GenerateInitialFixtures();
         }
 
         private List<Fixture> GenerateInitialFixtures()
         {
-            return new List<Fixture>();
+            return new FixtureBuilder().GetNewFixtures(this.session.GameTime, this.session);
         }
 
         private List<Player> LoadBuyablePlayers()
@@ -75,7 +75,9 @@ namespace MOBA_Manager.Game
 
         public Session SetSessionUser(User user)
         {
-            return this.session.SetUser(user);
+            this.session.SetUser(user);
+            this.session.FixturesList = GenerateInitialFixtures();
+            return this.session;
         }
     }
 }
