@@ -31,7 +31,9 @@ namespace MOBA_Manager.UI
         private void SetupUI()
         {
             Switcher.ingameFrame = InMainGameFrame;
+            DateLabel.Content = this.playerSession.GameTime.Date.ToString("d");
             InMainGameFrame.Navigate(new HomeScreenPage(this.playerSession));
+            
         }
 
         private void AllPlayerButton_Click(object sender, RoutedEventArgs e)

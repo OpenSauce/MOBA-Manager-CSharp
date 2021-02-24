@@ -20,7 +20,7 @@ namespace MOBA_Manager.Game
         public void ProceedGame()
         {
             CalculateDataUpdates();
-            //ContinueTime();
+            ContinueTime();
         }
 
         private void CalculateDataUpdates()
@@ -60,7 +60,7 @@ namespace MOBA_Manager.Game
 
         private void ContinueTime()
         {
-            throw new NotImplementedException();
+            playerSession.GameTime = playerSession.GameTime.AddDays(3);
         }
 
         private void CalculateTransfers()

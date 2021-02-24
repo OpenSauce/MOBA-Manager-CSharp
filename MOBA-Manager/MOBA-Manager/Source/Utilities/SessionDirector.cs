@@ -1,5 +1,6 @@
 ﻿using MOBA_Manager.DataModel;
 using MOBA_Manager.Source.DataModel;
+using System;
 using System.Collections.Generic;
 
 namespace MOBA_Manager.Game
@@ -32,6 +33,7 @@ namespace MOBA_Manager.Game
         private void SetupSession()
         {
             this.session = new Session();
+            this.session.GameTime = new DateTime(2020, 1, 1);
             LoadGameEntities();
         }
 
