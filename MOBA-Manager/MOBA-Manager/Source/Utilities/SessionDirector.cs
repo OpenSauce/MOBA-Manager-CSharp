@@ -8,7 +8,7 @@ namespace MOBA_Manager.Game
 {
     public class SessionDirector
     {
-        private Session session = null;
+        private static Session session = null;
 
         public SessionDirector()
         {
@@ -20,9 +20,9 @@ namespace MOBA_Manager.Game
             new SessionDirector();
         }
 
-        public Session GetSession()
+        public static Session GetSession()
         {
-            return this.session;
+            return session;
         }
 
         private void SetupSessionAndUI()
@@ -33,21 +33,21 @@ namespace MOBA_Manager.Game
 
         private void SetupSession()
         {
-            this.session = new Session();
-            this.session.GameTime = new DateTime(2020, 1, 1);
+            session = new Session();
+            session.GameTime = new DateTime(2020, 1, 1);
             LoadGameEntities();
         }
 
         private void LoadGameEntities()
         {
-            this.session.SetPlayerData(LoadPlayers());
-            this.session.BuyablePlayers = LoadBuyablePlayers();
-            this.session.SetTeamData(LoadTeams());
+            session.SetPlayerData(LoadPlayers());
+            session.BuyablePlayers = LoadBuyablePlayers();
+            session.SetTeamData(LoadTeams());
         }
 
         private List<Fixture> GenerateInitialFixtures()
         {
-            return new FixtureBuilder().GetNewFixtures(this.session.GameTime, this.session);
+            return new FixtureBuilder().GetNewFixtures(session.GameTime, session);
         }
 
         private List<Player> LoadBuyablePlayers()
@@ -75,9 +75,9 @@ namespace MOBA_Manager.Game
 
         public Session SetSessionUser(User user)
         {
-            this.session.SetUser(user);
-            this.session.FixturesList = GenerateInitialFixtures();
-            return this.session;
+            session.SetUser(user);
+            session.FixturesList = GenerateInitialFixtures();
+            return session;
         }
     }
 }
