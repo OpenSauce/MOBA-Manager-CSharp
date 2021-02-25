@@ -38,6 +38,6 @@
                 <SolidColorBrush Color="Black" Opacity="0.2" />
             </Rectangle.Fill>
         </Rectangle>
-        <Label x:Name="DateLabel" Content="Label" HorizontalAlignment="Right" Margin="0,20,20,0" VerticalAlignment="Top" Style="{DynamicResource Header}"/>
+        <Label x:Name="DateLabel" Content="Label" HorizontalAlignment="Right" Margin="0,20,20,0" VerticalAlignment="Top" Style="{DynamicResource Header}" />
     </Grid>
 </Page>

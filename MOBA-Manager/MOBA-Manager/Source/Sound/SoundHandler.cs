@@ -23,10 +23,11 @@ namespace MOBA_Manager.Source.Sound
             bi.EndInit();
             speakerOff = bi;
         }
-                public static void PlayMainMusic()
+
+        public static void PlayMainMusic()
         {
             m_mediaPlayer = new MediaPlayer();
-            m_mediaPlayer.Open(new Uri(@"D:\GitHub\MOBA-Manager\MOBA-Manager\MOBA-Manager\Sound\Doomsayer.wav", UriKind.RelativeOrAbsolute));
+            m_mediaPlayer.Open(new Uri(@"..\..\Sound\Doomsayer.wav", UriKind.RelativeOrAbsolute));
             m_mediaPlayer.Volume = GetMusicVolumeSettings();
             m_mediaPlayer.MediaEnded += new EventHandler(Media_Ended);
             m_mediaPlayer.Play();
