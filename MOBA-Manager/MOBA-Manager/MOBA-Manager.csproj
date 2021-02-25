@@ -242,6 +242,7 @@
     <Resource Include="Fonts\ThaleahFat.ttf" />
     <Resource Include="Fonts\monogram.ttf" />
     <Resource Include="Fonts\monogram_extended.ttf" />
+    <None Include="packages.config" />
     <None Include="Source\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
