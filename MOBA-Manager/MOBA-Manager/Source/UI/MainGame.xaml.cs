@@ -1,5 +1,6 @@
 ﻿using MOBA_Manager.Game;
 using MOBA_Manager.Source.UI.InGame.Fixtures;
+using MOBA_Manager.Source.UI.Training;
 using MOBA_Manager.UI.InGame;
 using System.Windows;
 using System.Windows.Controls;
@@ -72,6 +73,11 @@ namespace MOBA_Manager.UI
         private void FixturesButton_Click(object sender, RoutedEventArgs e)
         {
             InMainGameFrame.Navigate(new FixturesPage(this.playerSession.FixturesList));
+        }
+
+        private void TrainingButton_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new TrainingScreen());
         }
     }
 }

@@ -152,6 +152,12 @@
     <Compile Include="Source\UI\Settings\Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Source\UI\Training\PlayerTrainingControl.xaml.cs">
+      <DependentUpon>PlayerTrainingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Source\UI\Training\TrainingScreen.xaml.cs">
+      <DependentUpon>TrainingScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Source\Utilities\ControlledRandom.cs" />
     <Compile Include="Source\DataModel\IBaseEntity.cs" />
     <Compile Include="Source\DataModel\Player.cs" />
@@ -333,6 +339,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Source\UI\Settings\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\UI\Training\PlayerTrainingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\UI\Training\TrainingScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
