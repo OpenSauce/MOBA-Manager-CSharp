@@ -77,7 +77,10 @@ namespace MOBA_Manager.UI
 
         private void TrainingButton_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new TrainingScreen());
+            if (playerSession.MainPlayer.Team.Roster.Count > 0)
+            {
+                Switcher.Switch(new TrainingScreen());
+            }
         }
     }
 }
