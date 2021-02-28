@@ -1,4 +1,6 @@
 ﻿using MOBA_Manager.DataModel;
+using MOBA_Manager.Source.UI.Training;
+using MOBA_Manager.UI;
 using System;
 using System.Collections.Generic;
 
@@ -8,11 +10,13 @@ namespace MOBA_Manager.Game
     {
         private static Session playerSession;
         private PlayerGenerator playerGenerator;
+        public STATE state;
 
         public MainGameEngine(Session session)
         {
             playerSession = session;
             this.playerGenerator = new PlayerGenerator();
+            state = STATE.NEWs;
         }
 
         public Session PlayerSession { get => playerSession; set => playerSession = value; }
@@ -27,9 +31,27 @@ namespace MOBA_Manager.Game
         {
             CalculateCash();
             GenerateBuyablePlayers();
+            UpdateState();
             //CalculateTransfers();
             //CalculatePlayerUpdates();
             // CalculateTeamUpdates();
+        }
+
+        private void UpdateState()
+        {
+            switch (state)
+            {
+                case STATE.NEWs:
+                    break;
+
+                case STATE.TRAINING:
+                    Switcher.Switch(new TrainingScreen());
+                    break;
+
+                case STATE.MATCH:
+                    break;
+            }
+            state = ((int)state + 1 == 3) ? 0 : state + 1;
         }
 
         private void GenerateBuyablePlayers()
@@ -75,6 +97,13 @@ namespace MOBA_Manager.Game
             {
                 t.AddCash(t.Reputation * 0.8);
             }
+        }
+
+        public enum STATE
+        {
+            NEWs = 0,
+            TRAINING = 1,
+            MATCH = 2
         }
     }
 }

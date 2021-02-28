@@ -33,6 +33,7 @@ namespace MOBA_Manager.UI
         {
             Switcher.ingameFrame = InMainGameFrame;
             DateLabel.Content = this.playerSession.GameTime.Date.ToString("d");
+            StateLabel.Content = gameEngine.state;
             InMainGameFrame.Navigate(new HomeScreenPage(this.playerSession));
         }
 

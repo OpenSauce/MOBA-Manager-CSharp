@@ -10,6 +10,9 @@
 
     <Grid>
         <Label Content="Label" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Style="{DynamicResource TitleLabel}" />
-        <WrapPanel x:Name="TrainingPlayers" Margin="0,150,0,0" />
+        <WrapPanel x:Name="TrainingPlayers" Margin="0,150,0,50">
+        </WrapPanel>
+        <Button x:Name="TrainButton" Content="Train" Width="75" VerticalAlignment="Bottom" Margin="0,0,0,20" Click="TrainButton_Click" />
+        <Button x:Name="ReturnButton" Content="Return" Width="75" VerticalAlignment="Bottom" Margin="0,0,50,20" HorizontalAlignment="Right" Click="ReturnButton_Click" />
     </Grid>
 </Page>

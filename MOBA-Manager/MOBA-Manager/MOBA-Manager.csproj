@@ -120,7 +120,9 @@
     <Compile Include="Source\Game\FSM\iState.cs" />
     <Compile Include="Source\Game\FSM\StateManager.cs" />
     <Compile Include="Source\Game\FSM\Training.cs" />
+    <Compile Include="Source\Game\Match.cs" />
     <Compile Include="Source\Game\Trade.cs" />
+    <Compile Include="Source\Game\Training.cs" />
     <Compile Include="Source\Sound\SoundHandler.cs" />
     <Compile Include="Source\UI\InGame\AllTeams\AllTeamsPage.xaml.cs">
       <DependentUpon>AllTeamsPage.xaml</DependentUpon>

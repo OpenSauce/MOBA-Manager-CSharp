@@ -39,5 +39,6 @@
             </Rectangle.Fill>
         </Rectangle>
         <Label x:Name="DateLabel" Content="Label" HorizontalAlignment="Right" Margin="0,20,20,0" VerticalAlignment="Top" Style="{DynamicResource Header}" />
+        <Label x:Name="StateLabel" Content="Label" HorizontalAlignment="Left" Margin="714,71,0,0" VerticalAlignment="Top" Style="{DynamicResource TextLabel}" />
     </Grid>
 </Page>
