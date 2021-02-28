@@ -5,7 +5,7 @@
         private bool LoadPortraits()
         {
             var result = true;
-            //Test
+
             return result;
         }
     }
