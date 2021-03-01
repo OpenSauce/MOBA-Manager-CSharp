@@ -26,6 +26,7 @@ namespace MOBA_Manager.Source.UI.InGame
             this.PlayerPortrait.Source = ControlPlayer.IconIndex;
             this.PlayerNameLabel.Content = ControlPlayer.GetFullName();
             this.PlayerRoleLabel.Content = ControlPlayer.GetPlayerRole();
+            this.PlayerRatingLabel.Content = ControlPlayer.GetPlayerRating() + "/5";
         }
 
         public Player ControlPlayer { get; set; }

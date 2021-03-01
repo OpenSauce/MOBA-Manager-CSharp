@@ -18,6 +18,8 @@ namespace MOBA_Manager.Game
         public List<Player> BuyablePlayers { get; set; }
         public DateTime GameTime { get; set; }
 
+        private MainGameEngine engine;
+
         public Session()
         {
         }
@@ -55,7 +57,11 @@ namespace MOBA_Manager.Game
 
         public void Start()
         {
-            Switcher.Switch(new MainGame(new MainGameEngine(this)));
+            if(engine == null)
+            {
+                engine = new MainGameEngine(this);
+            }
+            Switcher.Switch(new MainGame(engine));
         }
 
         internal List<Team> GetTeamList()

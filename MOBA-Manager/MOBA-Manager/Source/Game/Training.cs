@@ -16,13 +16,21 @@ namespace MOBA_Manager.Source.Game
         {
             foreach (Player p in playerList)
             {
-                p.CurrentSkill = (int)Math.Floor(p.CurrentSkill + RunTraining(p));
+                int training = (int)Math.Floor(RunTraining(p));
+                if (p.CurrentSkill + training > p.PotentialSkill)
+                {
+                    p.CurrentSkill = p.PotentialSkill;
+                }
+                else
+                {
+                    p.CurrentSkill = p.CurrentSkill + training;
+                }
             }
         }
 
         private Double RunTraining(Player p)
         {
-            int ageValue = p.Age < 28 ? 2 : 1;
+            int ageValue = p.Age < 28 && p.Age > 20 ? 2 : -1;
             return 1 + trainingModifier + ageValue + ControlledRandom.RandomNumber(1, 3);
         }
     }

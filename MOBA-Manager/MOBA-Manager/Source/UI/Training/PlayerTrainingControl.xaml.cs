@@ -24,7 +24,7 @@ namespace MOBA_Manager.Source.UI.Training
         {
             this.PlayerPortrait.Source = ControlPlayer.IconIndex;
             this.PlayerNameLabel.Content = ControlPlayer.GetFullName();
-            this.PlayerRatingLabel.Content = ControlPlayer.CurrentSkill;
+            this.PlayerRatingLabel.Content = ControlPlayer.GetPlayerRating();
         }
 
         public Player ControlPlayer { get; set; }
