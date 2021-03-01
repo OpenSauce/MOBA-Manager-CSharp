@@ -130,6 +130,9 @@
     <Compile Include="Source\UI\InGame\BuyPlayers\BuyPlayerControl.xaml.cs">
       <DependentUpon>BuyPlayerControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Source\UI\InGame\Fixtures\FixtureControl.xaml.cs">
+      <DependentUpon>FixtureControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Source\UI\InGame\Fixtures\FixturesPage.xaml.cs">
       <DependentUpon>FixturesPage.xaml</DependentUpon>
     </Compile>
@@ -293,6 +296,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Source\UI\InGame\BuyPlayers\BuyPlayersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Source\UI\InGame\Fixtures\FixtureControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

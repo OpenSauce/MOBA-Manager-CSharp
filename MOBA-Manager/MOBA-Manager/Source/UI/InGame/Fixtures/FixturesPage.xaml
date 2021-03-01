@@ -9,5 +9,17 @@
       Title="FixturesPage">
 
     <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="100">
+            <StackPanel x:Name="BuyPlayerStackPanel" Margin="0">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type UserControl}">
+                        <Setter Property="Margin" Value="10,10,10,10" />
+                    </Style>
+                </StackPanel.Resources>
+                <StackPanel.Background>
+                    <SolidColorBrush Color="#FF191B1B" Opacity="0.6" />
+                </StackPanel.Background>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

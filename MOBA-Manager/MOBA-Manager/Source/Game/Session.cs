@@ -57,7 +57,7 @@ namespace MOBA_Manager.Game
 
         public void Start()
         {
-            if(engine == null)
+            if (engine == null)
             {
                 engine = new MainGameEngine(this);
             }

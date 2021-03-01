@@ -15,6 +15,7 @@ namespace MOBA_Manager.Source.Utilities
             for (int i = 0; i < teams.Count; i++)
             {
                 Fixture f = new Fixture(playerSession.MainPlayer.Team, teams[i], startingDate);
+                fixtureList.Add(f);
             }
             return fixtureList;
         }

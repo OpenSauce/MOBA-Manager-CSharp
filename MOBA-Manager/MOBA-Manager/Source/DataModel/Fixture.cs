@@ -5,15 +5,15 @@ namespace MOBA_Manager.Source.DataModel
 {
     public class Fixture
     {
-        private DateTime matchTime;
-        private Team homeTeam;
-        private Team awayTeam;
+        public DateTime MatchTime { get; set; }
+        public Team HomeTeam { get; set; }
+        public Team AwayTeam { get; set; }
 
         public Fixture(Team homeTeam, Team awayTeam, DateTime matchTime)
         {
-            this.matchTime = matchTime;
-            this.homeTeam = homeTeam;
-            this.awayTeam = awayTeam;
+            this.MatchTime = matchTime;
+            this.HomeTeam = homeTeam;
+            this.AwayTeam = awayTeam;
         }
     }
 }
