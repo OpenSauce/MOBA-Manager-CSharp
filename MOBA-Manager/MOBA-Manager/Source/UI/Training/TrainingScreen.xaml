@@ -4,15 +4,17 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:MOBA_Manager.Source.UI.Training"
+      xmlns:monogame="clr-namespace:MOBA_Manager.Monogame"
       mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TrainingScreen">
 
     <Grid>
         <Label Content="Label" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Style="{DynamicResource TitleLabel}" />
-        <WrapPanel x:Name="TrainingPlayers" Margin="0,150,0,50">
+        <WrapPanel x:Name="TrainingPlayers" Margin="-10,113,10,258">
         </WrapPanel>
         <Button x:Name="TrainButton" Content="Train" Width="75" VerticalAlignment="Bottom" Margin="0,0,0,20" Click="TrainButton_Click" />
         <Button x:Name="ReturnButton" Content="Return" Width="75" VerticalAlignment="Bottom" Margin="0,0,50,20" HorizontalAlignment="Right" Click="ReturnButton_Click" />
+        <monogame:TrainingGame Margin="0,200,0,100" />
     </Grid>
 </Page>
